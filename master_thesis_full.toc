@@ -36,60 +36,60 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}How the data is controlled}{13}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}technical structure}{14}{section.2.2}
+\contentsline {section}{\numberline {2.2}technical structure}{15}{section.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{sending parameters}{17}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{organize python code os modules}{17}{section*.12}
+\contentsline {subsubsection}{organize python code os modules}{18}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{use of the client library}{17}{section*.13}
+\contentsline {subsubsection}{use of the client library}{18}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{communication of client library and earth engine}{18}{section*.14}
+\contentsline {subsubsection}{communication of the client library and earth engine}{18}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}organise dependencies}{18}{section.2.3}
+\contentsline {section}{\numberline {2.3}organise dependencies}{19}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Results}{20}{chapter.3}
+\contentsline {chapter}{\numberline {3}Results}{21}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}example situation 1}{20}{section.3.1}
+\contentsline {section}{\numberline {3.1}example situation 1}{21}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}sample session 2}{23}{section.3.2}
+\contentsline {section}{\numberline {3.2}sample session 2}{24}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}sample session 3}{26}{section.3.3}
+\contentsline {section}{\numberline {3.3}sample session 3}{27}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Discussion}{30}{chapter.4}
+\contentsline {chapter}{\numberline {4}Discussion}{31}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}limits and problems of the current version of the earthEngineGrabR}{30}{section.4.1}
+\contentsline {section}{\numberline {4.1}limits and problems of the current version of the earthEngineGrabR}{31}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{small file size of vector data}{31}{section*.16}
+\contentsline {subsubsection}{small file size of vector data}{32}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{a limited number of available data products and their possible properties}{31}{section*.17}
+\contentsline {subsubsection}{a limited number of available data products and their possible properties}{32}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{no projection control}{31}{section*.18}
+\contentsline {subsubsection}{no projection control}{32}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{challenge to get all dependencies to work, different operating systems, the confusing authentication process}{31}{section*.19}
+\contentsline {subsubsection}{challenge to get all dependencies to work, different operating systems, the confusing authentication process}{32}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}future work and further enhancements}{32}{section.4.2}
+\contentsline {section}{\numberline {4.2}future work and further enhancements}{33}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{if available allow a monthly resolution}{33}{section*.20}
+\contentsline {subsubsection}{if available allow a monthly resolution}{34}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{control the spatial resolution for each product separately}{33}{section*.21}
+\contentsline {subsubsection}{control the spatial resolution for each product separately}{34}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{add more control of projections}{33}{section*.22}
+\contentsline {subsubsection}{add more control of projections}{34}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{add internal iterations to increase the number of possible features to be processed}{33}{section*.23}
+\contentsline {subsubsection}{add internal iterations to increase the number of possible features to be processed}{34}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{change the authentication process so that no manually copy or pasting is necessary anymore}{34}{section*.24}
+\contentsline {subsubsection}{change the authentication process so that no manually copy or pasting is necessary anymore}{35}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{possibility for the user to add and define new data products}{34}{section*.25}
+\contentsline {subsubsection}{possibility for the user to add and define new data products}{35}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Internal limitations of the GEE and what this implies for the earthEngineGrabR}{35}{section.4.3}
+\contentsline {section}{\numberline {4.3}Internal limitations of the GEE and what this implies for the earthEngineGrabR}{36}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Limitation of processing resources}{35}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Limitation of processing resources}{36}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{System throughput an performance}{35}{section*.26}
+\contentsline {subsubsection}{System throughput an performance}{36}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Export limitation}{36}{section*.27}
+\contentsline {subsubsection}{Export limitation}{37}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}This is Appendix 1...}{39}{chapter.5}
+\contentsline {chapter}{\numberline {5}This is Appendix 1...}{40}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}This is appendix 2...}{40}{chapter.6}
+\contentsline {chapter}{\numberline {6}This is appendix 2...}{41}{chapter.6}

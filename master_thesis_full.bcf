@@ -2069,11 +2069,6 @@
     <bcf:citekey order="17">gorelick2017google</bcf:citekey>
     <bcf:citekey order="18">gorelick2017google</bcf:citekey>
     <bcf:citekey order="19">gorelick2017google</bcf:citekey>
-    <bcf:citekey order="20">hansen2006vegetation</bcf:citekey>
-    <bcf:citekey order="21">pekel2016high</bcf:citekey>
-    <bcf:citekey order="22">farr2007shuttle</bcf:citekey>
-    <bcf:citekey order="23">weiss2018global</bcf:citekey>
-    <bcf:citekey order="24">funk2015climate</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt/global" type="entry" sortscheme="nyt" sortnamekeyscheme="global">
   <bcf:sorting>

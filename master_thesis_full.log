@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  17 APR 2018 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  17 APR 2018 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1068,13 +1068,13 @@ been already used, duplicate ignored
 l.19 
       [2
 
-] <images/traditional_acquisition.pdf, id=178, 963.6pt x 541.02126pt>
+] <images/traditional_acquisition.pdf, id=178, 722.7pt x 406.51875pt>
 File: images/traditional_acquisition.pdf Graphic file (type pdf)
 
 <use images/traditional_acquisition.pdf>
 Package pdftex.def Info: images/traditional_acquisition.pdf used on input line 
 28.
-(pdftex.def)             Requested size: 426.79134pt x 239.61859pt.
+(pdftex.def)             Requested size: 426.79134pt x 240.07349pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1133,7 +1133,7 @@ Overfull \hbox (2.50383pt too wide) in paragraph at lines 14--15
 [11
 
 ]
-Underfull \hbox (badness 10000) in alignment at lines 47--47
+Overfull \hbox (51.17673pt too wide) in alignment at lines 47--47
 [][][][][] 
  []
 
@@ -1143,49 +1143,46 @@ Overfull \hbox (0.20032pt too wide) in paragraph at lines 51--53
  de-rived data prod-
  []
 
-[12]
+
 Overfull \hbox (14.56082pt too wide) in paragraph at lines 57--59
 []\OT1/ppl/m/n/12 To pro-vide to-po-graphic prod-ucts, the Shut-tle Radar To-po
 g-ra-phy Mis-sion (SRTM)
  []
 
-
+[12]
 Overfull \hbox (1.30132pt too wide) in paragraph at lines 60--61
 []\OT1/ppl/m/n/12 The Cli-mate Haz-ard Group In-fraRed Pre-cip-i-ta-tion with S
 ta-tion Data (CHIRPS)
  []
 
-<images/design_function.pdf, id=257, 963.6pt x 541.02126pt>
+[13] <images/design_function.pdf, id=359, 722.7pt x 406.51875pt>
 File: images/design_function.pdf Graphic file (type pdf)
 
 <use images/design_function.pdf>
 Package pdftex.def Info: images/design_function.pdf used on input line 77.
-(pdftex.def)             Requested size: 426.79134pt x 239.61859pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13] <images/processin_folw.pdf, id=267, 963.6pt x 541.02126pt>
+(pdftex.def)             Requested size: 426.79134pt x 240.07349pt.
+ [14 <./images/design_function.pdf>]
+<images/processin_folw.pdf, id=515, 722.7pt x 406.51875pt>
 File: images/processin_folw.pdf Graphic file (type pdf)
 
 <use images/processin_folw.pdf>
-Package pdftex.def Info: images/processin_folw.pdf used on input line 99.
-(pdftex.def)             Requested size: 426.79134pt x 239.61859pt.
+Package pdftex.def Info: images/processin_folw.pdf used on input line 100.
+(pdftex.def)             Requested size: 426.79134pt x 240.07349pt.
+ [15 <./images/processin_folw.pdf>]
+<images/concole_connection.pdf, id=596, 722.7pt x 406.51875pt>
+File: images/concole_connection.pdf Graphic file (type pdf)
+
+<use images/concole_connection.pdf>
+Package pdftex.def Info: images/concole_connection.pdf used on input line 122.
+(pdftex.def)             Requested size: 426.79134pt x 240.07349pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <./images/design_function.pdf>] [15 <./images/processin_folw.pdf>]
-<images/concole_connection.pdf, id=279, 963.6pt x 541.02126pt>
-File: images/concole_connection.pdf Graphic file (type pdf)
-
-<use images/concole_connection.pdf>
-Package pdftex.def Info: images/concole_connection.pdf used on input line 119.
-(pdftex.def)             Requested size: 426.79134pt x 239.61859pt.
- [16 <./images/concole_connection.pdf>]
-[17] [18]) (./chapters/results.tex [19]
+[16] [17 <./images/concole_connection.pdf>] [18]) (./chapters/results.tex
+[19] [20]
 Chapter 3.
-<images/territories.pdf, id=301, 614.295pt x 794.97pt>
+<images/territories.pdf, id=655, 614.295pt x 794.97pt>
 File: images/territories.pdf Graphic file (type pdf)
 
 <use images/territories.pdf>
@@ -1201,10 +1198,10 @@ Overfull \hbox (106.98923pt too wide) in paragraph at lines 24--27
 m-ple: \OT1/pcr/m/n/12 eeProduct[]modis[]treecover()\OT1/ppl/m/n/12 .
  []
 
-[20
+[21
 
-] [21 <./images/territories.pdf>] [22]
-<images/sample_session_1.pdf, id=332, 614.295pt x 794.97pt>
+] [22 <./images/territories.pdf>] [23]
+<images/sample_session_1.pdf, id=685, 614.295pt x 794.97pt>
 File: images/sample_session_1.pdf Graphic file (type pdf)
 
 <use images/sample_session_1.pdf>
@@ -1220,12 +1217,12 @@ Overfull \hbox (1.62729pt too wide) in paragraph at lines 60--61
 -ity found in cen-tral Africa,
  []
 
-[23] [24 <./images/sample_session_1.pdf>] (./master_thesis_full.toc)
+[24] [25 <./images/sample_session_1.pdf>] (./master_thesis_full.toc)
 \tf@toc=\write7
 \openout7 = `master_thesis_full.toc'.
 
 
-<images/stripes.pdf, id=357, 614.295pt x 794.97pt>
+<images/stripes.pdf, id=710, 614.295pt x 794.97pt>
 File: images/stripes.pdf Graphic file (type pdf)
  <use images/stripes.pdf>
 Package pdftex.def Info: images/stripes.pdf used on input line 73.
@@ -1234,7 +1231,7 @@ Package pdftex.def Info: images/stripes.pdf used on input line 73.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/stripes_distance_zoom.pdf, id=358, 614.295pt x 794.97pt>
+<images/stripes_distance_zoom.pdf, id=711, 614.295pt x 794.97pt>
 File: images/stripes_distance_zoom.pdf Graphic file (type pdf)
 
 <use images/stripes_distance_zoom.pdf>
@@ -1245,10 +1242,10 @@ Package pdftex.def Info: images/stripes_distance_zoom.pdf used on input line 10
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25
+[26
 
-] [26 <./images/stripes.pdf>] [27 <./images/stripes_distance_zoom.pdf>]
-<images/sample_session_3_change_map.pdf, id=397, 614.295pt x 794.97pt>
+] [27 <./images/stripes.pdf>] [28 <./images/stripes_distance_zoom.pdf>]
+<images/sample_session_3_change_map.pdf, id=750, 614.295pt x 794.97pt>
 File: images/sample_session_3_change_map.pdf Graphic file (type pdf)
 
 <use images/sample_session_3_change_map.pdf>
@@ -1259,7 +1256,7 @@ ine 155.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28]) (./chapters/discussion.tex [29 <./images/sample_session_3_change_map.pdf>
+[29]) (./chapters/discussion.tex [30 <./images/sample_session_3_change_map.pdf>
 ]
 Chapter 4.
 
@@ -1268,15 +1265,15 @@ Overfull \hbox (6.7156pt too wide) in paragraph at lines 4--9
 duc-tion the earth-Engine-
  []
 
-[30
+[31
 
-] [31] [32] [33] [34] [35])
+] [32] [33] [34] [35] [36])
 Overfull \hbox (1.53139pt too wide) in paragraph at lines 114--252
 \OT1/ppl/m/n/12 The GEE pro-vides data ex-port to Google Drive and Google Cloud
  Plat-form (GCP).
  []
 
-[36]
+[37]
 Overfull \hbox (20.36897pt too wide) in paragraph at lines 257--257
 \OT1/ppl/m/n/12 dis-tributed agro-hydrological mod-elling''. In: \OT1/ppl/m/it/
 12 Jour-nal of Hy-drol-ogy \OT1/ppl/m/n/12 287.1-4, pp. 279{
@@ -1315,17 +1312,17 @@ You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-[37
+[38
 
-] (./chapters/appendix1.tex [38]
+] (./chapters/appendix1.tex [39]
 Chapter 5.
-) (./chapters/appendix2.tex [39
+) (./chapters/appendix2.tex [40
 
 ]
 Chapter 6.
 )
 No file master_thesis_full.ind.
-(./chapters/selbststaendigkeit.tex [40
+(./chapters/selbststaendigkeit.tex [41
 
 ]
 Overfull \hbox (2.52751pt too wide) in paragraph at lines 7--8
@@ -1335,7 +1332,7 @@ f-s-mit-tel be-nutzt habe.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
- [41
+ [42
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
@@ -1350,10 +1347,10 @@ Package logreq Info: Writing requests to 'master_thesis_full.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 272.
  ) 
 Here is how much of TeX's memory you used:
- 15367 strings out of 494910
- 237060 string characters out of 6179836
- 731790 words of memory out of 5000000
- 18268 multiletter control sequences out of 15000+600000
+ 15369 strings out of 494910
+ 237087 string characters out of 6179836
+ 731966 words of memory out of 5000000
+ 18266 multiletter control sequences out of 15000+600000
  16586 words of font info for 47 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  38i,9n,45p,2036b,2508s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1366,10 +1363,10 @@ ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/cour
 ier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master_thesis_full.pdf (45 pages, 7864731 bytes).
+Output written on master_thesis_full.pdf (46 pages, 9299275 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
- 482 compressed objects within 5 object streams
- 165 named destinations out of 1000 (max. 500000)
+ 935 PDF objects out of 1000 (max. 8388607)
+ 786 compressed objects within 8 object streams
+ 169 named destinations out of 1000 (max. 500000)
  232 words of extra memory for PDF output out of 10000 (max. 10000000)
 
