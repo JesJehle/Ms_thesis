@@ -1,14 +1,114 @@
 \chapter{Discussion}
-\label{ch:discussion}
-
-Try to write introduction and discussion in a way that the reader doesn't really require methods and results. To do so, you have to use the first (few) sentences of the discussion to recapitulate your findings.
-
-Discuss your results here, ideally structured into various sections, of which one is:
 
 
-\section{Conclusions}
-\label{sec:conclusions}
+The previous sample sessions in the results section showed the ability of the earthEngineGrabR to acquire remote sensing data for various research questions.
+Compared to the traditional method described in the introduction the earthEngineGrabR is superior in various ways:
+The use of the earthEngineGrabR to acquire remote sensing data for a specific time, region and aggregation provide significant savings of time, processing resources and labour. To acquire, the data for the research questions was a matter of minutes, even the aggregation of daily precipitation satellite imagery for 15 years took less than 15 minutes. The required processing resources for the computation was completely outsourced, while there was only a minimum of load on the local processing resources. Further, no manual preprocessing or integration of different data sources was necessary and no external GIS software had to be used. The entire process could be controlled from within R and only a minimum of GIS knowlege and no experience with Python or the earth engine Python API was recquired. With the earthEngineGrabR, the user not only could harvest data products from the earth engine data catalogue but with the aggregation process controlled by the user, could generate new data dependent on the research questions. 
+Therefore, for the described use cased, it can be said, that the earthEngineGrabR strongly simplyfied and at the same time extended the possibility of the user to acquire remote sensing data for there research questions.
+Thereby, the package shows the potential of a simplified access to the capabilities of the GEE for the scientific work.
 
-  Your conclusions summarise your main findings as presented in the
-  Discussion chapter. Put them here...
+\section{limits and problems of the current version of the earthEngineGrabR}
 
+Although in some cases, the use of the earthEngineGrabR package offers some significant advantages to the scientific work, the current version is still limited in many ways. 
+
+\subsubsection{small file size of vector data}
+
+Particularly, due to the current upload limit of the fusion table API, it's not possible to process vector data with more than 5000 features. This small size certainly restricts the application of the package and would make it uncomely for most scientific projects. 
+
+\subsubsection{a limited number of available data products and their possible properties}
+
+Furthermore, the choice of available data products and their properties in the earthEngineGrabR is still low. The package, for example, offers no product for temperature, climate or any vegetation indexes and the available products lack a necessary temporal resolution. For instance, since the smallest temporal interval is one year, it's not possible to request the precipitation or distance to surface water for a certain season. But for the most ecological problems, the seasonality is of great importance.
+
+
+\subsubsection{no projection control}
+
+Another problem that is unsolved yet, is that during the upload process all vector data is transformed to geographic reference system WGS84. That is, that all the processing in earth engine is performed without a projection unless you call the WGS84 a projection. Therefore all projections of the original vector data are lost. The output of the \texttt{ee\_grab} function does not reflect the projection of the imported vector data. The conversion to WGS84 is unproblematic as long as there is no calculation of areas. Since the spatial reducer of the earthEngineGrabR only allows simple statistics like mean, median, mode, min and max, there is no calculation of areas and the conversion to WGS84 is harmless to the results of the analysis. However, in most cases, it would require a manual reprojection of the results by the user to combine the data collected by the earthEngineGrabR with data that is already at hand. An additional control of the projection would be helpful.
+
+\subsubsection{challenge to get all dependencies to work, different operating systems, the confusing authentication process}
+
+
+The most challenging problem though is to get the earthEngineGrabR to work on all operating systems properly. This point is challenging because of the many requirements and dependencies of the package. There are dependencies to R packages python libraries and external libraries like GDAL and there has to be a working python distribution on the system with a specified python path as an environmental variable. An additional difficulty is the confusing and extensive authentication process. While the Google Drive and Fusion Table API are accessed directly with R, the earth engine API and the gdal driver for fusion tables are accessed with python. In R the authentication protocol is managed by the httr R package and requires no manual copying and pasting of authorisation tokens. For the authorisation to the API's accessed from python the copy and pasting of tokens are still necessary. 
+Furthermore, the httr R package in its current implementation of the earthEngineGrabR works with access tokens, which need to be refreshed after approximately an hour while the authentication protocols managed with different python libraries work with refresh tokens, which never expire and therefore only need one initial authorisation. While using the earthEngineGrabR, this results in regular interruptions where the user is asked to again log in to his Google Account. Although with an already logged in account, this is simply one click with a mouse per hour, this can be problematic for unsupervised use of the package for instance on a  server. Therefore, although already strongly simplified, the current management of the dependencies and authentication protocols is still error-prone and requires too much activity on the user's side.
+
+\section{future work and further enhancements}
+
+Most of the shortcomings addressed in the last section can be rectified with the further development of the earthEngineGrabR package. As mentioned in the methods section, the current version of the package is supposed to provide a stable framework for the base functionality of the package like: 
+
+\begin{itemize}
+	
+	\item uploading data to earth engine
+	\item select a data product
+	\item rovide extensive control over the aggregation corresponding to the shape, temporal and spatial resolution
+	\item export data products from earth engine and import the products into R
+	\item manage the dependencies and authorisations to the involved API's
+	
+\end{itemize}
+
+
+
+The further development can be divided into the improvement of the framework and the implementation and the further development of additional features.
+Below, a number of additional extensions to the earthEngineGrabR is described that would rectify most of the addressed shortcomings.
+
+
+The most urgent extension is the implementation of additional data products. Basically, all data products available within the Earth Engine public data catalogue can be considered (In the appendix, table n. gorelick, list of the available datasets). Ath the moment the implementations are driven by demand. To provide data products covering weather and climate conditions, the implementation of additional products based on ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer) and MODIS would be reasonable. Furthermore, a data product to provide vegetation indices calculated form Sentinel or Landsat satellite imagery would be exciting. This product, for example, would provide to choose a time interval in months, maximum cloud cover to filter the image collection, whether to use Landsat or Sentinel imagery to calculate the Index and a selection of possible vegetation indexes like the NDVI (Normalized Difference Vegetation Index) or NDBI (Normalized Difference Built-up Index) etc. 
+
+\subsubsection{if available allow a monthly resolution}
+
+
+In addition, the available data products in the earthEngineGrabR: the chirps precipitation products and jrc distance to surface water product, receive a monthly resolution. In the time interval argument, this would result in the possibility to specify year and month of the interval of interest.
+
+\subsubsection{control the spatial resolution for each product separately}
+
+
+
+
+Furthermore, it would be reasonable to choose the spatial resolution for each data product separately and add control over the projection of the analysis. 
+
+
+\subsubsection{add more control of projections}
+
+
+This could be achieved by simply taking the target projection and send it as a string that specifies the EPSG (European Petroleum Survey Group - list of codes for geographic reference systems) to the earth engine servers and reprojects the requested data. Another option would be to control the projection explicitly with an additional argument.
+
+\subsubsection{add internal iterations to increase the number of possible features to be processed}
+
+
+it would require a manual subdivision and partial processing of the vector data what is 
+
+To increase the overall file size and the number of features of the target that can be processed it's necessary to build a workaround for two internal limitations of the Earth Engine API and the Fusion Table API. One is the upload limit for Fusion Tables, of around 5000 features at a time and another an export limit of Earth Engine of about 70 000 features at a time to Google Drive. The workaround for both limitations is to subdivide the file, iterate over the request of each subdivision and finally merge the subdivision results back together. This could be done in the following way: In the Fusion Table API, it's possible to upload vector data as a new Fusion Table or add to an existing one. Therefore, in the beginning, the file could be subdivided into chunks, that don't exceed 5000 features. While the first chunk is used to upload a new Fusion Table all additional chunks can be added in an iteration process. This existing Fusion Table is used as the target in Earth Engine. If the export exceeds 70 000 features it is again subdivided into multiple requests, downloaded separately and merged during the import process in R. This approach would enable the processing of considerably larger vector data and furthermore make use of a performance gain achieved by parallelisation and iteration. This effect was already mentioned in the last sample session example in the results section and will be pointed out in the following tips and tricks section.
+
+\subsubsection{change the authentication process so that no manually copy or pasting is necessary anymore}
+
+
+
+To simplify the authentication process it would be relevant to replace the manually copy and pasting of the authorisation tokens with an automatic transfer. Next, all authorisation processes should work with a refresh token which only requires one initial authorisation. The produced credentials refresh automatically without the intervention of the user. To further shield the user from the authorisation process it would be reasonable to incorporate the \texttt{ee\_grab\_init} inside the \texttt{ee\_grab} function and run the initialisation if the credentials cannot be found. This way, if the user calls the \texttt{ee\_grab} function the first time, \texttt{ee\_grab\_init} gets called and triggers the authorisation process. 
+
+
+\subsubsection{possibility for the user to add and define new data products}
+
+
+Finally, it would be necessary to consider a possibility to add new data products by the user himself. To achieve this either the earthEngineGrabR has to provide a function that works with all datasets on the Earth Engine Data Catalog or there is detailed documentation on how to create your own data products and the user acts like a coworker that incorporate changes to the earthEngineGrabR using the version control system of GitHub. This two examples certainly are extremes of two different designs of the earthEngineGrabR and a solution should make use of both directions. In the broader sense, it's the question of how to provide extensibility to the users. It seems necessary that demanded features are implemented by the package maintainer. However, to supply tools, that the users can build the required data products himself is probably superior to one individual being responsible for the implementation of every request.
+Independently of the different approaches of how to provide extensibility, there are several implementations that would certainly simplify the integration of additional features and the collaboration with other users of the earthEngineGrabR package. The first is, to provide a comprehensive documentation with additional sample sessions, vignettes or tutorials. Next, to implement tests in the development workflow and use them for Continuous Integration (CI). Discarding, of the improved stability of the package, testing and CI would improve the collaboration with co-workers and simplify the publication of the earthEngineGrabR. 
+
+To improve the framework for the base functionality of the earthEngineGrabR package the interface of R and Python could be changed. Instead of an interface depending on the console which invoiced system calls in the way described in the methods section the new published reticulate package for r-studio could be used. The use of reticulate would offer some significant benefits. The reticulate package offers the translation of R and Python data types. This would overdue the use of a flat file connection to pass parameters or processing info. Further, retuculate contains a multitude of helper functions that ease the use of R in combination with Python (\texttt{py\_available()}, for instance, checks for a python version on the system). While the execution of pythons scripts with a console, require the python code organised as scripts, with reticulate it's possible to run python code directly in R and organise the code in smaler, more flexible chunks, what is important when it comes to tools that provide the option to expand the earthEngineGrabR with additional data products and functionalities. The use of the reticulate package also would simplify the installation of python dependencies, because they can be performed in R (\texttt{py\_install()}- installs python libraries).
+In summary, the reticulate package would provide a more precise, less error-prone and more flexible interface of R and Python then the currently implemented use of system calls.
+
+\section{Internal limitations of the GEE and what this implies for the earthEngineGrabR}
+
+Besides the discussed limitation, there are also limitations of the GEE, that in contrast to the limitations of the earthEngineGrabR, can't be avoided by further development of the package. These internal limitations have a strong influence on the operations that can be performed with the package. 
+
+\subsection{Limitation of processing resources}
+
+
+\subsubsection{System throughput an performance}
+
+A reason for Earth Engines performance is its ability to efficiently distribute and manage complex computations across many machines. There is an almost linear relationship of throughput (pixels/sec) with the number of machines.
+Although the Earth Engine can execute and manage extremely large computations, the underlying infrastructure consists of clusters of low-end servers and there is a hard limit on the amount of data that can be brought into any individual server. The current Remote procedure call (RPC) and caching system limit the size of an object to 100 MB.
+An option to configure machines in earth engine is not available.
+Users can only express computations by using the parallel processing primitives provided in the Earth Engine client library and some non-parallelizable operations simply cannot be performed effectively in this environment.
+During the development of the earthEngineGrabR, the experience was repeatedly made, that requests of smaller magnitude are processed fast and immediately while requests exceeding a certain magnitude in data throughput, result in unforeseeable long data processing. Unfortunately, due to the reason, that the Earth Engine system hides nearly every aspect of the computation from the user, the magnitude generating this bottleneck is not obvious. Hence, avoiding the bottleneck saves hours of computation time and also enables processes that otherwise result in errors referring to computation timeout or user memory limit exceeding. For example, processing all available data products and joining them in one request, given a target shapefile of 10.000 features, takes more than 1 hour of computation, while iterating over the data products with one request each, is a matter of a few minutes. This insight is reflected in the internal design of the earthEnigneGrabR. In the \texttt{ee\_grab} function, each data product is processed individually. Furthermore, this approach allows processing the data products in parallel. The individual requests for the data products, generated by the GEE client library in python, all end with a command to export the generated data to Google Drive. However, the request must not wait until the data is processed. Instead, the request ends with the response of the earth engine servers, whether earth engine started a valid export or not. Yet, on the server side, the start of the export is the moment the actual computation of the data is initialised. This allows requesting the computation of multiple data products at the same time. The exported data products are individually downloaded from Google Drive and joined in R. This way, data bottlenecks, resulting in long export and computation timeout errors are avoided. 
+In summary, the performance of the earthEngineGrabR depends on earth engines ability to efficiently distribute computation by an internal parallelisation mechanism, that can't be controlled by the user. Operations that can't be efficiently scaled result in unforeseeable long processes and error and slow down the computation. By dividing requests with high data throughput in multiple smaller request, this internal limitation partly is avoided.
+
+\subsubsection{Export limitation}
+
+The GEE provides data export to Google Drive and Google Cloud Platform (GCP). While the export to GCP is fast and works with very large datasets, the export to Google Drive is limited to 2 GB and proportionally slow. Due to the reason, that outside the USA the always free tier of the GCP is not available, the export to Google Drive is the only free option. Similar to the described data bottleneck, discarding the official limit of 2 GB, it has shown that keeping the size of the export smal dramatically speeds up the process while export files larger 200 MB can result in hours of computation time. While this limitation can partly be avoided by the iteration approach described, it strongly restricts the download of large files.
