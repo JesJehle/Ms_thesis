@@ -2,7 +2,7 @@
 
 The following section is supposed to provide a scientific scenario and three corresponding sample sessions in which the earthEngineGrabR can be used to acquire remote sensing data to meet a specific research question. The emphasis of this section lies on how to use the earthEngineGrabR in practice. 
 
-\section{sample session 1}
+\section{szenario}
 
 Imagine, you are a scientist involved with the MIKE Programm (Monitoring the Illegal Killing of Elephants). Your object of investigation is to find covariates for the intensity of illegally killed elephants in Africa. You have access to data collected within the Great Elephant Census, a continent-wide aerial survey counting the number and distribution of elephants within there territories. 
 
@@ -12,15 +12,16 @@ Imagine, you are a scientist involved with the MIKE Programm (Monitoring the Ill
 			\includegraphics[width=7cm]{images/territories.pdf}
 	\end{center}
 		\caption{territories}
+		\label{territories}
 \end{wrapfigure}
 	% \vskip 2em%
 
-Image X shows the study area. Each region corresponds to a territory, and for each territory, you have the aggregated number of illegally killed elephants. To run your statistical model in R and find influential covariates you need further environmental variables derived from satellite imagery like the topography, land-use, and precipitation. 
+Figure \ref{territories} shows the study area. Each region corresponds to a territory, and for each territory, you have the aggregated number of illegally killed elephants. To run your statistical model in R and find influential covariates you need further environmental variables derived from satellite imagery like the topography, land-use, and precipitation. 
 
 
 Because the study area is fragmented and of large-scale at the same time it would require significant effort to use one of the search and order tools like the Earth Explorer, to acquire and prepare the remote sensing data for your analysis. You would have to download a multitude of tiles for each of your environmental variables to cover the study area. Next, you would have to integrate, merge and aggregate all this data in an external GIS application before you start your actual analysis in R. But fortunately, you know, that one of your colleagues lately used a new R packages, some "graber" that greatly simplified his data acquisition process and you are desperate enough to give it a try. After some googling, you find the earthEngineGrabR and the corresponding Git Hup package, which describes how to apply for a GEE account and how to install the required dependencies for the package. Because you have GDAL and Python already installed, you only install the sf R package and wait a few hours for the acknowledgement e-mail from Google, that you or your Google Account is now a trusted tester of the GEE. Now you are ready to use the earthEngineGrabR.
 
-\section{sample session 1}
+\section{large-scale analysis}
 
 First, install the package from Git Hup with the \texttt{install\_githup()} function form the devtools package.
 
@@ -46,7 +47,8 @@ This process is repeated for each API. If the function runs successfully, all ne
 \begin{center}
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=10cm]{images/install_authentication.png}
+			\includegraphics[width=15cm]{images/install_authentication.png}
+			\caption{Example of the authentication process, right}
 			\label{install}
 		\end{center}
 	\end{figure}
@@ -102,7 +104,8 @@ The output of the \texttt{ee\_grab} function is an object of class "sf".  The ou
 \begin{center}
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=16cm]{images/sample_session_1.pdf}
+			\includegraphics[width=11cm]{images/sample_session_1-cropped.pdf}
+			\caption{on top the accessibility to the nearest populated areas in minutes and tree cover in percent at the bottom}
 			\label{sample_session_1}
 		\end{center}
 	\end{figure}
@@ -114,22 +117,24 @@ Figure \ref{sample_session_1} shows the mean tree cover in percent from 2008 to 
 
 While this sample session shows the capabilities of the earthEngineGrabR package to aggregate over large areas, the next example is dedicated to the opposite situation. 
 
-\section{sample session 2}
+\section{small-scale analysis}
 
-Let 's stay with the invented scientist and his situation already described. Because of your access to the Great Elephant Census data you have not only the aggregated data for each territory but also the pre-aggregated survey data consisting of the number of elephants counted within a region specified by position, hight and the flight path of the aircraft. The combined areas form the spatial coverage of the survey and are available as shapefiles.
-
-
-	
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\begin{center}
-		\includegraphics[width=7cm]{images/stripes.pdf}
+		\includegraphics[width=7cm]{images/stripes-cropped.pdf}
+		\caption{stripes of the aircraft}
+		\label{stripes}
 	\end{center}
 \end{wrapfigure}
-	% \vskip 2em%
+% \vskip 2em%
 
 
+Let 's stay with the invented scientist and his situation already described. Because of your access to the Great Elephant Census data you have not only the aggregated data for each territory but also the pre-aggregated survey data consisting of the number of elephants counted within a region specified by position, hight and the flight path of the aircraft.
+	
 
-Map X shows the coverage for Tanzania. This time you are interested in the availability of surface water in each of these regions, therefore you want to use the distance to surface water data product available in the earthEngineGrabR package. As the target, you use the shapefile of the survey coverage and only specify the \texttt{jrc\_distanceToWater} product in the products argument. As spatial and temporal reducer you choose median. 
+The combined areas form the spatial coverage of the survey and are available as shapefiles.
+Figure \ref{stripes} shows the coverage for Tanzania. You are interested in the availability of surface water in each of these regions, therefore you want to use the distance to surface water data product available in the earthEngineGrabR package. 
+As the target, you use the shapefile of the survey coverage and only specify the \texttt{jrc\_distanceToWater} product in the products argument. As spatial and temporal reducer you choose median. 
 
 \begin{lstlisting}
 
@@ -143,13 +148,17 @@ resolution = 100
 \end{lstlisting}
 
 
-Due to the smaller area of the features of the target (mean area of 0.7 square kilometre), you choose a resolution of 50 meters and execute the function. The computation time takes about 3 minutes, and the result is shown in map .y Since the area of the coverage is too small for a meaningful visualisation, map X shows a strongly zoomed view of the actual map x. 
+
+Due to the smaller area of the features of the target (mean area of 0.7 square kilometre), you choose a resolution of 50 meters and execute the function. The computation time takes about 3 minutes, and the result is shown in figure \ref{session_2}. Since the area of the coverage is too small for a meaningful visualisation, figure \ref{session_2} shows a strongly zoomed view of the actual figure \ref{stripes}. 
+
+
 
 \begin{center}
-	
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/stripes_distance_zoom.pdf}
+			\caption{distance to surface water in km for the coverage of the areal survey}
+			\label{session_2}
 		\end{center}
 	\end{figure}
 	% \vskip 2em%
@@ -162,7 +171,7 @@ This example shows the flexibility of the earthEngineGrabR referred to the scale
 In the last example, a more extended use case of the \texttt{ee\_grab} function is presented.
 
 
-\section{sample session 3}
+\section{time-series analysis}
 
 You are also interested in changes over time, for example, the change of precipitation in the elephant territories. Out of the documentation you know, that the precipitation product of the earthEngineGrabR is available from 2000 to 2015 on a yearly basis, thus you decide to calculate the precipitation for each year from 2000 to 2015 and analyse the change by using a linear model. The chirps precipitation product is produced from satellite data on a daily basis, what offers the possibility to calculate the yearly precipitation sum. Because the yearly precipitation sum is a common practice in hydrology and compared to the mean not this prone to extreme values you decide to calculate the yearly sum in each of the elephant territories for each year. To achieve that, you simply use the \texttt{ee\_grab} function, iterate over each year and collect the iteration products as follows:
 
@@ -218,5 +227,14 @@ With the use of the earthEngineGrabR it was possible to quickly and easily acqui
 
 
 
+\begin{itemize}
+	
+	\item change section headers to, large-scale analysis, small-scale analysis, time-series-analysis
+	\item summaries features, product browsing, flexibility - temporal, spatially, fast.
+	\item summaries what was performed, 
+	\item acquire and aggregate data for large-scale pan-african analysis.
+	\item small-scale, specific shape of AOI,
+	\item time-series analysis, iteration.
+\end{itemize}
 
 

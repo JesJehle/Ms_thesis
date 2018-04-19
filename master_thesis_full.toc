@@ -56,15 +56,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Results}{21}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}sample session 1}{21}{section.3.1}
+\contentsline {section}{\numberline {3.1}szenario}{21}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}sample session 1}{22}{section.3.2}
+\contentsline {section}{\numberline {3.2}large-scale analysis}{22}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}sample session 2}{25}{section.3.3}
+\contentsline {section}{\numberline {3.3}small-scale analysis}{26}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}sample session 3}{26}{section.3.4}
+\contentsline {section}{\numberline {3.4}time-series analysis}{27}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}What can be learned}{30}{section.3.5}
+\contentsline {section}{\numberline {3.5}What can be learned}{29}{section.3.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Discussion}{31}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -80,26 +80,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}future work and further enhancements}{33}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{if available allow a monthly resolution}{34}{section*.22}
+\contentsline {subsection}{\numberline {4.2.1}implementation of additional features}{33}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{control the spatial resolution for each product separately}{34}{section*.23}
+\contentsline {subsubsection}{Add more data products}{33}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{add more control of projections}{34}{section*.24}
+\contentsline {subsubsection}{if available allow a monthly resolution}{33}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{add internal iterations to increase the number of possible features to be processed}{34}{section*.25}
+\contentsline {subsubsection}{control the spatial resolution for each product separately}{34}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{change the authentication process so that no manually copy or pasting is necessary anymore}{35}{section*.26}
+\contentsline {subsubsection}{add more control of projections}{34}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{possibility for the user to add and define new data products}{35}{section*.27}
+\contentsline {subsubsection}{add internal iterations to increase the number of possible features to be processed}{34}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{change the authentication process so that no manually copy or pasting is necessary anymore}{34}{section*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{possibility for the user to add and define new data products}{35}{section*.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}improve the framework}{35}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Internal limitations of the GEE and what this implies for the earthEngineGrabR}{36}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Limitation of processing resources}{36}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Limitation, strengths and weaknesses of the GEE}{36}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{System throughput an performance}{36}{section*.28}
+\contentsline {subsubsection}{System throughput an performance}{36}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Export limitation}{37}{section*.29}
+\contentsline {subsubsection}{streanghts of the GEE}{36}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}This is Appendix 1...}{40}{chapter.5}
+\contentsline {subsubsection}{weaknesses of the GEE}{37}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}This is appendix 2...}{41}{chapter.6}
+\contentsline {subsection}{\numberline {4.3.2}What does that mean for the earthEngineGrabR}{37}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{support the internal distribution mechanism of the GEE by processing the data products in parallel}{37}{section*.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{avoiding export limitation by using the vector format}{38}{section*.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{use earth engine strengths to generate the data productes}{38}{section*.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}This is Appendix 1...}{41}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}This is appendix 2...}{42}{chapter.6}

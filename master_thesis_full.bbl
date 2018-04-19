@@ -37,7 +37,7 @@
            family_i={B\bibinitperiod},
            given={MB},
            given_i={M\bibinitperiod}}}%
-        {{uniquename=0,hash=e96430d82a8ac27fe9f81cb8eec2b597}{%
+        {{uniquename=1,hash=e96430d82a8ac27fe9f81cb8eec2b597}{%
            family={Hansen},
            family_i={H\bibinitperiod},
            given={S{ø}ren},
@@ -149,6 +149,149 @@
       \field{pages}{49\bibrangedash 65}
       \range{pages}{17}
     \endentry
+    \entry{farr2007shuttle}{article}{}
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{uniquename=0,hash=3af793b5a7bd6b99c0cd64b6ece072f5}{%
+           family={Farr},
+           family_i={F\bibinitperiod},
+           given={Tom\bibnamedelima G},
+           given_i={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{uniquename=0,hash=62d72ff71afe634c745f15798e72a3c3}{%
+           family={Rosen},
+           family_i={R\bibinitperiod},
+           given={Paul\bibnamedelima A},
+           given_i={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{uniquename=0,hash=84fdfb6261bbfc603e47418a68a752f1}{%
+           family={Caro},
+           family_i={C\bibinitperiod},
+           given={Edward},
+           given_i={E\bibinitperiod}}}%
+        {{uniquename=0,hash=673d4e05e7f8c213882c37e1f00d9556}{%
+           family={Crippen},
+           family_i={C\bibinitperiod},
+           given={Robert},
+           given_i={R\bibinitperiod}}}%
+        {{uniquename=0,hash=e43f9c74d088c5e5ea3a90afbcc3cf6b}{%
+           family={Duren},
+           family_i={D\bibinitperiod},
+           given={Riley},
+           given_i={R\bibinitperiod}}}%
+        {{uniquename=0,hash=d449ef125f86f23e7147cfd7d7f07090}{%
+           family={Hensley},
+           family_i={H\bibinitperiod},
+           given={Scott},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=2b92f25f3a2635ca0c4e1afeb46c02f1}{%
+           family={Kobrick},
+           family_i={K\bibinitperiod},
+           given={Michael},
+           given_i={M\bibinitperiod}}}%
+        {{uniquename=0,hash=df6537516eabadb0864eb4ecf9814ab7}{%
+           family={Paller},
+           family_i={P\bibinitperiod},
+           given={Mimi},
+           given_i={M\bibinitperiod}}}%
+        {{uniquename=0,hash=df74707b0c7af5b338db3cdafe0240c1}{%
+           family={Rodriguez},
+           family_i={R\bibinitperiod},
+           given={Ernesto},
+           given_i={E\bibinitperiod}}}%
+        {{uniquename=0,hash=4aecc439ae7e4c52d86697c19f2164c2}{%
+           family={Roth},
+           family_i={R\bibinitperiod},
+           given={Ladislav},
+           given_i={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{3127d2eb4ee4805e988b6f08ebde3f78}
+      \strng{fullhash}{976e27bd768e74ef2f89d9f2692fa646}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2007}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reviews of geophysics}
+      \field{number}{2}
+      \field{title}{The shuttle radar topography mission}
+      \field{volume}{45}
+      \field{year}{2007}
+    \endentry
+    \entry{funk2015climate}{article}{}
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{uniquename=0,hash=ed4def6de429f4039a38ac61ad138565}{%
+           family={Funk},
+           family_i={F\bibinitperiod},
+           given={Chris},
+           given_i={C\bibinitperiod}}}%
+        {{uniquename=0,hash=73e7781761147554590f789a5dc41bab}{%
+           family={Peterson},
+           family_i={P\bibinitperiod},
+           given={Pete},
+           given_i={P\bibinitperiod}}}%
+        {{uniquename=0,hash=91ae5b1f40ab9f94a8888fe25ada361d}{%
+           family={Landsfeld},
+           family_i={L\bibinitperiod},
+           given={Martin},
+           given_i={M\bibinitperiod}}}%
+        {{uniquename=0,hash=2b0c8f914a80a9d858eb922df64d078a}{%
+           family={Pedreros},
+           family_i={P\bibinitperiod},
+           given={Diego},
+           given_i={D\bibinitperiod}}}%
+        {{uniquename=0,hash=188d3b4b509ae7a58f26d044c86a06b5}{%
+           family={Verdin},
+           family_i={V\bibinitperiod},
+           given={James},
+           given_i={J\bibinitperiod}}}%
+        {{uniquename=0,hash=725f4873866a08a7fbfd51bfdf0cab63}{%
+           family={Shukla},
+           family_i={S\bibinitperiod},
+           given={Shraddhanand},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=ce418a3f75860fa0601547eafa6b883f}{%
+           family={Husak},
+           family_i={H\bibinitperiod},
+           given={Gregory},
+           given_i={G\bibinitperiod}}}%
+        {{uniquename=0,hash=b2eb11124de7097f103d8cc2dbff9321}{%
+           family={Rowland},
+           family_i={R\bibinitperiod},
+           given={James},
+           given_i={J\bibinitperiod}}}%
+        {{uniquename=0,hash=0df2ac315fa268d29d14fef630901080}{%
+           family={Harrison},
+           family_i={H\bibinitperiod},
+           given={Laura},
+           given_i={L\bibinitperiod}}}%
+        {{uniquename=0,hash=9d6e8fa5b9b8bc83970ef79f8cd2dda0}{%
+           family={Hoell},
+           family_i={H\bibinitperiod},
+           given={Andrew},
+           given_i={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{678935c621cb4355fbff3dbf2ce268e6}
+      \strng{fullhash}{7de93fcb68b79c9643108df507308e21}
+      \field{sortinit}{F}
+      \field{sortinithash}{c6a7d9913bbd7b20ea954441c0460b78}
+      \field{labelyear}{2015}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific data}
+      \field{title}{The climate hazards infrared precipitation with stations—a new environmental record for monitoring extremes}
+      \field{volume}{2}
+      \field{year}{2015}
+      \field{pages}{150066}
+      \range{pages}{1}
+    \endentry
     \entry{terms}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=8b36e9207c24c76e6719268e49201d94}{%
@@ -222,6 +365,53 @@
       \field{year}{2017}
       \field{pages}{18\bibrangedash 27}
       \range{pages}{10}
+    \endentry
+    \entry{hansen2006vegetation}{misc}{}
+      \name{author}{6}{}{%
+        {{uniquename=1,hash=87e0c043267d751dcecfafbf67d7c10a}{%
+           family={Hansen},
+           family_i={H\bibinitperiod},
+           given={M},
+           given_i={M\bibinitperiod}}}%
+        {{uniquename=0,hash=ef2e3d0bb32e82e3af02cf184675c3bf}{%
+           family={DeFries},
+           family_i={D\bibinitperiod},
+           given={R},
+           given_i={R\bibinitperiod}}}%
+        {{uniquename=0,hash=45e8b09abbde8b813945cf5aec6ae000}{%
+           family={Townshend},
+           family_i={T\bibinitperiod},
+           given={JR},
+           given_i={J\bibinitperiod}}}%
+        {{uniquename=0,hash=d19830ab727bde8c91b691258c0792f3}{%
+           family={Carroll},
+           family_i={C\bibinitperiod},
+           given={M},
+           given_i={M\bibinitperiod}}}%
+        {{uniquename=0,hash=3274cb7ff88ee72e6ca06e61dfa7a839}{%
+           family={Dimiceli},
+           family_i={D\bibinitperiod},
+           given={C},
+           given_i={C\bibinitperiod}}}%
+        {{uniquename=0,hash=4c7458e64a599612573702479a5c8517}{%
+           family={Sohlberg},
+           family_i={S\bibinitperiod},
+           given={R},
+           given_i={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Collection}%
+      }
+      \strng{namehash}{03de0a7c17857926ae546359587db6cc}
+      \strng{fullhash}{9c9778c485ba3b39f1bad79512b1f566}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2006}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Vegetation continuous fields MOD44B, 2001 percent tree cover}
+      \field{year}{2006}
     \endentry
     \entry{hardt2012oauth}{article}{}
       \name{author}{1}{}{%
@@ -490,6 +680,48 @@
       \field{pages}{3209\bibrangedash 3241}
       \range{pages}{33}
     \endentry
+    \entry{pekel2016high}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,hash=eef85b9f88fea6ef7d55ed7619fa9f34}{%
+           family={Pekel},
+           family_i={P\bibinitperiod},
+           given={Jean-Francois},
+           given_i={J\bibinithyphendelim F\bibinitperiod}}}%
+        {{uniquename=0,hash=69f1c453c04f282e9ad3bc566266b71a}{%
+           family={Cottam},
+           family_i={C\bibinitperiod},
+           given={Andrew},
+           given_i={A\bibinitperiod}}}%
+        {{uniquename=0,hash=ecdf9b747a50a0392d63cfcb19bab980}{%
+           family={Gorelick},
+           family_i={G\bibinitperiod},
+           given={Noel},
+           given_i={N\bibinitperiod}}}%
+        {{uniquename=0,hash=e9a85f4135a9777d039d35ca21184150}{%
+           family={Belward},
+           family_i={B\bibinitperiod},
+           given={Alan\bibnamedelima S},
+           given_i={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{e389fb8dfb0057fc1f62071851b1ada3}
+      \strng{fullhash}{62c938bb8237c01cb5176bc6acd8b3e2}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{2016}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{number}{7633}
+      \field{title}{High-resolution mapping of global surface water and its long-term changes}
+      \field{volume}{540}
+      \field{year}{2016}
+      \field{pages}{418}
+      \range{pages}{1}
+    \endentry
     \entry{rhee2010monitoring}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=33fa36d81cff4c5188ad6e6f4919c355}{%
@@ -628,6 +860,75 @@
       \field{year}{2017}
       \field{pages}{170004\bibrangedash 170004}
       \range{pages}{1}
+    \endentry
+    \entry{weiss2018global}{article}{}
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{uniquename=0,hash=4f1be555374bc77bd741e6240071c2e2}{%
+           family={Weiss},
+           family_i={W\bibinitperiod},
+           given={DJ},
+           given_i={D\bibinitperiod}}}%
+        {{uniquename=0,hash=9eef7d7800534ba66f0d332cb98c011c}{%
+           family={Nelson},
+           family_i={N\bibinitperiod},
+           given={A},
+           given_i={A\bibinitperiod}}}%
+        {{uniquename=0,hash=1d722f8c4b4a779a6359efca87b86dd1}{%
+           family={Gibson},
+           family_i={G\bibinitperiod},
+           given={HS},
+           given_i={H\bibinitperiod}}}%
+        {{uniquename=0,hash=835f85130d1b6e6c8c943026856d8bf4}{%
+           family={Temperley},
+           family_i={T\bibinitperiod},
+           given={W},
+           given_i={W\bibinitperiod}}}%
+        {{uniquename=0,hash=46562dea7bcbee0a58fb4297b196f1fe}{%
+           family={Peedell},
+           family_i={P\bibinitperiod},
+           given={S},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=d2fe10fcf8f8cd7c5c19b971d2a0575b}{%
+           family={Lieber},
+           family_i={L\bibinitperiod},
+           given={A},
+           given_i={A\bibinitperiod}}}%
+        {{uniquename=0,hash=a9bbcf05badc48f1f3a68a6bd491fdab}{%
+           family={Hancher},
+           family_i={H\bibinitperiod},
+           given={M},
+           given_i={M\bibinitperiod}}}%
+        {{uniquename=0,hash=878f5f0baa95b8176c0d4290e305a358}{%
+           family={Poyart},
+           family_i={P\bibinitperiod},
+           given={E},
+           given_i={E\bibinitperiod}}}%
+        {{uniquename=0,hash=bcc88ff014e5fe4ca4cc03231873d819}{%
+           family={Belchior},
+           family_i={B\bibinitperiod},
+           given={S},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=963761624592fbfb26db6e7967b4fa53}{%
+           family={Fullman},
+           family_i={F\bibinitperiod},
+           given={N},
+           given_i={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{3fee39ace5f1016976b992ea214238d0}
+      \strng{fullhash}{3b24b6f2561750aa2afec2006f68fec9}
+      \field{sortinit}{W}
+      \field{sortinithash}{99e3ba1b3f78bb6f073e7fa7ac11636b}
+      \field{labelyear}{2018}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Nature}
+      \field{title}{A global map of travel time to cities to assess inequalities in accessibility in 2015}
+      \field{year}{2018}
     \endentry
     \entry{wu2000global}{article}{}
       \name{author}{1}{}{%
