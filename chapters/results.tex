@@ -1,20 +1,20 @@
 \chapter{Results}
 
-The following section is supposed to provide a scientific scenario and three corresponding sample sessions in which the earthEngineGrabR can be used to acquire remote sensing data to meet a specific research question. The emphasis of this section lies on how to use the earthEngineGrabR in practice. 
+The following section is supposed to provide a scientific scenario and three corresponding sample sessions in which the earthEngineGrabR can be used to acquire remote sensing data to meet a specific question. The emphasis of this section lies on how to use the earthEngineGrabR and gives tips and tricks on how to apply the package.
 
 \section{szenario}
 
-Imagine, you are a scientist involved with the MIKE Programm (Monitoring the Illegal Killing of Elephants). Your object of investigation is to find covariates for the intensity of illegally killed elephants in Africa. You have access to data collected within the Great Elephant Census, a continent-wide aerial survey counting the number and distribution of elephants within there territories. 
+Imagine, a scientist involved with the MIKE Programm (Monitoring the Illegal Killing of Elephants). Your object of investigation is to find covariates for the intensity of illegally killed elephants in Africa. You have access to data collected within the Great Elephant Census, a continent-wide aerial survey counting the number and distribution of elephants within there territories. 
 
 
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\begin{center}
-			\includegraphics[width=7cm]{images/territories.pdf}
+		\includegraphics[width=7cm]{images/territories.pdf}
 	\end{center}
-		\caption{territories}
-		\label{territories}
+	\caption{territories}
+	\label{territories}
 \end{wrapfigure}
-	% \vskip 2em%
+% \vskip 2em%
 
 Figure \ref{territories} shows the study area. Each region corresponds to a territory, and for each territory, you have the aggregated number of illegally killed elephants. To run your statistical model in R and find influential covariates you need further environmental variables derived from satellite imagery like the topography, land-use, and precipitation. 
 
@@ -76,7 +76,7 @@ resolution = 1000
 
 
 
-The resolution parameter sets the resolution of the processed data in Earth Engine and applies for all products. A value smaller than the native resolution of the data product results in Earth Engine resampling the data with the default nearest neighbour method, values higher result in a pixel aggregation with a default method mean. In the documentation, you learned that the native resolution of the tree cover product is 250m while the accessibility products provide a resolution of 30m. Because the area of the territories is of large-scale (mean area of the territories is 9862 square kilometres), you choose 1000m as the scale of your analysis. The resolution parameter actively controls the scope of computation and out of this the processing time. Therefore it's a good choice to not unnecessarily set him too low. 
+The resolution parameter sets the resolution of the processed data in Earth Engine and applies for all products. A value smaller than the native resolution of the data product results in Earth Engine resampling the data with the default nearest neighbour method, values higher result in a pixel aggregation with a default method mean. In the documentation, you learned that the native resolution of the tree cover product is 250m while the accessibility products provide a resolution of 30m. Because the area of the territories is of large-scale (mean area of the regions is 9862 square kilometres), you choose 1000m as the scale of your analysis. The resolution parameter actively controls the scope of computation and out of this the processing time. Therefore it's a good choice to not unnecessarily set him too low. 
 Since all parameters are set, the function can be executed. 
 During the processing the function prints info corresponding to the state of the upload, the processing and the download of each data product. With the verbose = FALSE, this behaviour can be avoided. 
 
@@ -130,10 +130,10 @@ While this sample session shows the capabilities of the earthEngineGrabR package
 
 
 Let 's stay with the invented scientist and his situation already described. Because of your access to the Great Elephant Census data you have not only the aggregated data for each territory but also the pre-aggregated survey data consisting of the number of elephants counted within a region specified by position, hight and the flight path of the aircraft.
-	
+
 
 The combined areas form the spatial coverage of the survey and are available as shapefiles.
-Figure \ref{stripes} shows the coverage for Tanzania. You are interested in the availability of surface water in each of these regions, therefore you want to use the distance to surface water data product available in the earthEngineGrabR package. 
+Figure \ref{stripes} shows the coverage for Tanzania. You are interested in the availability of surface water in each of these regions. Therefore you want to use the distance to surface water data product available in the earthEngineGrabR package. 
 As the target, you use the shapefile of the survey coverage and only specify the \texttt{jrc\_distanceToWater} product in the products argument. As spatial and temporal reducer you choose median. 
 
 \begin{lstlisting}
@@ -220,21 +220,14 @@ By joining the estimates with the spatial data of the territories, the estimates
 
 MapX shows the estimate of the yearly change of the annual precipitation sum in for each territory. Given, that those estimates reflect a yearly change some values are remarkable hight. While the yearly precipitation sum is increasing for the territories in East Africa, it is decreasing for most territories in central Africa, especially for those with hight tree cover (see map X).
 
-\section{What can be learned}
+\section{Roundup}
+
+The focus of this section is not on the interpretation of the results but the use of the earthEngineGrabR package.
+With the use of the package, it was possible to quickly and easily acquire remote sensing data in three different use-cases. First, with the instructions on the packages Git Hup site, the requirements and the earthEngineGrabR were installed. Next, the \texttt{ee\_grab\_init} installed the necessary python dependencies and guided the user through the different authentications. The section illustrated how to use R, autocomplete feature and the package's data product functions to browse through the available data products and quickly open the further documentation. Then, the \texttt{ee\_grab} function was used to acquire remote sensing data for different situations. The section showed the package's flexibility corresponding to the possible AOI, by obtaining data for both large-scale analyses with a mean area of the territories of 9862 square kilometres and small-scale study with a mean area of 0.7 square kilometre.
+The last sample session gave suggestions on how to extend the possibilities of the package by integrating the \texttt{ee\_grab} over a series of years and doing this, acquire a time series of a specific data products.
 
 
-With the use of the earthEngineGrabR it was possible to quickly and easily acquire remote sensing data for different research questions. This allowed a fast testing of hypothesis
 
 
-
-\begin{itemize}
-	
-	\item change section headers to, large-scale analysis, small-scale analysis, time-series-analysis
-	\item summaries features, product browsing, flexibility - temporal, spatially, fast.
-	\item summaries what was performed, 
-	\item acquire and aggregate data for large-scale pan-african analysis.
-	\item small-scale, specific shape of AOI,
-	\item time-series analysis, iteration.
-\end{itemize}
 
 

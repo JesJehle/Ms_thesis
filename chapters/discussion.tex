@@ -109,24 +109,27 @@ The GEE provides data export to Google Drive and Google Cloud Platform (GCP). Wh
 
 \subsection{What does that mean for the earthEngineGrabR}
 
-\subsubsection{support the internal distribution mechanism of the GEE by processing the data products in parallel}
+\subsubsection{Support the internal distribution mechanism of the GEE by processing the data products in parallel}
 
 During the development of the earthEngineGrabR, the experience was repeatedly made, that requests of smaller magnitude are processed fast and immediately while requests exceeding a certain magnitude in data throughput, result in unforeseeable long data processing. Unfortunately, due to the reason, that the Earth Engine system hides nearly every aspect of the computation from the user, the magnitude generating this bottleneck is not obvious. Hence, avoiding the bottleneck saves hours of computation time and also enables processes that otherwise result in errors referring to computation timeout or user memory limit exceeding. For example, processing all available data products and joining them in one request, given a target shapefile of 10.000 features, takes more than 1 hour of computation, while iterating over the data products with one request each, is a matter of a few minutes. This insight is reflected in the internal design of the earthEnigneGrabR. In the \texttt{ee\_grab} function, each data product is processed individually. Furthermore, this approach allows processing the data products in parallel. This way, data bottlenecks, resulting in long export and computation timeout errors are avoided. The performance of the earthEngineGrabR depends on earth engines ability to distribute computation by an internal parallelisation mechanism efficiently. Operations that can't be efficiently scaled result in unforeseeable long processes and error and slow down the computation. By requesting the data products individually and in parallel, instead of joining the inter-products in earth engine, the package supports the internal distribution and parallelisation mechanism of earth engine.
 
-\subsubsection{avoiding export limitation by using the vector format}
+\subsubsection{Instead of acquire Big data, process Big data and acquire the results}
 
 The export limit of 2 GB from the GEE to Google Drive actively restricts the possible download size. To download large data sets under such conditions is time-consuming error-prone. Because the internal processes of the GEE are shielded from the user, there is no possibility to inform the user about the internal processing state of the computation. The user would have to wait unseeingly long without any response and in case of an internal error for nothing.
 Therefore, If the task is to download large data sets, the search and order tools are indeed the better choice.
 Splitting the exported file into smaller chunks, indeed speed up the export and computation time but only partly solve the underlining problem.
 While the data that can be processed inside the GEE can become remarkably large, the data that can be exported is proportionally small.
-What makes the GEE unique are the available resources to process the data before exporting. To avoid the described export limit, the processing resources are used to aggregate the data inside earth engine, instead of exporting the raw raster data. The aggregation inside earth engine dramatically reduces the file size and speeds up the export. 
+What makes the GEE unique are the available resources to process the data before exporting. 
+To avoid the described export limit, the processing resources are used to aggregate the data inside earth engine, instead of exporting the raw raster data. The aggregation inside earth engine dramatically reduces the file size and speeds up the export. 
+With the earthEngineGrabR it's not possible to acquire Big geo-spatial Data, but to process big geo-spatial data and acquire the results.
 Considering this, using vector data as the output of the ee\_grab function is more suitable because it provides a more flexible data format, that can easily adapt the shape of the AOI, furthermore, compared to raster it's smaller in size, and therefore can be downloaded faster avoiding the export limit of earth engine. 
 
-\subsubsection{use earth engine strengths to generate the data productes}
+\subsubsection{Use earth engine's strengths to generate the data productes}
 
 The limitation and strengths of the earthEngineGrabR arise from the weakness and strengths of the GEE.
 To use the full potential of the GEE, the earthEngineGrabR has to provide comfortable and user-friendly access to the capabilities of the GEE while using earth engine' internal strengths to offer a variety of data products.
 The generated data products should correspond to earth engine capabilities to use per-pixel and finite neighbourhood operations such as band-math, morphological operations, spectral unmixing, template matching and texture analysis or statistical operations applied to a collection of images, such as a time-series stack of images. 
+
 
 
 
