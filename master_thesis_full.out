@@ -2,17 +2,17 @@
 \BOOKMARK [1][-]{section.1.1}{Remote sensing data \040in environmental system modeling}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Accessibility of remote-sensing data}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.3}{The difficulty in acquire, integrate and process remote sensing data}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{Introduction to earth engine}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{Introduction to Google Earth Engine}{chapter.1}% 5
 \BOOKMARK [2][-]{subsection.1.4.1}{The potential of the GEE for the acquisition of remote sensing data}{section.1.4}% 6
 \BOOKMARK [1][-]{section.1.5}{The earthEngineGrabR}{chapter.1}% 7
 \BOOKMARK [0][-]{chapter.2}{Methods}{}% 8
-\BOOKMARK [1][-]{section.2.1}{How the data is controlled}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{technical structure}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.3}{organise dependencies}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.1}{Design and functionality of the \040data manipulation}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Technical framework}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Organize dependencies and authentications}{chapter.2}% 11
 \BOOKMARK [0][-]{chapter.3}{Results}{}% 12
-\BOOKMARK [1][-]{section.3.1}{szenario}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{large-scale analysis}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.3}{small-scale analysis}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.1}{Szenario}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Large-scale analysis}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{Small-scale analysis}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.4}{time-series analysis}{chapter.3}% 16
 \BOOKMARK [1][-]{section.3.5}{Roundup}{chapter.3}% 17
 \BOOKMARK [0][-]{chapter.4}{Discussion}{}% 18

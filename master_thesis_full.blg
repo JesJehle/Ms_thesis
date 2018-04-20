@@ -1,15 +1,15 @@
 [0] Config.pm:340> INFO - This is Biber 2.4
 [1] Config.pm:343> INFO - Logfile is 'master_thesis_full.blg'
-[68] biber:287> INFO - === Do Apr 19, 2018, 17:45:09
-[201] Biber.pm:348> INFO - Reading 'master_thesis_full.bcf'
-[414] Biber.pm:742> INFO - Found 22 citekeys in bib section 0
-[423] Biber.pm:3151> INFO - Processing section 0
-[476] Biber.pm:3308> INFO - Looking for bibtex format file 'reference.bib' for section 0
-[526] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[573] bibtex.pm:974> INFO - Found BibTeX data source 'reference.bib'
-[1432] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1432] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1432] Biber.pm:3028> INFO - Sorting list 'nyt/global' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[1433] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[1505] bbl.pm:519> INFO - Writing 'master_thesis_full.bbl' with encoding 'UTF-8'
-[1669] bbl.pm:615> INFO - Output to master_thesis_full.bbl
+[108] biber:287> INFO - === Fr Apr 20, 2018, 15:19:01
+[284] Biber.pm:348> INFO - Reading 'master_thesis_full.bcf'
+[557] Biber.pm:742> INFO - Found 25 citekeys in bib section 0
+[566] Biber.pm:3151> INFO - Processing section 0
+[616] Biber.pm:3308> INFO - Looking for bibtex format file 'reference.bib' for section 0
+[674] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[728] bibtex.pm:974> INFO - Found BibTeX data source 'reference.bib'
+[1810] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1810] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1810] Biber.pm:3028> INFO - Sorting list 'nyt/global' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[1811] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[1897] bbl.pm:519> INFO - Writing 'master_thesis_full.bbl' with encoding 'UTF-8'
+[2084] bbl.pm:615> INFO - Output to master_thesis_full.bbl

@@ -2069,13 +2069,17 @@
     <bcf:citekey order="17">gorelick2017google</bcf:citekey>
     <bcf:citekey order="18">gorelick2017google</bcf:citekey>
     <bcf:citekey order="19">gorelick2017google</bcf:citekey>
-    <bcf:citekey order="20">hansen2006vegetation</bcf:citekey>
-    <bcf:citekey order="21">pekel2016high</bcf:citekey>
-    <bcf:citekey order="22">farr2007shuttle</bcf:citekey>
-    <bcf:citekey order="23">weiss2018global</bcf:citekey>
-    <bcf:citekey order="24">funk2015climate</bcf:citekey>
-    <bcf:citekey order="25">terms</bcf:citekey>
-    <bcf:citekey order="26">hardt2012oauth</bcf:citekey>
+    <bcf:citekey order="20">gray1997data</bcf:citekey>
+    <bcf:citekey order="21">gorelick2017google</bcf:citekey>
+    <bcf:citekey order="22">roy2017google</bcf:citekey>
+    <bcf:citekey order="23">hansen2006vegetation</bcf:citekey>
+    <bcf:citekey order="24">pekel2016high</bcf:citekey>
+    <bcf:citekey order="25">farr2007shuttle</bcf:citekey>
+    <bcf:citekey order="26">weiss2018global</bcf:citekey>
+    <bcf:citekey order="27">funk2015climate</bcf:citekey>
+    <bcf:citekey order="28">sf</bcf:citekey>
+    <bcf:citekey order="29">terms</bcf:citekey>
+    <bcf:citekey order="30">hardt2012oauth</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt/global" type="entry" sortscheme="nyt" sortnamekeyscheme="global">
   <bcf:sorting>

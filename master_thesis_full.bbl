@@ -366,6 +366,68 @@
       \field{pages}{18\bibrangedash 27}
       \range{pages}{10}
     \endentry
+    \entry{gray1997data}{article}{}
+      \name{author}{8}{}{%
+        {{uniquename=0,hash=d2f74f5c31108f8e927626ee785fec46}{%
+           family={Gray},
+           family_i={G\bibinitperiod},
+           given={Jim},
+           given_i={J\bibinitperiod}}}%
+        {{uniquename=0,hash=c0977d136fdc05a6f02edad761cb4700}{%
+           family={Chaudhuri},
+           family_i={C\bibinitperiod},
+           given={Surajit},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=e6e85e7511ac734da8d58e71a83ba738}{%
+           family={Bosworth},
+           family_i={B\bibinitperiod},
+           given={Adam},
+           given_i={A\bibinitperiod}}}%
+        {{uniquename=0,hash=66d67f5835ced44536b192827ac28c48}{%
+           family={Layman},
+           family_i={L\bibinitperiod},
+           given={Andrew},
+           given_i={A\bibinitperiod}}}%
+        {{uniquename=0,hash=dfc3075017b9003493f8dd39af0a8b0b}{%
+           family={Reichart},
+           family_i={R\bibinitperiod},
+           given={Don},
+           given_i={D\bibinitperiod}}}%
+        {{uniquename=0,hash=008f00c67d969edea25c70aa4651dbf0}{%
+           family={Venkatrao},
+           family_i={V\bibinitperiod},
+           given={Murali},
+           given_i={M\bibinitperiod}}}%
+        {{uniquename=0,hash=5eb5b271189f4a655f41a7aa526865a2}{%
+           family={Pellow},
+           family_i={P\bibinitperiod},
+           given={Frank},
+           given_i={F\bibinitperiod}}}%
+        {{uniquename=0,hash=67ec9379456eccbc423d4e9906c2ed0d}{%
+           family={Pirahesh},
+           family_i={P\bibinitperiod},
+           given={Hamid},
+           given_i={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{44fcfd121e0965d3725870320848497f}
+      \strng{fullhash}{4ff13d161ac7a3129f51427d6b1ec443}
+      \field{sortinit}{G}
+      \field{sortinithash}{1c854ef9177a91bf894e66485bdbd3ed}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Data mining and knowledge discovery}
+      \field{number}{1}
+      \field{title}{Data cube: A relational aggregation operator generalizing group-by, cross-tab, and sub-totals}
+      \field{volume}{1}
+      \field{year}{1997}
+      \field{pages}{29\bibrangedash 53}
+      \range{pages}{25}
+    \endentry
     \entry{hansen2006vegetation}{misc}{}
       \name{author}{6}{}{%
         {{uniquename=1,hash=87e0c043267d751dcecfafbf67d7c10a}{%
@@ -680,6 +742,27 @@
       \field{pages}{3209\bibrangedash 3241}
       \range{pages}{33}
     \endentry
+    \entry{sf}{manual}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=422fc79d05d5bcdcc598a0a7c6f95159}{%
+           family={Pebesma},
+           family_i={P\bibinitperiod},
+           given={Edzer},
+           given_i={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{422fc79d05d5bcdcc598a0a7c6f95159}
+      \strng{fullhash}{422fc79d05d5bcdcc598a0a7c6f95159}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{R package version 0.6-1}
+      \field{title}{sf: Simple Features for R}
+      \verb{url}
+      \verb https://github.com/r-spatial/sf/
+      \endverb
+    \endentry
     \entry{pekel2016high}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,hash=eef85b9f88fea6ef7d55ed7619fa9f34}{%
@@ -758,6 +841,28 @@
       \field{year}{2010}
       \field{pages}{2875\bibrangedash 2887}
       \range{pages}{13}
+    \endentry
+    \entry{roy2017google}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=eb85a1adf62af25ac54893c86c327229}{%
+           family={Roy},
+           family_i={R\bibinitperiod},
+           given={Samapriya},
+           given_i={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{eb85a1adf62af25ac54893c86c327229}
+      \strng{fullhash}{eb85a1adf62af25ac54893c86c327229}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{2017}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Google Earth Engine Asset Manager with Addons}
+      \field{year}{2017}
     \endentry
     \entry{salomonson2002overview}{inproceedings}{}
       \name{author}{5}{}{%
