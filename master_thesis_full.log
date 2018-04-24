@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  24 APR 2018 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  24 APR 2018 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1177,26 +1177,32 @@ File: images/design_function-cropped.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/design_function-cropped.pdf used on input line 
 80.
 (pdftex.def)             Requested size: 426.79134pt x 220.51195pt.
- [13 <./images/design_function-cropped.pdf>] <images/processin_folw.pdf, id=539
-, 722.7pt x 406.51875pt>
-File: images/processin_folw.pdf Graphic file (type pdf)
+ [13 <./images/design_function-cropped.pdf>] <images/processing_flow_big.pdf, i
+d=539, 722.7pt x 542.025pt>
+File: images/processing_flow_big.pdf Graphic file (type pdf)
 
-<use images/processin_folw.pdf>
-Package pdftex.def Info: images/processin_folw.pdf used on input line 103.
-(pdftex.def)             Requested size: 426.79134pt x 240.07349pt.
- [14 <./images/processin_folw.pdf>]
-<images/concole_connection-cropped.pdf, id=621, 460.72125pt x 237.96274pt>
-File: images/concole_connection-cropped.pdf Graphic file (type pdf)
+<use images/processing_flow_big.pdf>
+Package pdftex.def Info: images/processing_flow_big.pdf used on input line 103.
 
-<use images/concole_connection-cropped.pdf>
-Package pdftex.def Info: images/concole_connection-cropped.pdf used on input li
-ne 124.
-(pdftex.def)             Requested size: 426.79134pt x 220.43524pt.
+(pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15] [16 <./images/concole_connection-cropped.pdf>] [17]
+[14]
+<images/concole_connection_big-cropped.pdf, id=548, 722.7pt x 345.54094pt>
+File: images/concole_connection_big-cropped.pdf Graphic file (type pdf)
+
+<use images/concole_connection_big-cropped.pdf>
+Package pdftex.def Info: images/concole_connection_big-cropped.pdf used on inpu
+t line 124.
+(pdftex.def)             Requested size: 426.79134pt x 204.06245pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15 <./images/processing_flow_big.pdf>] [16 <./images/concole_connection_big-cr
+opped.pdf>] [17]
 Overfull \hbox (11.07072pt too wide) in paragraph at lines 166--167
 \OT1/ppl/m/n/12 The earth-Engine-GrabR pack-age has sev-eral pack-age de-pen-de
 n-cies in R and Python.
@@ -1275,7 +1281,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18]) (./chapters/results.tex [19]
 Chapter 3.
-<images/territories.pdf, id=669, 578.16pt x 578.16pt>
+<images/territories.pdf, id=683, 578.16pt x 578.16pt>
 File: images/territories.pdf Graphic file (type pdf)
 
 <use images/territories.pdf>
@@ -1304,7 +1310,7 @@ Underfull \hbox (badness 2181) in paragraph at lines 22--23
 [20
 
  <./images/territories.pdf>]
-<images/install_authentication.png, id=684, 1927.2pt x 750.805pt>
+<images/install_authentication.png, id=698, 1927.2pt x 750.805pt>
 File: images/install_authentication.png Graphic file (type png)
 
 <use images/install_authentication.png>
@@ -1331,7 +1337,7 @@ l.103 	\begin{figure}[H]
                         
 Option `H' ignored and `p' used.
 
-<images/sample_session_1-cropped.pdf, id=703, 761.84625pt x 1228.59pt>
+<images/sample_session_1-cropped.pdf, id=717, 761.84625pt x 1228.59pt>
 File: images/sample_session_1-cropped.pdf Graphic file (type pdf)
 
 <use images/sample_session_1-cropped.pdf>
@@ -1343,7 +1349,7 @@ Package pdftex.def Info: images/sample_session_1-cropped.pdf used on input line
 LaTeX Warning: Float too large for page by 10.42973pt on input line 109.
 
 [23] [24 <./images/sample_session_1-cropped.pdf>]
-<images/stripes-cropped.pdf, id=736, 614.295pt x 617.30624pt>
+<images/stripes-cropped.pdf, id=750, 614.295pt x 617.30624pt>
 File: images/stripes-cropped.pdf Graphic file (type pdf)
 
 <use images/stripes-cropped.pdf>
@@ -1390,15 +1396,14 @@ Underfull \hbox (badness 2772) in paragraph at lines 133--136
  []
 
 [25 <./images/stripes-cropped.pdf>]
-<images/smalle-scale-analysis-cropped.pdf, id=762, 722.7pt x 615.0478pt>
-File: images/smalle-scale-analysis-cropped.pdf Graphic file (type pdf)
+<images/stripes_distance_2.pdf, id=776, 601.24625pt x 448.67625pt>
+File: images/stripes_distance_2.pdf Graphic file (type pdf)
 
-<use images/smalle-scale-analysis-cropped.pdf>
-Package pdftex.def Info: images/smalle-scale-analysis-cropped.pdf used on input
- line 155.
-(pdftex.def)             Requested size: 426.79134pt x 363.2223pt.
- [26 <./images/smalle-scale-analysis-cropped.pdf>] [27]
-<images/change_precipitation.pdf, id=799, 1011.78pt x 867.24pt>
+<use images/stripes_distance_2.pdf>
+Package pdftex.def Info: images/stripes_distance_2.pdf used on input line 155.
+(pdftex.def)             Requested size: 426.79134pt x 318.50075pt.
+ [26 <./images/stripes_distance_2.pdf>]
+<images/change_precipitation.pdf, id=792, 1011.78pt x 867.24pt>
 File: images/change_precipitation.pdf Graphic file (type pdf)
 
 <use images/change_precipitation.pdf>
@@ -1410,7 +1415,11 @@ Overfull \hbox (28.45273pt too wide) in paragraph at lines 203--205
  [] 
  []
 
-[28 <./images/change_precipitation.pdf>]) (./chapters/discussion.tex [29]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27] [28 <./images/change_precipitation.pdf>]) (./chapters/discussion.tex
+[29]
 Chapter 4.
 
 Overfull \hbox (6.7156pt too wide) in paragraph at lines 4--7
@@ -1510,7 +1519,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
  ) 
 Here is how much of TeX's memory you used:
  15430 strings out of 494910
- 238307 string characters out of 6179836
+ 238297 string characters out of 6179836
  690141 words of memory out of 5000000
  18307 multiletter control sequences out of 15000+600000
  17718 words of font info for 49 fonts, out of 8000000 for 9000
@@ -1524,10 +1533,10 @@ ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master_thesis_full.pdf (47 pages, 8455328 bytes).
+Output written on master_thesis_full.pdf (47 pages, 8674930 bytes).
 PDF statistics:
- 973 PDF objects out of 1000 (max. 8388607)
- 829 compressed objects within 9 object streams
+ 987 PDF objects out of 1000 (max. 8388607)
+ 837 compressed objects within 9 object streams
  187 named destinations out of 1000 (max. 500000)
  298 words of extra memory for PDF output out of 10000 (max. 10000000)
 
