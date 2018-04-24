@@ -86,17 +86,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Add more data products}{32}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Extend the properties of the data products}{32}{section*.23}
+\contentsline {subsubsection}{Extend the properties of the data products}{33}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Internal iterations as workaround for the vector data processing restriction}{33}{section*.24}
+\contentsline {subsubsection}{Internal iterations as a workaround for the vector data processing restriction}{33}{section*.24}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Simplify the authentication process}{33}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{33}{section*.26}
+\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{34}{section*.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Improve the framework of the earthEngineGrabR}{34}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Internal limitations of EE and what this implies for the earthEngineGrabR}{34}{section.4.3}
+\contentsline {section}{\numberline {4.3}Internal limitations of EE and what this implies for the earthEngineGrabR}{35}{section.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Limitation, strengths and weaknesses of EE}{35}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
@@ -114,6 +114,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Use EE's strengths to generate the data products}{37}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}This is Appendix 1...}{40}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{38}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}This is appendix 2...}{41}{chapter.6}
+\contentsline {chapter}{\numberline {6}This is Appendix 1...}{41}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}This is appendix 2...}{42}{chapter.7}
