@@ -1,4 +1,4 @@
-\chapter{Introduction}
+\section{Introduction}
 
 
 To model environmental systems, data about the system  and resources to process this data to derive insight, is needed. Remote sensing data, such as satellite imagery and derived data products, such as land cover, vegetation indices, elevation models, or precipitation, are integral parts of environmental system models. 
@@ -43,9 +43,15 @@ These obstacles hinder most researchers to make use of this massive stack of rem
 
 
 
-\subsection{The potential of the GEE for the acquisition of remote sensing data}
+\subsection{}
 
-The EE thus offers an elegant solution for working with large remote sensing data and the related problems of the interoperability of the data due to distributed sources and the big data problems caused by the size of the data and required processing resources. 
+
+The Google Earth Engine is a cloud-based platform that strongly simplifies the access to high-performance computing resources to process extensive remote sensing datasets, without the information technology (IT) management obstacles like, data acquisition and storage, combine different file formats, managing databases, machine allocations, CPUs, GPUs. 
+Earth Engine (EE) consists of a multi-petabyte data catalogue, a high performance, parallel and therefore scaleable, computation service and is accessed and controlled through an Internet-accessible application programming interface (API). Queries are constructed by using operations drawn from the EE client library consisting of more than 800 functions ranging from simple mathematical operations to powerful geostatistical, machine learning and image processing operations (\cite{gorelick2017google}).
+
+By using the EE the acquisition and preprocessing of large-scale remote sensing data can strongly be simplified.
+
+EE offers an elegant solution for working with large remote sensing data and the related problems of the interoperability of the data due to distributed sources and the big data problems caused by the size of the data and required processing resources. 
 Processing resources and data are connected, and there are no unnecessary inter-products or downloads. 
 The data does not have to be download and preprocessed separately. Instead, the data is already stored in one managed database, pre-processed and in access and analysis-ready format. 
 The computational power required to process the data is automatically scaled, which makes computations of an entirely new magnitude possible without bothering with any IT management obstacles.
@@ -54,11 +60,11 @@ With EE, it is possible to request and generate precisely the data needed for an
 However, the EE API is controlled by a client library, currently only available in JavaScript and Python. To use the EE additional effort to learn and apply the client libraries is necessary, furthermore, scientists using a different programming language like R cannot access the EE API directly from within R.
 There is currently no R or Python package that is using EE capabilities to simplify the acquisition and preprocessing of remotely sensed data. Actually, there is not a single R or Python package using any of EE capabilities directly. The few existing ones are written in Python and only facilitate the use of the EE API by providing a pipeline to other API's like the Planet-GEE-Pipeline-GUI or provide an automated upload feature of assets via the Google Cloud Environment like the geeadd tool (\cite{roy2017google}).
 
-In summary, although the Earth Engine solves many of the challenges in retrieving data from large remote sensing datasets for environmental system modeling, it is still exclusive for experienced users of the EE client library available only in JavaScript and Python.
+Although the Earth Engine solves many of the challenges in retrieving data from large remote sensing datasets for environmental system modeling, it is still exclusive for experienced users of the EE client library available only in JavaScript and Python.
 
-\section{The earthEngineGrabR}
 
-To recap the current situation:
+In the following the problem statement that motivates this thesis is summaries:
+
 \begin{itemize}
 	
 	\item The stack and resolution of freely available remote sensing data, as the potential as input for environmental system model, is continuously increasing.
