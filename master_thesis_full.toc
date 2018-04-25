@@ -1,123 +1,109 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Abstract}{2}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Introduction}{3}{chapter.2}
+\contentsline {subsection}{\numberline {1.0.1}The potential of the GEE for the acquisition of remote sensing data}{5}{subsection.1.0.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Remote sensing data \\ in environmental system modeling}{3}{section.2.1}
+\contentsline {section}{\numberline {1.1}The earthEngineGrabR}{5}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Accessibility of remote-sensing data}{3}{section.2.2}
+\contentsline {section}{\numberline {1.2}Introduction to Google Earth Engine}{6}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}The difficulty in acquire, integrate and process remote sensing data}{4}{section.2.3}
+\contentsline {subsubsection}{The public data catalogue}{6}{section*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Interoperability problem}{5}{section*.2}
+\contentsline {subsubsection}{The tile architecture}{7}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Big data problem}{6}{section*.3}
+\contentsline {subsubsection}{The pyramid architecture}{7}{section*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Restricted access}{6}{section*.4}
+\contentsline {subsubsection}{The system architecture}{8}{section*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Introduction to Google Earth Engine}{6}{section.2.4}
+\contentsline {subsubsection}{Construct earth engine programmes with the client library}{8}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The public data catalogue}{7}{section*.5}
+\contentsline {subsubsection}{Data distribution models}{8}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The tile architecture}{7}{section*.6}
+\contentsline {chapter}{\numberline {2}Methods}{10}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The pyramid architecture}{8}{section*.7}
+\contentsline {section}{\numberline {2.1}Available data products}{11}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The system architecture}{8}{section*.8}
+\contentsline {section}{\numberline {2.2}Design and functionality of the \\ data manipulation}{12}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Construct earth engine programmes with the client library}{8}{section*.9}
+\contentsline {section}{\numberline {2.3}Technical framework}{14}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Data distribution models}{8}{section*.10}
+\contentsline {subsubsection}{Sending parameters}{16}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}The potential of the GEE for the acquisition of remote sensing data}{9}{subsection.2.4.1}
+\contentsline {subsubsection}{Organize Python code os modules}{17}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}The earthEngineGrabR}{10}{section.2.5}
+\contentsline {subsubsection}{Use of the client library}{17}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methods}{11}{chapter.3}
+\contentsline {subsubsection}{Communication of the client library and EE}{17}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Available data products}{12}{section.3.1}
+\contentsline {subsubsection}{Parallel processing of data products}{18}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Design and functionality of the \\ data manipulation}{13}{section.3.2}
+\contentsline {section}{\numberline {2.4}Organize dependencies and authentications}{18}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Technical framework}{15}{section.3.3}
+\contentsline {subsubsection}{Dependencies}{18}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sending parameters}{17}{section*.11}
+\contentsline {subsubsection}{Authentication}{19}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Organize Python code os modules}{18}{section*.12}
+\contentsline {chapter}{\numberline {3}Results}{20}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Use of the client library}{18}{section*.13}
+\contentsline {section}{\numberline {3.1}Szenario}{20}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Communication of the client library and EE}{18}{section*.14}
+\contentsline {section}{\numberline {3.2}Large-scale analysis}{21}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parallel processing of data products}{19}{section*.15}
+\contentsline {section}{\numberline {3.3}Small-scale analysis}{25}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Organize dependencies and authentications}{19}{section.3.4}
+\contentsline {section}{\numberline {3.4}Time-series analysis}{26}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dependencies}{19}{section*.16}
+\contentsline {section}{\numberline {3.5}Summary}{28}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Authentication}{20}{section*.17}
+\contentsline {chapter}{\numberline {4}Discussion}{30}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Limits and problems of the current version of the earthEngineGrabR}{30}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Szenario}{21}{section.4.1}
+\contentsline {subsubsection}{Vector data processing restriction}{31}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Large-scale analysis}{22}{section.4.2}
+\contentsline {subsubsection}{Limited number of available data products and their possible properties}{31}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Small-scale analysis}{26}{section.4.3}
+\contentsline {subsubsection}{No control of projection}{31}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Time-series analysis}{27}{section.4.4}
+\contentsline {subsubsection}{Multiple dependencies, operating system interoperability, confusing authentication process}{31}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Summary}{29}{section.4.5}
+\contentsline {section}{\numberline {4.2}Further development of the earthEngineGrabR}{32}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Discussion}{31}{chapter.5}
+\contentsline {subsection}{\numberline {4.2.1}Implementation of additional features}{32}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Limits and problems of the current version of the earthEngineGrabR}{31}{section.5.1}
+\contentsline {subsubsection}{Add more data products}{32}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vector data processing restriction}{32}{section*.18}
+\contentsline {subsubsection}{Extend the properties of the data products}{33}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Limited number of available data products and their possible properties}{32}{section*.19}
+\contentsline {subsubsection}{Internal iterations as a workaround for the vector data processing restriction}{33}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{No control of projection}{32}{section*.20}
+\contentsline {subsubsection}{Simplify the authentication process}{33}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Multiple dependencies, operating system interoperability, confusing authentication process}{32}{section*.21}
+\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{34}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Further development of the earthEngineGrabR}{33}{section.5.2}
+\contentsline {subsection}{\numberline {4.2.2}Improve the framework of the earthEngineGrabR}{34}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Implementation of additional features}{33}{subsection.5.2.1}
+\contentsline {section}{\numberline {4.3}Internal limitations of EE and what this implies for the earthEngineGrabR}{35}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Add more data products}{33}{section*.22}
+\contentsline {subsection}{\numberline {4.3.1}Limitation, strengths and weaknesses of EE}{35}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Extend the properties of the data products}{34}{section*.23}
+\contentsline {subsubsection}{System throughput an performance}{35}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Internal iterations as a workaround for the vector data processing restriction}{34}{section*.24}
+\contentsline {subsubsection}{Straights of EE}{35}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Simplify the authentication process}{34}{section*.25}
+\contentsline {subsubsection}{Weaknesses of EE}{35}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{35}{section*.26}
+\contentsline {subsection}{\numberline {4.3.2}What does that mean for the earthEngineGrabR?}{36}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Improve the framework of the earthEngineGrabR}{35}{subsection.5.2.2}
+\contentsline {subsubsection}{Support the internal distribution mechanism of EE by processing the data products in parallel}{36}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Internal limitations of EE and what this implies for the earthEngineGrabR}{36}{section.5.3}
+\contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{36}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Limitation, strengths and weaknesses of EE}{36}{subsection.5.3.1}
+\contentsline {subsubsection}{Use EE's strengths to generate the data products}{37}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{System throughput an performance}{36}{section*.27}
+\contentsline {chapter}{\numberline {5}Conclusion}{38}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Straights of EE}{36}{section*.28}
+\contentsline {chapter}{\numberline {6}This is Appendix 1...}{41}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Weaknesses of EE}{36}{section*.29}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}What does that mean for the earthEngineGrabR?}{37}{subsection.5.3.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Support the internal distribution mechanism of EE by processing the data products in parallel}{37}{section*.30}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{37}{section*.31}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Use EE's strengths to generate the data products}{38}{section*.32}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}This is Appendix 1...}{42}{chapter.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}This is appendix 2...}{43}{chapter.8}
+\contentsline {chapter}{\numberline {7}This is appendix 2...}{42}{chapter.7}

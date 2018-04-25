@@ -1,9 +1,11 @@
-\chapter{Abstract}
 
+With the decision of National Aeronautics and Space Administration (NASA), United States Geological Survey (USGS) and National Oceanic and Atmospheric Administration (NOAA), as well as European Space Agency (ESA) to provide open access to their satellite data, petabyte-scale archives of remote sensing data are now freely available.
+The increasing availability, as well as the wide range of the spatial-, temporal-  and radiometric-resolution, have made remote sensing data, the best source of data for large-scale applications and studies in environmental system modelling.
+Still, acquiring and preparing remote sensing data for large-scale applications is challenging and requires expertise in Geographic Information System (GIS) and access to high-performance computing resources.
+Google Earth Engine is a cloud-based platform that strongly simplifies the access to high-performance computing resources while offering a multi-petabyte data catalogue of analysis-ready geospatial datasets.
+By using the Earth Engine (EE) the acquisition and preprocessing of large-scale remote sensing data can strongly be simplified.
 
-The value of remotely-sensed data as a source of input data for environmental processes modelling has been increasing in the past years (\cite{melesse2007remote})
+However, the EE API is accessed by a client library, whose application requires additional effort to learn. Furthermore, the client library is currently only available in JavaScript and Python. Therefore, scientists using the programming language R cannot apply the client library.
 
-Through contributions of several earth observation missions, the stock of freely available remote sensing data, as well as its temporal and spatial resolution, is continuously growing (\cite{melesse2007remote}).
-
-
-The value of remotely-sensed data as a source of input data for environmental processes modelling has been increasing in the past years (Assefa M. Melesse). The increasing availability of remotely-sensed data from different sensors with a wide range of spatial and temporal resolution and radiometric has made remote sensing data, perhaps, the best source of data for large-scale applications and study 
+In the present work, a simplified access to capabilities of the EE for the R programming environment is presented.
+The thesis aims to develop an R package - earthEngineGrabR - that simplifies the acquisition of remote sensing data by using the EE as a backend-service to retrieve selected data products for a given region and time of interest in an analysis-ready format. Any processing of the remote sensing data shall entirely be outsourced to EE and only the derived data products, are exported and imported into R. 
