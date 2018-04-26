@@ -1,26 +1,26 @@
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{subsection.1.0.1}{The potential of the GEE for the acquisition of remote sensing data}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.1}{The earthEngineGrabR}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Introduction to Google Earth Engine}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.2}{Methods}{}% 5
-\BOOKMARK [1][-]{section.2.1}{Available data products}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Design and functionality of the \040data manipulation}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.3}{Technical framework}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.4}{Organize dependencies and authentications}{chapter.2}% 9
-\BOOKMARK [0][-]{chapter.3}{Results}{}% 10
-\BOOKMARK [1][-]{section.3.1}{Szenario}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.2}{Large-scale analysis}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.3}{Small-scale analysis}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.4}{Time-series analysis}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.5}{Summary}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Discussion}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Limits and problems of the current version of the earthEngineGrabR}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.2}{Further development of the earthEngineGrabR}{chapter.4}% 18
-\BOOKMARK [2][-]{subsection.4.2.1}{Implementation of additional features}{section.4.2}% 19
-\BOOKMARK [2][-]{subsection.4.2.2}{Improve the framework of the earthEngineGrabR}{section.4.2}% 20
-\BOOKMARK [1][-]{section.4.3}{Internal limitations of EE and what this implies for the earthEngineGrabR}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.3.1}{Limitation, strengths and weaknesses of EE}{section.4.3}% 22
-\BOOKMARK [2][-]{subsection.4.3.2}{What does that mean for the earthEngineGrabR?}{section.4.3}% 23
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 24
-\BOOKMARK [0][-]{chapter.6}{This is Appendix 1...}{}% 25
-\BOOKMARK [0][-]{chapter.7}{This is appendix 2...}{}% 26
+\BOOKMARK [1][-]{section.0.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.0.2}{Introduction to Earth Engine}{}% 2
+\BOOKMARK [2][-]{subsection.0.2.1}{The public data catalogue}{section.0.2}% 3
+\BOOKMARK [2][-]{subsection.0.2.2}{Reasons of the performance of Earth Engine}{section.0.2}% 4
+\BOOKMARK [0][-]{chapter.1}{Methods}{}% 5
+\BOOKMARK [1][-]{section.1.1}{Available data products}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Design and functionality of the \040data manipulation}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.3}{Technical framework for the interface of R and EE}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.4}{Organize dependencies and authentications}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Results}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Szenario}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.2}{Large-scale analysis}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Small-scale analysis}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Time-series analysis}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.5}{Summary}{chapter.2}% 15
+\BOOKMARK [0][-]{chapter.3}{Discussion}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Limits and problems of the current version of the earthEngineGrabR}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.2}{Further development of the earthEngineGrabR}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.2.1}{Implementation of additional features}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.2}{Improve the framework of the earthEngineGrabR}{section.3.2}% 20
+\BOOKMARK [1][-]{section.3.3}{Internal limitations of EE and what this implies for the earthEngineGrabR}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.1}{Limitation, strengths and weaknesses of EE}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.2}{What does that mean for the earthEngineGrabR?}{section.3.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 24
+\BOOKMARK [0][-]{chapter.5}{This is Appendix 1...}{}% 25
+\BOOKMARK [0][-]{chapter.6}{This is appendix 2...}{}% 26

@@ -41,13 +41,12 @@ For instance, the processing of a moderately sized remote sensing imagery stack 
 Hence, although petabyte-scale archives of geospatial data are freely available, the access and utilisation of these datasets for environmental system modelling are restricted due to the given difficulties. 
 These obstacles hinder most researchers to make use of this massive stack of remote sensing imagery, restricting access to the information that can be derived from large remote sensing datasets, to remote-sensing experts with exclusive access to high-performance computing resources.
 
+This is where the use of the Google Earth Engine provides significant advantages.
+The Earth Engine (EE) is a cloud-based platform that strongly simplifies the access to high-performance computing resources to process extensive remote sensing datasets, without the information technology (IT) management obstacles like, data acquisition and storage, combine different file formats, managing databases, machine allocations, CPUs, GPUs. 
+Earth Engine (EE) consists of a multi-petabyte data catalogue, a high performance, parallel and therefore scaleable, computation service and is accessed and controlled through an Internet-accessible application programming interface (API). The user writes EE programmes using the client library available for Python and JavaScript.
+The EE client library consisting of more than 800 functions ranging from simple mathematical operations to powerful geostatistical, machine learning and image processing operations.
+The functions in the client library can be composed to build a description of the computation the user wants to perform. This description is sent to Earth Engine servers for evaluation (\cite{gorelick2017google}).
 
-
-\subsection{}
-
-
-The Google Earth Engine is a cloud-based platform that strongly simplifies the access to high-performance computing resources to process extensive remote sensing datasets, without the information technology (IT) management obstacles like, data acquisition and storage, combine different file formats, managing databases, machine allocations, CPUs, GPUs. 
-Earth Engine (EE) consists of a multi-petabyte data catalogue, a high performance, parallel and therefore scaleable, computation service and is accessed and controlled through an Internet-accessible application programming interface (API). Queries are constructed by using operations drawn from the EE client library consisting of more than 800 functions ranging from simple mathematical operations to powerful geostatistical, machine learning and image processing operations (\cite{gorelick2017google}).
 
 By using the EE the acquisition and preprocessing of large-scale remote sensing data can strongly be simplified.
 
@@ -60,18 +59,16 @@ With EE, it is possible to request and generate precisely the data needed for an
 However, the EE API is controlled by a client library, currently only available in JavaScript and Python. To use the EE additional effort to learn and apply the client libraries is necessary, furthermore, scientists using a different programming language like R cannot access the EE API directly from within R.
 There is currently no R or Python package that is using EE capabilities to simplify the acquisition and preprocessing of remotely sensed data. Actually, there is not a single R or Python package using any of EE capabilities directly. The few existing ones are written in Python and only facilitate the use of the EE API by providing a pipeline to other API's like the Planet-GEE-Pipeline-GUI or provide an automated upload feature of assets via the Google Cloud Environment like the geeadd tool (\cite{roy2017google}).
 
-Although the Earth Engine solves many of the challenges in retrieving data from large remote sensing datasets for environmental system modeling, it is still exclusive for experienced users of the EE client library available only in JavaScript and Python.
 
-
-In the following the problem statement that motivates this thesis is summaries:
+To summaries the problem statement of the present thesis:
 
 \begin{itemize}
 	
 	\item The stack and resolution of freely available remote sensing data, as the potential as input for environmental system model, is continuously increasing.
-	\item With the traditional methods discussed, the process of acquiring remote sensing data for analysis is costly and inefficient and requires high-performance computing resources.
-	\item This restricting access to the information that can be derived from large remote sensing datasets, to remote-sensing experts and deviates resources from the scientific work.
-	\item The EE provides a performant and flexible solution to the problems related to large remote sensing datasets and is superior to the acquisition with a search and order tool.
-	\item However, the use of the EE is exclusive for experienced users of the EE client library only available for Python.
+	\item With the standard procedure discussed, the process of acquiring remote sensing data for analysis is costly, inefficient and requires high-performance computing resources.
+	\item This restricting access to the information that can be derived from large remote sensing datasets, to remote-sensing experts and deviates resources.
+	\item The EE provides a performant and flexible solution to the problems related to large remote sensing datasets and is superior to the acquisition with the standard procedure.
+	\item However, the use of the EE is exclusive for experienced users of the EE client library only available in JavaScript and Python.
 	\item Hence, to use the potential of the EE for the acquisition of remote sensing data, the access to the EE needs to be simplified.
 	
 \end{itemize}
@@ -88,29 +85,30 @@ This way, the developed interface exploits two of EE's significant advantages. O
 
 
 
+To understand the reasons for EE's performance EE's underlying system architecture and the computation service need to be introduced.
+The following section gives a brief introduction to the provided data catalog and the system architecture that is essential to understand EE's performancee.
 
 
-\section{Introduction to Google Earth Engine}
+\section{Introduction to Earth Engine}
 
-EE is a cloud-based platform that strongly simplifies the access to high-performance computing resources to process extensive remote sensing datasets, without the information technology (IT) management obstacles like, data acquisition and storage, combine different file formats, managing databases, machine allocations, CPUs, GPUs. 
-EE consists of a multi-petabyte data catalogue, a high performance, parallel and therefore scaleable, computation service and is accessed and controlled through an Internet-accessible application programming interface (API). Queries are constructed by using operations drawn from the Earth Engine client library consisting of more than 800 functions ranging from simple mathematical operations to powerful geostatistical, machine learning and image processing operations (\cite{gorelick2017google}).
+\subsection{The public data catalogue}
 
-\subsubsection{The public data catalogue}
-
-The majority of the EE public data catalogue consists of remote sensing imagery collected by earth-observing satellites missions from government agencies like NASA, USGS, NOAA and ESA. It contains the entire archives of Landsat, Sentinel 1-2 and Modis, but also several other environmental, geophysical and social-economic datasets. This catalogue is continuously extended and updated from current missions, and this way holds up to date satellite imagery with a latency of about one day.
-In EE, imagery data or raster is stored in a 2D gridded raster container referred to as an image. One image can have any number of bands, and while each band need to be homogeneous in data type, resolution and projection, bands in an image can vary in data type, resolution and projection. Each image can have associated metadata stored as key-value pairs to provide additional information like acquisition time, location or any metadata provided.
+The majority of the EE public data catalogue consists of remote sensing imagery collected by earth-observing satellites missions from government agencies like NASA, USGS, NOAA and ESA. It contains the entire archive of Landsat, Sentinel 1-2 and Modis, but also several other environmental, geophysical and social-economic datasets. This catalogue is continuously extended and updated from current missions, and this way holds up to date satellite imagery with a latency of about one day.
+In EE, imagery or raster data is stored in a 2D gridded raster container referred to as an image. One image can have any number of bands, and while each band needs to be of the same data type, resolution and projection, bands in an image can vary in data type, resolution and projection. Each image can have associated metadata stored as key-value pairs to provide additional information like acquisition time, location or any metadata provided.
 Multiple images that are related, such as images from the same source or sensor are combined in collections. These Collections provide fast spatial and temporal filtering and sorting capabilities using metadata associated to every single image in the collection. The metadata enables users to search through millions of images to select data that meet specific criteria. For example, users can quickly filter the entire Landsat 7 archive for images within Germany, collected on day-of-year 40 - 80, from the year 1990 - 2000 with cloud cover less 50\%. While this also would be possible in one of the search and order tools, EE additionally provides extensive GIS capabilities and processing resources to further manipulate the data.
-For instance, the filtered Landsat scenes could be aggregated to a median composite. The bands in the median composite could be used to calculate the Normalized Difference Vegetation Index (NDVI). The NDVI image could be spatially aggregated over multiple regions defined by the feature of a shapefile representing the states of Germany. While this process is a matter of minutes on Earth Engine, it indeed would require extended big data solutions on a local system.
+For instance, the filtered Landsat scenes can be aggregated to a median composite. The bands in the median composite can be used to calculate the Normalized Difference Vegetation Index (NDVI). The NDVI image can be spatially aggregated over multiple regions defined by the feature of a shapefile representing the states of Germany. On EE each of this processes are a matter of minutes or seconds.
 
 What makes EE that performant is the storage system as a tile database with built-in pyramiding architecture in combination with the system architecture and several data distribution models (\cite{gorelick2017google}).
 
+\subsection{Reasons of the performance of Earth Engine}
+
 \subsubsection{The tile architecture}
 
-Images ingested into Earth Engine are preprocessed to provide fast and efficient access. First, images are parsed into tiles in the images original projection and resolution and stored in a tile database. Each tile has the size of 256 x 256 Pixels and refers to the practical trade-off between loading unneeded data versus the overhead of issuing additional reads. Instead of resampling all data to a fixed grid, traditional data cube systems would do, this method is information-preserving (\cite{gray1997data}). Because the data is maintained in their original projection, resolution and bit depth the data degradation that is inevitable if resampling to a fixed grid, is avoided
+Images ingested into Earth Engine are preprocessed to provide fast and efficient access. First, images are parsed into tiles in the images original projection and resolution and stored in a tile database. Each tile has the size of 256 x 256 Pixels and refers to the practical trade-off between loading unneeded data versus the overhead of issuing additional reads. Instead of resampling all data to a fixed grid, traditional data as cube systems would do, this method is information-preserving (\cite{gray1997data}). Because the data are maintained in the original projection, resolution and bit depth, the data degradation, which is inevitable if resampling to a fixed grid, can be avoided
 
 \subsubsection{The pyramid architecture}
 
-Additionally, a pyramid of reduced-resolution tiles is created for each image and stored in the tile database. Each level of the pyramid is produced by downsampling the previous level by a factor of two until the entire image fits into a single tile. During downsampling, continuous valued bands by default are averaged, while discrete-valued bands are aggregated using one of min, mode, max. This way, if fractions of data from an image are requested for computation in a reduced resolution, only the relevant tiles from the most appropriate pyramid level need to be retrieved from the tile database. The tile database enables EE to provide data in a variety of resolutions without introducing significant storage overhead.
+Additionally, a pyramid of reduced-resolution tiles is created for each image and stored in the tile database. Each level of the pyramid is produced by downsampling the previous level by a factor of two until the entire image fits into a single tile. During downsampling, continuous valued bands by default are averaged, while discrete-valued bands are aggregated using a minimum, maximum or modal value. This way, if data fractions from an image are requested for computation in a reduced resolution, only the relevant tiles from the most appropriate pyramid level need to be retrieved from the tile database. The tile database enables EE to provide data in a variety of resolutions without introducing significant storage overhead.
 
 \subsubsection{The system architecture}
 
@@ -118,18 +116,13 @@ The processing system automatically subdivides and distributes computations to e
 Users can interact with the Earth Engine by using either an associated web-based interactive development environment (IDE), third-party Web Apps, or directly with one of the client libraries on a local system by using the EE Python or JavaScript API.
 The IDE code editor and the third-party Web Apps use the client libraries to send requests to EE through a Representational State Transfer Application Programming Interface (REST API). 
 The Tilestore Servers houses the public data catalogue in the described architecture. In the Asset Database, the user can ingest their data. 
-The Borg Cluster Management Software manages each component of the system, and each service is load-balanced over multiple workers. Failure of any individual workers results in the caller reissuing the query.
-
-\subsubsection{Construct earth engine programmes with the client library}
-
-The user writes EE programmes using the client library available for Python and JavaScript.
-The functions in the client library can be composed to build a description of the computation the user wants to perform. This description is sent to Earth Engine servers for evaluation. To further improve performance Earth Engine uses a lazy evaluation model that allows it to compute only the fraction of output that is necessary to fulfill the current request. It postpones computing output pixels until it knows more about the context in which they are needed (\cite{gorelick2017google}).
-
+The Borg Cluster Management Software manages each component of the system, and each service is load-balanced over multiple workers. Failure of any individual workers results in the caller reissuing the query. 
+To further improve performance Earth Engine uses a lazy evaluation model that allows it to compute only the fraction of output that is necessary to fulfill the current request. It postpones computing output pixels until it gets told more about the context in which they are needed (\cite{gorelick2017google}).
 
 \subsubsection{Data distribution models}
 
 To achieve high performance, the functions in the Earth Engine library apply several built-in parallelisation and data distribution models. Each model aims to optimise a different data access pattern.
-For operations that are local, image tiling is used.
+For local operations, image tiling is used.
 In remote sensing, especially raster manipulation many processing operations are local. That is, the computation of a Pixel depends only on input pixels within a fixed distance. Examples of per-pixel operations are band math, spectral unmixing neighbourhood or convolution operations. To process operations in parallel, the area is subdivided into tiles and computed independently. This way, to process one of those tiles most of the time only a few or one input tile is needed. Image tiling combined with pyramided inputs provides a fast computation of results at any requested scale or projection.
 For operations that are inherently non-local a spatial aggregations is used.
 Non-local operations such as computations of regional or global statistics, raster-to-vector conversions, or sampling an image to train a classifier, can at least partly still be executed in parallel by aggregating together many sub-results. In EE, those processes are executed as distributed processes using a scatter-gather model. First, similar to the image tiling approach, a spatial region is divided into subregions that are allocated to workers in a distributed worker pool and computed independently. These intermediate results are sent back to the master of this computation, which combines them and transform the intermediate results into the final result. For instance, to compute a mean value each worker computes sums and counts, the master collects these intermediate results and compute the final results as the total sum by the total count.

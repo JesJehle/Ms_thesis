@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  25 APR 2018 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  26 APR 2018 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1043,9 +1043,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1 <./images/artWork_croped_2.png>] (./master_thesis_full.toc
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 19.
 
-Overfull \hbox (2.67204pt too wide) in paragraph at lines 87--87
+Overfull \hbox (2.67204pt too wide) in paragraph at lines 83--83
  [][] [][]\OT1/ppl/m/n/12 Internal lim-i-ta-tions of EE and what this im-plies 
 for the earth-Engine- 
  []
@@ -1056,30 +1056,28 @@ for the earth-Engine-
 
  [2
 
-] (./chapters/abstract.tex) (./chapters/introduction.texpdfTeX warning (ext4): 
-destination with the same identifier (name{page.1}) has been already used, dupl
-icate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Introduction} [1]
-Chapter 1.
+] (./chapters/abstract.tex) (./chapters/introduction.tex
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1.
 
 Overfull \hbox (3.30455pt too wide) in paragraph at lines 7--9
 []\OT1/ppl/m/n/12 Through con-tri-bu-tions of sev-eral earth ob-ser-va-tion mis
 -sions, the stock of freely
  []
 
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9 
+     [1]
 Overfull \hbox (8.78009pt too wide) in paragraph at lines 10--13
 \OT1/ppl/m/n/12 satel-lite mis-sions that, again, are part of mainly two earth 
 ob-ser-va-tion pro-grammes.
  []
 
-[2
-
-]
-<images/traditional_acquisition-cropped.pdf, id=188, 722.7pt x 327.47343pt>
+[2]
+<images/traditional_acquisition-cropped.pdf, id=191, 722.7pt x 327.47343pt>
 File: images/traditional_acquisition-cropped.pdf Graphic file (type pdf)
 
 <use images/traditional_acquisition-cropped.pdf>
@@ -1087,52 +1085,38 @@ Package pdftex.def Info: images/traditional_acquisition-cropped.pdf used on inp
 ut line 20.
 (pdftex.def)             Requested size: 426.79134pt x 193.39253pt.
  [3 <./images/traditional_acquisition-cropped.pdf>]
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 46.
+Overfull \hbox (2.08405pt too wide) in paragraph at lines 44--49
+\OT1/ppl/m/n/12 scaleable, com-pu-ta-tion ser-vice and is ac-cessed and con-tro
+lled through an Internet-
+ []
 
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 46.
+Overfull \hbox (15.23514pt too wide) in paragraph at lines 44--49
+\OT1/ppl/m/n/12 accessible ap-pli-ca-tion pro-gram-ming in-ter-face (API). The 
+user writes EE pro-grammes
+ []
 
 [4]
-LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 59.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 64.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
-
-Overfull \hbox (18.61923pt too wide) in paragraph at lines 65--66
-\OT1/ppl/m/n/12 sens-ing data for anal-y-sis is costly and in-ef-fi-cient and r
-e-quires high-performance
- []
-
-[5]
-Overfull \hbox (1.02821pt too wide) in paragraph at lines 73--74
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+ [5]
+Overfull \hbox (1.02821pt too wide) in paragraph at lines 76--77
 \OT1/ppl/m/n/12 the mas-sive stack of freely avail-able re-mote sens-ing data f
 or their re-search projects
  []
 
-
-Overfull \hbox (10.39926pt too wide) in paragraph at lines 89--91
-\OT1/ppl/m/n/12 EE is a cloud-based plat-form that strongly sim-pli-fies the ac
--cess to high-performance
- []
-
-
-Overfull \hbox (0.8713pt too wide) in paragraph at lines 89--91
-\OT1/ppl/m/n/12 in-for-ma-tion tech-nol-ogy (IT) man-age-ment ob-sta-cles like,
- data ac-qui-si-tion and stor-
- []
-
-[6] [7] [8]) (./chapters/methods.tex [9]
-Chapter 2.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 94.
+[6] [7]) (./chapters/methods.tex [8]
+Chapter 1.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 14.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [10
+) [9
 
 ]
 Overfull \hbox (1.5311pt too wide) in paragraph at lines 49--49
@@ -1141,11 +1125,11 @@ Overfull \hbox (1.5311pt too wide) in paragraph at lines 49--49
 
 
 Underfull \hbox (badness 1502) in paragraph at lines 50--50
-[]\OT1/ppl/m/n/12 Table 2.1: []Data prod-ucts with tem-po-ral cov-er-age, tempo
+[]\OT1/ppl/m/n/12 Table 1.1: []Data prod-ucts with tem-po-ral cov-er-age, tempo
 ral- and spatial-
  []
 
-[11]
+[10]
 Overfull \hbox (14.56082pt too wide) in paragraph at lines 60--62
 []\OT1/ppl/m/n/12 To pro-vide to-po-graphic prod-ucts, the Shut-tle Radar To-po
 g-ra-phy Mis-sion (SRTM)
@@ -1161,21 +1145,15 @@ ta-tion Data (CHIRPS)
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 67.
 
-[12]
-Overfull \hbox (10.19565pt too wide) in paragraph at lines 74--76
-\OT1/ppl/m/n/12 earth-Engine-GrabR, there are im-ple-men-ta-tions for sim-ple s
-tatis-tics like mean, mode,
- []
-
-<images/design_function-cropped.pdf, id=364, 722.7pt x 373.395pt>
+[11] <images/design_function-cropped.pdf, id=357, 722.7pt x 373.395pt>
 File: images/design_function-cropped.pdf Graphic file (type pdf)
 
 <use images/design_function-cropped.pdf>
 Package pdftex.def Info: images/design_function-cropped.pdf used on input line 
 80.
 (pdftex.def)             Requested size: 426.79134pt x 220.51195pt.
- [13 <./images/design_function-cropped.pdf>] <images/processing_flow_big.pdf, i
-d=514, 722.7pt x 542.025pt>
+ [12 <./images/design_function-cropped.pdf>] <images/processing_flow_big.pdf, i
+d=507, 722.7pt x 542.025pt>
 File: images/processing_flow_big.pdf Graphic file (type pdf)
 
 <use images/processing_flow_big.pdf>
@@ -1186,8 +1164,8 @@ Package pdftex.def Info: images/processing_flow_big.pdf used on input line 103.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14]
-<images/concole_connection_big-cropped.pdf, id=524, 722.7pt x 345.54094pt>
+[13]
+<images/concole_connection_big-cropped.pdf, id=516, 722.7pt x 345.54094pt>
 File: images/concole_connection_big-cropped.pdf Graphic file (type pdf)
 
 <use images/concole_connection_big-cropped.pdf>
@@ -1198,8 +1176,8 @@ t line 124.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./images/processing_flow_big.pdf>] [16 <./images/concole_connection_big-cr
-opped.pdf>] [17]
+[14 <./images/processing_flow_big.pdf>] [15 <./images/concole_connection_big-cr
+opped.pdf>] [16]
 Overfull \hbox (11.07072pt too wide) in paragraph at lines 166--167
 \OT1/ppl/m/n/12 The earth-Engine-GrabR pack-age has sev-eral pack-age de-pen-de
 n-cies in R and Python.
@@ -1276,9 +1254,9 @@ If that doesn't work, type  X <return>  to quit.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18]) (./chapters/results.tex [19]
-Chapter 3.
-<images/territories.pdf, id=658, 578.16pt x 578.16pt>
+[17]) (./chapters/results.tex [18]
+Chapter 2.
+<images/territories.pdf, id=651, 578.16pt x 578.16pt>
 File: images/territories.pdf Graphic file (type pdf)
 
 <use images/territories.pdf>
@@ -1304,10 +1282,10 @@ Underfull \hbox (badness 2181) in paragraph at lines 22--23
 []\OT1/ppl/m/n/12 Because the study area is frag-
  []
 
-[20
+[19
 
  <./images/territories.pdf>]
-<images/install_authentication.png, id=674, 1927.2pt x 750.805pt>
+<images/install_authentication.png, id=666, 1927.2pt x 750.805pt>
 File: images/install_authentication.png Graphic file (type png)
 
 <use images/install_authentication.png>
@@ -1318,7 +1296,7 @@ Package pdftex.def Info: images/install_authentication.png used on input line 5
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21] [22 <./images/install_authentication.png>]
+[20] [21 <./images/install_authentication.png>]
 Underfull \hbox (badness 10000) in alignment at lines 96--96
 [][][][][][] 
  []
@@ -1334,7 +1312,7 @@ l.103 	\begin{figure}[H]
                         
 Option `H' ignored and `p' used.
 
-<images/sample_session_1-cropped.pdf, id=693, 761.84625pt x 1228.59pt>
+<images/sample_session_1-cropped.pdf, id=685, 761.84625pt x 1228.59pt>
 File: images/sample_session_1-cropped.pdf Graphic file (type pdf)
 
 <use images/sample_session_1-cropped.pdf>
@@ -1345,8 +1323,8 @@ Package pdftex.def Info: images/sample_session_1-cropped.pdf used on input line
 
 LaTeX Warning: Float too large for page by 10.42973pt on input line 109.
 
-[23] [24 <./images/sample_session_1-cropped.pdf>]
-<images/stripes-cropped.pdf, id=726, 614.295pt x 617.30624pt>
+[22] [23 <./images/sample_session_1-cropped.pdf>]
+<images/stripes-cropped.pdf, id=719, 614.295pt x 617.30624pt>
 File: images/stripes-cropped.pdf Graphic file (type pdf)
 
 <use images/stripes-cropped.pdf>
@@ -1359,7 +1337,7 @@ Underfull \hbox (badness 1715) in paragraph at lines 130--131
 
 
 Underfull \hbox (badness 1558) in paragraph at lines 133--136
-\OT1/ppl/m/n/12 avail-able as shape-files. Fig-ure []3.4[]
+\OT1/ppl/m/n/12 avail-able as shape-files. Fig-ure []2.4[]
  []
 
 
@@ -1392,15 +1370,15 @@ Underfull \hbox (badness 2772) in paragraph at lines 133--136
 \OT1/pcr/m/n/12 jrc[]distanceToWater \OT1/ppl/m/n/12 prod-uct in
  []
 
-[25 <./images/stripes-cropped.pdf>]
-<images/stripes_distance_2.pdf, id=752, 601.24625pt x 448.67625pt>
+[24 <./images/stripes-cropped.pdf>]
+<images/stripes_distance_2.pdf, id=745, 601.24625pt x 448.67625pt>
 File: images/stripes_distance_2.pdf Graphic file (type pdf)
 
 <use images/stripes_distance_2.pdf>
 Package pdftex.def Info: images/stripes_distance_2.pdf used on input line 155.
 (pdftex.def)             Requested size: 426.79134pt x 318.50075pt.
- [26 <./images/stripes_distance_2.pdf>]
-<images/change_precipitation.pdf, id=768, 1011.78pt x 867.24pt>
+ [25 <./images/stripes_distance_2.pdf>]
+<images/change_precipitation.pdf, id=761, 1011.78pt x 867.24pt>
 File: images/change_precipitation.pdf Graphic file (type pdf)
 
 <use images/change_precipitation.pdf>
@@ -1415,22 +1393,22 @@ Overfull \hbox (28.45273pt too wide) in paragraph at lines 203--205
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28 <./images/change_precipitation.pdf>]) (./chapters/discussion.tex
-[29]
-Chapter 4.
+[26] [27 <./images/change_precipitation.pdf>]) (./chapters/discussion.tex
+[28]
+Chapter 3.
 
 Overfull \hbox (6.7156pt too wide) in paragraph at lines 4--7
 \OT1/ppl/m/n/12 Com-pared to the tra-di-tional method de-scribed in the in-tro-
 duc-tion the earth-Engine-
  []
 
-[30
+[29
 
-] [31] [32] [33]
+] [30] [31] [32]
 
-LaTeX Warning: Citation 'reticulate' on page 34 undefined on input line 71.
+LaTeX Warning: Citation 'reticulate' on page 33 undefined on input line 71.
 
-[34] [35]
+[33] [34]
 Overfull \hbox (1.53139pt too wide) in paragraph at lines 103--105
 \OT1/ppl/m/n/12 The GEE pro-vides data ex-port to Google Drive and Google Cloud
  Plat-form (GCP).
@@ -1442,9 +1420,9 @@ Overfull \hbox (1.5453pt too wide) in paragraph at lines 108--108
  pro-cess-ing the data prod-
  []
 
-[36] [37]
-Chapter 5.
-) [38
+[35] [36]
+Chapter 4.
+) [37
 
 ]
 Overfull \hbox (20.36897pt too wide) in paragraph at lines 261--261
@@ -1471,17 +1449,17 @@ Overfull \hbox (10.71338pt too wide) in paragraph at lines 261--261
 enz Hurni (2011). ``Geovite-
  []
 
-[39
+[38
 
-] (./chapters/appendix1.tex [40]
-Chapter 6.
-) (./chapters/appendix2.tex [41
+] (./chapters/appendix1.tex [39]
+Chapter 5.
+) (./chapters/appendix2.tex [40
 
 ]
-Chapter 7.
+Chapter 6.
 )
 No file master_thesis_full.ind.
-(./chapters/selbststaendigkeit.tex [42
+(./chapters/selbststaendigkeit.tex [41
 
 ]
 Overfull \hbox (2.52751pt too wide) in paragraph at lines 7--8
@@ -1491,7 +1469,7 @@ f-s-mit-tel be-nutzt habe.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
- [43
+ [42
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
@@ -1499,7 +1477,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
 Package rerunfilecheck Info: File `master_thesis_full.out' has not changed.
-(rerunfilecheck)             Checksum: 8C2140F8D3D427C3DD4292336C8192EA;1941.
+(rerunfilecheck)             Checksum: 9FFD0A969A023BAFA6E58BFAD174EF28;1946.
 
 
 LaTeX Warning: There were undefined references.
@@ -1515,9 +1493,9 @@ Package logreq Info: Writing requests to 'master_thesis_full.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
  ) 
 Here is how much of TeX's memory you used:
- 15422 strings out of 494910
- 238228 string characters out of 6179836
- 690138 words of memory out of 5000000
+ 15419 strings out of 494910
+ 238213 string characters out of 6179836
+ 690136 words of memory out of 5000000
  18304 multiletter control sequences out of 15000+600000
  17718 words of font info for 49 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1530,10 +1508,10 @@ ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master_thesis_full.pdf (46 pages, 8674728 bytes).
+Output written on master_thesis_full.pdf (45 pages, 8673855 bytes).
 PDF statistics:
- 960 PDF objects out of 1000 (max. 8388607)
- 811 compressed objects within 9 object streams
- 180 named destinations out of 1000 (max. 500000)
+ 953 PDF objects out of 1000 (max. 8388607)
+ 805 compressed objects within 9 object streams
+ 177 named destinations out of 1000 (max. 500000)
  274 words of extra memory for PDF output out of 10000 (max. 10000000)
 

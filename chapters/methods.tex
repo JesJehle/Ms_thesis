@@ -1,8 +1,8 @@
 \chapter{Methods}
 
-The eartgEngineGrabR package is supposed to provide an interface of R and the EE to acquire remote sensing data in R. The emphasis is to develop a stable framework for an interface between R and the EE. This framework should enable the user to select from some data sets, choose a temporal and spatial resolution and send a request to the EE servers to process and export the data to the user's local machine. The framework is supposed to work as a foundation that eases further extensions.
+The eartgEngineGrabR package provide an interface of R and the EE to acquire remote sensing data in R. This interface should enable the user to select from some data sets, choose a temporal and spatial resolution and send a request to the EE servers to process and export the data to the user's local machine. The earthEngineGrabR is supposed to work as a foundation that eases further extensions.
 
-The base functionality of the framework is: 
+The base functionality of the earthEngineGrabR is: 
 \begin{itemize}
 	\item Uploading vector data to earth engine
 	\item Choose from a list of data product
@@ -11,16 +11,16 @@ The base functionality of the framework is:
 	\item Manage the dependencies and authentications to the involved API's
 \end{itemize}
 
-The package consists of two functions \mbox{\texttt{ee\_grab()}} and \mbox{\texttt{ee\_grab\_init()}}. The \texttt{ee\_grab\_init()} function handles authentications and the installation of additional dependencies necessary for the earthEngineGrabR package to work. The \texttt{ee\_grab()} function controlls the acquisition of the remote sensing data from EE.
+The package consists of two functions \mbox{\texttt{ee\_grab()}} and \mbox{\texttt{ee\_grab\_init()}}. The \texttt{ee\_grab\_init()} function handles authentications and the installation of additional dependencies necessary for the earthEngineGrabR package to work. The \texttt{ee\_grab()} function controls the acquisition of the remote sensing data from EE.
 
 First, the data section gives an overview of the data temporarily accessible through the earthEngineGrabR. 
 The next section introduces the general design and functionality that the package provides during the acquisition process. The section covers how the \texttt{ee\_grab()} function can select, filter, aggregate and retrieve the requested data, while the emphasis lies on the design workflow and arguments of the function.
-The following section introduces the technical framework that enables the interface of R and the GEE, while the focus in on the technical side in \texttt{ee\_grab()} function call.
+The following section introduces the technical framework that enables the interface of R and the EE, while the focus in on the technical side in \texttt{ee\_grab()} function call.
 The last section covers the necessary dependencies and authentications processes handled by the \texttt{ee\_grab\_init()}.
 
 \section{Available data products}
 
-The emphasis of the current version of the earthEngineGraR package is to develop a stable interface of R and the GEE to retrieve data in a user-specific form. Therefore the temporally available data is still limited to a selected list of data products, that should illustrate the diversity of the EE data catalogue. In the further development of the earthEngineGrabR package, this list should be extended.
+The main objective of the current version of the earthEngineGraR package is to develop a stable interface of R and the EE to retrieve data in a user-specific form. Therefore the temporally available data is still limited to a selected list of data products, that should illustrate the diversity of the EE data catalogue (see table \ref{data}). In the further development of the earthEngineGrabR package, this list will be extended.
 
 \begin{table}[h]
 	\begin{tabularx}{\textwidth}{|l|l|X|X|X|}
@@ -51,7 +51,7 @@ The emphasis of the current version of the earthEngineGraR package is to develop
 	\label{data}
 \end{table}
 
-Table \ref{data} shows the data products temporally accessible through the package. In the following, it is distinguished between a data source of the remote sensing data, that represents the primary source, for example, the Modis MOD44B.051 Terra Vegetation Continous Fields (VCF) and the derived data product: percent tree cover. In the earthEngineGrabR, the user requests remote sensing data as specific data products. A data product always represents one band of the source satellite image and one environmental variable like percent tree cover, distance to surface water or slope.
+In the following, I distinguish between a data source of the remote sensing data, that represents the primary source, for example, the Modis MOD44B.051 Terra Vegetation Continous Fields (VCF) and the derived data product: percent tree cover. In the earthEngineGrabR, the user requests remote sensing data as specific data products. A data product always represents one band of the source satellite image and one environmental variable like percent tree cover, distance to surface water or slope.
 The variables vary in temporal and spatial resolution dependent on the data product they are derived from. 
 
 To access land cover, the MOD44B.051 Terra VCF product with a yearly temporal resolution and a 250 m spatial resolution is used. The data set provides a sub-pixel-level representation of surface vegetation cover, designed to continuously represent earth's terrestrial surface as a gradient of three essential surface cover components: percent tree cover, percent non-tree cover and percent bare. The data set is generated using monthly composites of Terra Modis 250 m and 500 m Land Surface Reflectance data (\cite{hansen2006vegetation}).
@@ -66,13 +66,13 @@ For consistency, the data products that have a high spatial resolution like CHIR
 
 \section{Design and functionality of the \\ data manipulation}
 
-As described in the introduction, the necessary preprocessing of the remote sensing data is an integral part of the data acquisition process. In the earthEngineGrabR, the complete integration and aggregation of the data are outsourced to EE.
+As was described in the introduction, the necessary preprocessing of the remote sensing data is an integral part of the data acquisition process. In the earthEngineGrabR, the complete integration and aggregation of the data are outsourced to EE.
 Instead of downloading the raw raster data the package provides control to filter and aggregate selected data products according to a given target. This processing allows retrieving the data products in a specific, user-defined format. The user specifies a data product with a corresponding time interval and a temporal reducer, a spatial reducer and a target. 
 
 A data product in the earthEngineGrabR is specified with a earth engine data product-function. Each function specifies one particular data product with the corresponding parameters. The name of the function is \texttt{eeProduct\_ } followed by the source of the data products, underscore the name of the data product. For example: \texttt{eeProduct\_modis\_treeCover()}. The output of the function is simply an object of the class list that specifies the parameters of the requested data product. To use a function, that produces the required parameters instead of committing a list or a vector with the listed parameter, holds several advantages illustrated in the result section.
 
-In the EE a reducer is a way to aggregate data over space and time. In the earthEngineGrabR, there are implementations for simple statistics like mean, mode, max, and min. The temporal reducer aggregates the data over time and the spatial reducer aggregates the data over a region defines by the target. 
-The target is defined by vector data, where the spatial extent of the features define the region the spatial reducer is applied over.
+In the EE a reducer is a way to aggregate data over space and time. In the earthEngineGrabR, there are implementations for simple statistics such as computing the mean, modal, maximum, and minimum value. The temporal reducer aggregates the data over time and the spatial reducer aggregates the data over a region defines by the target. 
+The target is defined by vector data, where the spatial extent of the features define the region the spatial reducer is applied over (figure \ref*{Workflow}).
 
 \begin{center}
 	\begin{figure}[h]
@@ -90,11 +90,11 @@ The output of the \texttt{ee\_grab()} function is an object of class sf. The sf 
 During this entire processing flow, the size of the data is massively reduced, while the data is converted from a large remote sensing datasets in raster format to highly flexible and small vector data. The reasons to use vector data instead of raster data and the corresponding advantages are explained in the discussion.
 
 
-\section{Technical framework}
+\section{Technical framework for the interface of R and Earth Engine}
 
-To enable R users to request and download data from the EE, the package combines multiple tools like the programming languages R, Python, as well as multiple web services provided by Google like the Fusion Tables, Google Drive and of course the EE. While Google Drive is a general file sharing and storage service for all kinds of files, Google Fusion Table is specifically designed to manage tabular data and enables to upload, manipulate, visualise and share small amounts of data online.
+To enable R users to request and download data from EE, the package combines multiple tools like the programming languages R, Python, as well as multiple web services provided by Google such as the Fusion Tables, Google Drive and the EE. While Google Drive is a general file sharing and storage service for all kinds of files, Google Fusion Table is specifically designed to manage tabular data and enables to upload, manipulate, visualise and share small amounts of data online.
 
-Each tool performs a specific task. In R, the user specifies the requested data and initialises all further processes. In Python, the actual request is generated and send to EE. Because EE can import Fusion Tables, the Google Fusion Table is used to upload local vector data to EE. The EE performs all data processing and exports the data to Google Drive wherefrom it is downloaded and imported into R. 
+Each tool performs a specific task. In R, the user specifies the requested data and initialises all further processes. In Python, the actual request is generated and sent to EE. Because EE can import Fusion Tables, the Google Fusion Table is used to upload local vector data to EE. The EE performs all data processing and exports the data to Google Drive wherefrom it is downloaded and imported into R. 
 
 \begin{center}
 	
@@ -108,15 +108,21 @@ Each tool performs a specific task. In R, the user specifies the requested data 
 	% \vskip 2em%
 \end{center}
 
-Figure \ref{processingFlow} describes an internal processing flow of the \texttt{ee\_grab()} function.
-At the beginning of the function call, the target vector data is uploaded as Fusion Table illustrated with the arrows number 1. 
-The group of processes with the number 2, describes the integration of R and Python and the method Python code is executed from R. The processes with number 3 in, represents the exchange of arguments, or,  how parameters are passed from R to Python. The arrows with the number 4 illustrate the structure of the Python code as executable modules. The processes with the number 5 show the communication of the Python client library and EE while the arrows with number 6 describe the approach to send process info from EE to R. The arrows with number 7 illustrate the import of Fusion Table, the computation and the export of the processed data is and finally the processes with number 8, describes the access from R to Google Drive and the following download and import of the final data into R.
+In the following an internal processing flow of the \texttt{ee\_grab()} function is described (see figure \ref{processingFlow}).
+At the beginning of the function call, the target vector data is uploaded as Fusion Table (1). Next, Python code is executed from R via the system console (2). 
+Following, parameters are passed from R to Python via a flat file (3). Python code is organised as modules and devided in execution script and function script (4). The EE client library translates the execution scripts into a request, sends the request to EE  and reseved a response (5). The response containing process info is to R via a flat file (6). EE processes the request by import the Fusion Table, perform the requested computation and export the data to Google Drive (7).
+Finally Google Drive is accessed from R and the data are downloaded and imported into R subsequently (8).
 Based on the classification of the flowchart of figure \ref{processingFlow}, the following section explains all eight groups of processes in detail.
 
 If installed, the eartEngineGrabR R library is located in a default library folder for all R libraries. In the eartEngineGrabR folder, there is R folder, containing an R script, which defines all R functions used in the package. Furthermore, there is an additional Python folder containing Python scripts divided into execution scripts and function scripts. The function script, again, defines all Python functions. The execution Script, however, is executed from R and uses these functions.
 
-To upload the target vector data the Fusion Table driver in the Geospatial Data Abstraction (GDAL) library is used. To execute GDAL from R, R's ability to invoke function calls is applied. This method will be explained in more detail in the following section. GDAL's \texttt{ogr2ogr()}  function handles the upload process, that converts a variety of geo file formats to a Fusion Table. In Fusion Tables, geometries need to be expressed in the World Geodetic System 1984 (WGS84). Therefore the projection of the vector data uploaded as Fusion Table is converted and if necessary needs to be reprojected in EE.
-The EE is accessed with the EE client library available for Python. To access the EE from R it's necessary to execute Python from R. The integration should enable to pass arguments from R to Python and execute Python code from R. Instead of using a Python wrapper for R like the rPython package, earthEngineGrabR utilizes a simple command line or terminal to execute one language from the other, illustrated by the arrows with the number 1. The \texttt{ee\_grab()} function defined in the R script functions.R, invokes a system call by utilising the command line that executes the python execution script (execution.py) and simultaneously, indicated with the number 2, passes the parameters, to the execution scripts by using a flat file. 
+\subsubsection{Upload target data to Fusion Table}
+
+To upload the target vector data the Fusion Table driver in the Geospatial Data Abstraction (GDAL) library is used. To execute GDAL from R, R's ability to invoke function calls is applied. This method will be explained in more detail in the following section. GDAL's \texttt{ogr2ogr()}  function handles the upload process, that converts a variety of geo file formats to a Fusion Table. In Fusion Tables, geometries need to be expressed in the World Geodetic System 1984 (WGS84). Therefore the projection of the vector data uploaded as Fusion Table is converted.
+
+\subsubsection{Execute Python code from R}
+
+The EE is accessed with the EE client library available for Python. To access the EE from R it's necessary to execute Python from R. The integration should enable to pass arguments from R to Python and execute Python code from R. Instead of using a Python wrapper for R like the rPython package, earthEngineGrabR utilizes a simple command line or terminal to execute one language from the other, illustrated by the arrows with the number 1. The \texttt{ee\_grab()} function defined in the R script functions.R, invokes a system call by utilising the command line that executes the python execution script (execution.py) and simultaneously, passes the parameters, to the execution scripts by using a flat file (2). 
 
 \begin{center}
 	\begin{figure}[h]
