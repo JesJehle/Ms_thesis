@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  26 APR 2018 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  26 APR 2018 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -890,21 +890,21 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 (./master_thesis_full.aux)
 \openout1 = `master_thesis_full.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 159.
-LaTeX Font Info:    ... okay on input line 159.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 159.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 164.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
@@ -973,7 +973,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 159.
+Package hyperref Info: Link coloring OFF on input line 164.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -983,9 +983,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count321
 )
-LaTeX Info: Redefining \ref on input line 159.
-LaTeX Info: Redefining \pageref on input line 159.
-LaTeX Info: Redefining \nameref on input line 159.
+LaTeX Info: Redefining \ref on input line 164.
+LaTeX Info: Redefining \pageref on input line 164.
+LaTeX Info: Redefining \nameref on input line 164.
 
 (./master_thesis_full.out) (./master_thesis_full.out)
 \@outlinefile=\write5
@@ -999,27 +999,27 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'master_thesis_full.bbl' found.
  (./master_thesis_full.bbl)
-Package biblatex Info: Reference section=0 on input line 159.
-Package biblatex Info: Reference segment=0 on input line 159.
+Package biblatex Info: Reference section=0 on input line 164.
+Package biblatex Info: Reference segment=0 on input line 164.
 \c@lstlisting=\count322
- <images/ufcd-logo-e1-a4-color.png, id=108, 139.9629pt x 165.2574pt>
+ <images/ufcd-logo-e1-a4-color.png, id=96, 139.9629pt x 165.2574pt>
 File: images/ufcd-logo-e1-a4-color.png Graphic file (type png)
 
 <use images/ufcd-logo-e1-a4-color.png>
 Package pdftex.def Info: images/ufcd-logo-e1-a4-color.png used on input line 19
-1.
+6.
 (pdftex.def)             Requested size: 113.81102pt x 134.37971pt.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 196.
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 201.
 
-<images/logo_ee_croped.png, id=110, 648.4225pt x 225.84375pt>
+<images/logo_ee_croped.png, id=98, 648.4225pt x 225.84375pt>
 File: images/logo_ee_croped.png Graphic file (type png)
 
 <use images/logo_ee_croped.png>
-Package pdftex.def Info: images/logo_ee_croped.png used on input line 206.
+Package pdftex.def Info: images/logo_ee_croped.png used on input line 211.
 (pdftex.def)             Requested size: 284.52756pt x 99.0993pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
@@ -1027,14 +1027,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/ufcd-logo-e1-a4-c
 olor.png> <./images/logo_ee_croped.png>]
-<images/artWork_croped_2.png, id=119, 915.42pt x 1204.5pt>
+<images/artWork_croped_2.png, id=107, 915.42pt x 1204.5pt>
 File: images/artWork_croped_2.png Graphic file (type png)
 
 <use images/artWork_croped_2.png>
-Package pdftex.def Info: images/artWork_croped_2.png used on input line 219.
+Package pdftex.def Info: images/artWork_croped_2.png used on input line 224.
 (pdftex.def)             Requested size: 455.24408pt x 598.99542pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 219--220
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 224--225
  [] 
  []
 
@@ -1045,9 +1045,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 19.
 
-Overfull \hbox (2.67204pt too wide) in paragraph at lines 83--83
- [][] [][]\OT1/ppl/m/n/12 Internal lim-i-ta-tions of EE and what this im-plies 
-for the earth-Engine- 
+Overfull \hbox (0.60895pt too wide) in paragraph at lines 87--87
+ [][] [][]\OT1/ppl/m/n/12 Suggestions of an op-ti-mal fur-ther de-vel-op-ment o
+f the earth- 
  []
 
 )
@@ -1077,7 +1077,7 @@ ob-ser-va-tion pro-grammes.
  []
 
 [2]
-<images/traditional_acquisition-cropped.pdf, id=191, 722.7pt x 327.47343pt>
+<images/traditional_acquisition-cropped.pdf, id=177, 722.7pt x 327.47343pt>
 File: images/traditional_acquisition-cropped.pdf Graphic file (type pdf)
 
 <use images/traditional_acquisition-cropped.pdf>
@@ -1145,7 +1145,7 @@ ta-tion Data (CHIRPS)
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\\' on input line 67.
 
-[11] <images/design_function-cropped.pdf, id=357, 722.7pt x 373.395pt>
+[11] <images/design_function-cropped.pdf, id=343, 722.7pt x 373.395pt>
 File: images/design_function-cropped.pdf Graphic file (type pdf)
 
 <use images/design_function-cropped.pdf>
@@ -1153,7 +1153,7 @@ Package pdftex.def Info: images/design_function-cropped.pdf used on input line
 80.
 (pdftex.def)             Requested size: 426.79134pt x 220.51195pt.
  [12 <./images/design_function-cropped.pdf>] <images/processing_flow_big.pdf, i
-d=507, 722.7pt x 542.025pt>
+d=493, 722.7pt x 542.025pt>
 File: images/processing_flow_big.pdf Graphic file (type pdf)
 
 <use images/processing_flow_big.pdf>
@@ -1165,12 +1165,12 @@ Package pdftex.def Info: images/processing_flow_big.pdf used on input line 103.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [13]
-<images/concole_connection_big-cropped.pdf, id=516, 722.7pt x 345.54094pt>
+<images/concole_connection_big-cropped.pdf, id=501, 722.7pt x 345.54094pt>
 File: images/concole_connection_big-cropped.pdf Graphic file (type pdf)
 
 <use images/concole_connection_big-cropped.pdf>
 Package pdftex.def Info: images/concole_connection_big-cropped.pdf used on inpu
-t line 124.
+t line 129.
 (pdftex.def)             Requested size: 426.79134pt x 204.06245pt.
 
 
@@ -1178,7 +1178,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14 <./images/processing_flow_big.pdf>] [15 <./images/concole_connection_big-cr
 opped.pdf>] [16]
-Overfull \hbox (11.07072pt too wide) in paragraph at lines 166--167
+Overfull \hbox (11.07072pt too wide) in paragraph at lines 171--172
 \OT1/ppl/m/n/12 The earth-Engine-GrabR pack-age has sev-eral pack-age de-pen-de
 n-cies in R and Python.
  []
@@ -1189,7 +1189,7 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 	\end{tabularx}
+l.196 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1200,7 +1200,7 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 	\end{tabularx}
+l.196 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1211,7 +1211,7 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 	\end{tabularx}
+l.196 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1222,19 +1222,7 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 	\end{tabularx}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 	\end{tabularx}
+l.196 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1246,7 +1234,19 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 	\end{tabularx}
+l.196 	\end{tabularx}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1256,41 +1256,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [17]) (./chapters/results.tex [18]
 Chapter 2.
-<images/territories.pdf, id=651, 578.16pt x 578.16pt>
+<images/territories.pdf, id=634, 578.16pt x 578.16pt>
 File: images/territories.pdf Graphic file (type pdf)
 
 <use images/territories.pdf>
-Package pdftex.def Info: images/territories.pdf used on input line 12.
+Package pdftex.def Info: images/territories.pdf used on input line 13.
 (pdftex.def)             Requested size: 199.16928pt x 199.16547pt.
 
-Underfull \hbox (badness 1990) in paragraph at lines 19--20
-\OT1/ppl/m/n/12 find co-vari-ates for the in-ten-sity of
- []
-
-
-Underfull \hbox (badness 2503) in paragraph at lines 19--20
-\OT1/ppl/m/n/12 il-le-gally killed ele-phants in Africa.
- []
-
-
-Underfull \hbox (badness 3333) in paragraph at lines 19--20
-\OT1/ppl/m/n/12 You have ac-cess to data col-lected
- []
-
-
-Underfull \hbox (badness 2181) in paragraph at lines 22--23
+Underfull \hbox (badness 2181) in paragraph at lines 24--25
 []\OT1/ppl/m/n/12 Because the study area is frag-
  []
 
 [19
 
  <./images/territories.pdf>]
-<images/install_authentication.png, id=666, 1927.2pt x 750.805pt>
+<images/install_authentication.png, id=649, 1927.2pt x 750.805pt>
 File: images/install_authentication.png Graphic file (type png)
 
 <use images/install_authentication.png>
 Package pdftex.def Info: images/install_authentication.png used on input line 5
-0.
+3.
 (pdftex.def)             Requested size: 426.79134pt x 166.26596pt.
 
 
@@ -1312,7 +1297,7 @@ l.103 	\begin{figure}[H]
                         
 Option `H' ignored and `p' used.
 
-<images/sample_session_1-cropped.pdf, id=685, 761.84625pt x 1228.59pt>
+<images/sample_session_1-cropped.pdf, id=677, 761.84625pt x 1228.59pt>
 File: images/sample_session_1-cropped.pdf Graphic file (type pdf)
 
 <use images/sample_session_1-cropped.pdf>
@@ -1324,77 +1309,392 @@ Package pdftex.def Info: images/sample_session_1-cropped.pdf used on input line
 LaTeX Warning: Float too large for page by 10.42973pt on input line 109.
 
 [22] [23 <./images/sample_session_1-cropped.pdf>]
-<images/stripes-cropped.pdf, id=719, 614.295pt x 617.30624pt>
+<images/stripes-cropped.pdf, id=704, 614.295pt x 617.30624pt>
 File: images/stripes-cropped.pdf Graphic file (type pdf)
 
 <use images/stripes-cropped.pdf>
-Package pdftex.def Info: images/stripes-cropped.pdf used on input line 122.
+Package pdftex.def Info: images/stripes-cropped.pdf used on input line 128.
 (pdftex.def)             Requested size: 199.16928pt x 200.14175pt.
 
-Underfull \hbox (badness 1715) in paragraph at lines 130--131
-\OT1/ppl/m/n/12 vey data con-sist-ing of the num-ber
- []
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 133--136
-\OT1/ppl/m/n/12 avail-able as shape-files. Fig-ure []2.4[]
- []
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
 
 
-Underfull \hbox (badness 5533) in paragraph at lines 133--136
-\OT1/ppl/m/n/12 shows the cov-er-age for Tan-za-nia.
- []
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 133--136
-\OT1/ppl/m/n/12 You are in-ter-ested in the avail-abil-
- []
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 133--136
-\OT1/ppl/m/n/12 re-gions. There-fore you want to
- []
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
 
 
-Underfull \hbox (badness 2961) in paragraph at lines 133--136
-\OT1/ppl/m/n/12 use the jrc-distance-to-surface-water
- []
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 133--136
-\OT1/ppl/m/n/12 vey cov-er-age and only spec-ify the
- []
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 133--136
-\OT1/pcr/m/n/12 jrc[]distanceToWater \OT1/ppl/m/n/12 prod-uct in
- []
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
 
-[24 <./images/stripes-cropped.pdf>]
-<images/stripes_distance_2.pdf, id=745, 601.24625pt x 448.67625pt>
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 142.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 143.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 144.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 144.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 144.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 144.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 144.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 144.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 144.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 145.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 146.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 146.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 146.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 147.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 147.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 147.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 147.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 147.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 147.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 148.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 148.
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 149.
+
+<images/stripes_distance_2.pdf, id=708, 601.24625pt x 448.67625pt>
 File: images/stripes_distance_2.pdf Graphic file (type pdf)
 
 <use images/stripes_distance_2.pdf>
-Package pdftex.def Info: images/stripes_distance_2.pdf used on input line 155.
+Package pdftex.def Info: images/stripes_distance_2.pdf used on input line 157.
 (pdftex.def)             Requested size: 426.79134pt x 318.50075pt.
- [25 <./images/stripes_distance_2.pdf>]
-<images/change_precipitation.pdf, id=761, 1011.78pt x 867.24pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24 <./images/stripes-cropped.pdf>] [25 <./images/stripes_distance_2.pdf>]
+<images/change_precipitation.pdf, id=746, 1011.78pt x 867.24pt>
 File: images/change_precipitation.pdf Graphic file (type pdf)
 
 <use images/change_precipitation.pdf>
-Package pdftex.def Info: images/change_precipitation.pdf used on input line 203
+Package pdftex.def Info: images/change_precipitation.pdf used on input line 205
 .
 (pdftex.def)             Requested size: 455.24408pt x 390.2147pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 203--205
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 205--207
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] [27 <./images/change_precipitation.pdf>]) (./chapters/discussion.tex
-[28]
+) (./chapters/discussion.tex [26] [27 <./images/change_precipitation.pdf>]
 Chapter 3.
 
 Overfull \hbox (6.7156pt too wide) in paragraph at lines 4--7
@@ -1402,64 +1702,67 @@ Overfull \hbox (6.7156pt too wide) in paragraph at lines 4--7
 duc-tion the earth-Engine-
  []
 
-[29
+[28
 
-] [30] [31] [32]
-
-LaTeX Warning: Citation 'reticulate' on page 33 undefined on input line 71.
-
-[33] [34]
-Overfull \hbox (1.53139pt too wide) in paragraph at lines 103--105
-\OT1/ppl/m/n/12 The GEE pro-vides data ex-port to Google Drive and Google Cloud
- Plat-form (GCP).
+] [29] [30] [31] [32] [33]
+Overfull \hbox (4.67278pt too wide) in paragraph at lines 104--104
+[]\OT1/ppl/b/n/14.4 Suggestions of an op-ti-mal fur-ther de-vel-op-ment of the 
+earth-
  []
 
 
-Overfull \hbox (1.5453pt too wide) in paragraph at lines 108--108
+Overfull \hbox (1.5453pt too wide) in paragraph at lines 106--106
 [][]\OT1/ppl/b/n/12 Support the in-ter-nal dis-tri-bu-tion mech-a-nism of EE by
  pro-cess-ing the data prod-
  []
 
-[35] [36]
+[34] [35]
 Chapter 4.
-) [37
+) [36
 
 ]
-Overfull \hbox (20.36897pt too wide) in paragraph at lines 261--261
+Overfull \hbox (20.36897pt too wide) in paragraph at lines 266--266
 \OT1/ppl/m/n/12 dis-tributed agro-hydrological mod-elling''. In: \OT1/ppl/m/it/
 12 Jour-nal of Hy-drol-ogy \OT1/ppl/m/n/12 287.1-4, pp. 279{
  []
 
 
-Overfull \hbox (6.6577pt too wide) in paragraph at lines 261--261
+Overfull \hbox (6.6577pt too wide) in paragraph at lines 266--266
 [][]\OT1/ppl/m/n/12 Google (2015). \OT1/ppl/m/it/12 Google Earth En-gine Terms 
 of Ser-vice\OT1/ppl/m/n/12 . \OT1/ppl/m/sc/12 url\OT1/ppl/m/n/12 : []$\OT1/pcr/
 m/n/12 https : / / earthengine .
  []
 
 
-Overfull \hbox (14.21712pt too wide) in paragraph at lines 261--261
+Overfull \hbox (14.21712pt too wide) in paragraph at lines 266--266
 \OT1/ppl/m/n/12 re-la-tional ag-gre-ga-tion op-er-a-tor gen-er-al-iz-ing group-
 by, cross-tab, and sub-totals''.
  []
 
 
-Overfull \hbox (10.71338pt too wide) in paragraph at lines 261--261
+Overfull \hbox (10.71338pt too wide) in paragraph at lines 266--266
 [][]\OT1/ppl/m/n/12 Iosifescu, Cristina, Ionut Iosifescu, He-len Jenny, and Lor
 enz Hurni (2011). ``Geovite-
  []
 
-[38
+[37
 
-] (./chapters/appendix1.tex [39]
+]
+Overfull \hbox (15.26117pt too wide) in paragraph at lines 266--266
+[][]\OT1/ppl/m/n/12 RStudio. \OT1/ppl/m/it/12 retic-u-late: R In-ter-face to Py
+thon\OT1/ppl/m/n/12 . Ver-sion: 1.6.0.9002. \OT1/ppl/m/sc/12 url\OT1/ppl/m/n/12
+ : []$\OT1/pcr/m/n/12 https : / / github .
+ []
+
+(./chapters/appendix1.tex [38]
 Chapter 5.
-) (./chapters/appendix2.tex [40
+) (./chapters/appendix2.tex [39
 
 ]
 Chapter 6.
 )
 No file master_thesis_full.ind.
-(./chapters/selbststaendigkeit.tex [41
+(./chapters/selbststaendigkeit.tex [40
 
 ]
 Overfull \hbox (2.52751pt too wide) in paragraph at lines 7--8
@@ -1468,38 +1771,29 @@ f-s-mit-tel be-nutzt habe.
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
- [42
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
+ [41
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
  (./master_thesis_full.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
 Package rerunfilecheck Info: File `master_thesis_full.out' has not changed.
-(rerunfilecheck)             Checksum: 9FFD0A969A023BAFA6E58BFAD174EF28;1946.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                master_thesis_full
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: F830BBB08FF4EE3A5F6BE1A78FE98D9A;1795.
 Package logreq Info: Writing requests to 'master_thesis_full.run.xml'.
 \openout1 = `master_thesis_full.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 281.
  ) 
 Here is how much of TeX's memory you used:
- 15419 strings out of 494910
- 238213 string characters out of 6179836
- 690136 words of memory out of 5000000
- 18304 multiletter control sequences out of 15000+600000
+ 15425 strings out of 494910
+ 238365 string characters out of 6179836
+ 690400 words of memory out of 5000000
+ 18311 multiletter control sequences out of 15000+600000
  17718 words of font info for 49 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,11n,45p,1865b,1780s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,45p,1870b,1780s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
@@ -1508,10 +1802,10 @@ ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master_thesis_full.pdf (45 pages, 8673855 bytes).
+Output written on master_thesis_full.pdf (44 pages, 8671675 bytes).
 PDF statistics:
- 953 PDF objects out of 1000 (max. 8388607)
- 805 compressed objects within 9 object streams
- 177 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 937 PDF objects out of 1000 (max. 8388607)
+ 791 compressed objects within 8 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -22,15 +22,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Design and functionality of the \\ data manipulation}{11}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Technical framework for the interface of R and EE}{13}{section.1.3}
+\contentsline {section}{\numberline {1.3}Technical framework for the interface of R and Earth Engine}{13}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Sending parameters}{15}{section*.6}
+\contentsline {subsubsection}{Upload data to Fusion Table}{14}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Organize Python code os modules}{16}{section*.7}
+\contentsline {subsubsection}{Integration of R and Python}{14}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Use of the client library}{16}{section*.8}
+\contentsline {subsubsection}{Organize Python code as modules}{16}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Communication of the client library and EE}{16}{section*.9}
+\contentsline {subsubsection}{Communication of the client library, EE and Google Drive}{16}{section*.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Parallel processing of data products}{17}{section*.10}
 \defcounter {refsection}{0}\relax 
@@ -42,64 +42,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Results}{19}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Szenario}{19}{section.2.1}
+\contentsline {section}{\numberline {2.1}Large-scale analysis}{19}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Large-scale analysis}{20}{section.2.2}
+\contentsline {section}{\numberline {2.2}Small-scale analysis}{24}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Small-scale analysis}{24}{section.2.3}
+\contentsline {section}{\numberline {2.3}Time-series analysis}{25}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Time-series analysis}{25}{section.2.4}
+\contentsline {chapter}{\numberline {3}Discussion}{28}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Summary}{27}{section.2.5}
+\contentsline {section}{\numberline {3.1}Limits and problems of the current version of the earthEngineGrabR}{28}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Discussion}{29}{chapter.3}
+\contentsline {subsubsection}{Vector data processing restriction}{29}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Limits and problems of the current version of the earthEngineGrabR}{29}{section.3.1}
+\contentsline {subsubsection}{Limited number of available data products and their possible properties}{29}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vector data processing restriction}{30}{section*.13}
+\contentsline {subsubsection}{No control of projection}{29}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Limited number of available data products and their possible properties}{30}{section*.14}
+\contentsline {subsubsection}{Multiple dependencies, operating system interoperability, confusing authentication process}{29}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{No control of projection}{30}{section*.15}
+\contentsline {section}{\numberline {3.2}Further development of the earthEngineGrabR}{30}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Multiple dependencies, operating system interoperability, confusing authentication process}{30}{section*.16}
+\contentsline {subsection}{\numberline {3.2.1}Implementation of additional features}{30}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Further development of the earthEngineGrabR}{31}{section.3.2}
+\contentsline {subsubsection}{Add more data products}{30}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Implementation of additional features}{31}{subsection.3.2.1}
+\contentsline {subsubsection}{Extend the properties of the data products}{31}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Add more data products}{31}{section*.17}
+\contentsline {subsubsection}{Internal iterations as a workaround for the vector data processing restriction}{31}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Extend the properties of the data products}{32}{section*.18}
+\contentsline {subsubsection}{Simplify the authentication process}{31}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Internal iterations as a workaround for the vector data processing restriction}{32}{section*.19}
+\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{32}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Simplify the authentication process}{32}{section*.20}
+\contentsline {subsection}{\numberline {3.2.2}Improve the framework of the earthEngineGrabR}{32}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{33}{section*.21}
+\contentsline {section}{\numberline {3.3}Internal strengths, weaknesses and limitations of EE and their impact on the earthEngineGrabR}{33}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Improve the framework of the earthEngineGrabR}{33}{subsection.3.2.2}
+\contentsline {subsubsection}{System throughput and performance}{33}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Internal limitations of EE and what this implies for the earthEngineGrabR}{34}{section.3.3}
+\contentsline {subsubsection}{Straights of EE}{33}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Limitation, strengths and weaknesses of EE}{34}{subsection.3.3.1}
+\contentsline {subsubsection}{Weaknesses and limitations of EE}{33}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{System throughput an performance}{34}{section*.22}
+\contentsline {subsection}{\numberline {3.3.1}Suggestions of an optimal further development of the earthEngineGrabR}{34}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Straights of EE}{34}{section*.23}
+\contentsline {subsubsection}{Support the internal distribution mechanism of EE by processing the data products in parallel}{34}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Weaknesses of EE}{34}{section*.24}
+\contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{34}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}What does that mean for the earthEngineGrabR?}{35}{subsection.3.3.2}
+\contentsline {subsubsection}{Use EE's strengths to generate the data products}{35}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Support the internal distribution mechanism of EE by processing the data products in parallel}{35}{section*.25}
+\contentsline {chapter}{\numberline {4}Conclusion}{36}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{35}{section*.26}
+\contentsline {chapter}{\numberline {5}This is Appendix 1...}{39}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Use EE's strengths to generate the data products}{36}{section*.27}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusion}{37}{chapter.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}This is Appendix 1...}{40}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}This is appendix 2...}{41}{chapter.6}
+\contentsline {chapter}{\numberline {6}This is appendix 2...}{40}{chapter.6}

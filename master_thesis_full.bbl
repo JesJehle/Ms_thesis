@@ -19,6 +19,69 @@
 
 \refsection{0}
   \sortlist[entry]{nyt/global}
+    \entry{beale2017spatial}{article}{}
+      \name{author}{9}{}{%
+        {{uniquename=0,hash=706aa2c4187f9f7fce2aa07a74507133}{%
+           family={Beale},
+           family_i={B\bibinitperiod},
+           given={Colin\bibnamedelima M},
+           given_i={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{uniquename=0,hash=749971ea84887e346c6c48401b051b32}{%
+           family={Hauenstein},
+           family_i={H\bibinitperiod},
+           given={Severin},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=8533d4deee410a502b26f9c8f496fa72}{%
+           family={Mduma},
+           family_i={M\bibinitperiod},
+           given={Simon},
+           given_i={S\bibinitperiod}}}%
+        {{uniquename=0,hash=d60ac28fa0896588fc91746b00f392c8}{%
+           family={Frederick},
+           family_i={F\bibinitperiod},
+           given={Howard},
+           given_i={H\bibinitperiod}}}%
+        {{uniquename=0,hash=37307d5ee7148f3a776c1f24db8aea2b}{%
+           family={Jones},
+           family_i={J\bibinitperiod},
+           given={Trevor},
+           given_i={T\bibinitperiod}}}%
+        {{uniquename=0,hash=805c85d7eae50e70aa95ad62e14d0af6}{%
+           family={Bracebridge},
+           family_i={B\bibinitperiod},
+           given={Claire},
+           given_i={C\bibinitperiod}}}%
+        {{uniquename=0,hash=baceecf846d8605d9ed4ab36530030b2}{%
+           family={Maliti},
+           family_i={M\bibinitperiod},
+           given={Honori},
+           given_i={H\bibinitperiod}}}%
+        {{uniquename=0,hash=efedc41b2bff4cdaed638b9aea3dc122}{%
+           family={Kija},
+           family_i={K\bibinitperiod},
+           given={Hamza},
+           given_i={H\bibinitperiod}}}%
+        {{uniquename=0,hash=999124d7c3fff74a7f025d30b6662e9f}{%
+           family={Kohi},
+           family_i={K\bibinitperiod},
+           given={Edward\bibnamedelima M},
+           given_i={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6d850e8a65625e5cac4f9dad7259adc1}
+      \strng{fullhash}{bf62556e8321589f5a94f1a9ae55dfd5}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2017}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biological Conservation}
+      \field{title}{Spatial analysis of aerial survey data reveals correlates of elephant carcasses within a heavily poached ecosystem}
+      \field{year}{2017}
+    \endentry
     \entry{bogh2004incorporating}{article}{}
       \true{moreauthor}
       \name{author}{10}{}{%
@@ -93,6 +156,43 @@
       \field{year}{2004}
       \field{pages}{279\bibrangedash 299}
       \range{pages}{21}
+    \endentry
+    \entry{burn2011global}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=11fc2b4d958ea892734a3fa7df290697}{%
+           family={Burn},
+           family_i={B\bibinitperiod},
+           given={Robert\bibnamedelima W},
+           given_i={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{uniquename=0,hash=5507bd8b07337f507025201480d30410}{%
+           family={Underwood},
+           family_i={U\bibinitperiod},
+           given={Fiona\bibnamedelima M},
+           given_i={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{uniquename=0,hash=6f3a55f0d873707d57bdc5a70c07a7ef}{%
+           family={Blanc},
+           family_i={B\bibinitperiod},
+           given={Julian},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{cebe98affff9695109c88f15f7ad1335}
+      \strng{fullhash}{957f417fe53eb207c98482aa985b471c}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2011}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PLoS one}
+      \field{number}{9}
+      \field{title}{Global trends and factors associated with the illegal killing of elephants: a hierarchical Bayesian analysis of carcass encounter data}
+      \field{volume}{6}
+      \field{year}{2011}
+      \field{pages}{e24165}
+      \range{pages}{-1}
     \endentry
     \entry{butler2014earth}{misc}{}
       \true{moreauthor}
@@ -863,6 +963,25 @@
       \field{labeltitlesource}{title}
       \field{title}{Google Earth Engine Asset Manager with Addons}
       \field{year}{2017}
+    \endentry
+    \entry{reticulate}{manual}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0040cd1e256cd59f8101f5f8c7a93166}{%
+           family={RStudio},
+           family_i={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0040cd1e256cd59f8101f5f8c7a93166}
+      \strng{fullhash}{0040cd1e256cd59f8101f5f8c7a93166}
+      \field{sortinit}{R}
+      \field{sortinithash}{c7387613477035a752d935acfc3e3ea2}
+      \field{labelyear}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Version: 1.6.0.9002}
+      \field{title}{reticulate: R Interface to Python}
+      \verb{url}
+      \verb https://github.com/rstudio/reticulate
+      \endverb
     \endentry
     \entry{salomonson2002overview}{inproceedings}{}
       \name{author}{5}{}{%

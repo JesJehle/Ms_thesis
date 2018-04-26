@@ -5,18 +5,18 @@ The previous sample sessions in the results section showed the ability of the ea
 Compared to the traditional method described in the introduction the earthEngineGrabR is superior in various ways:
 The use of the earthEngineGrabR to acquire remote sensing data for a specific time, region and aggregation provide significant savings of time, processing resources and labour. To acquire, the data for the illustrated use-cases was a matter of minutes, even the aggregation of daily precipitation satellite imagery for 15 years required less than 15 m. The necessary processing resources for the computation was outsourced entirely, while there was only a minimum of load on the local processing resources. Further, no manual preprocessing or integration of different data sources was necessary, and no external GIS software had to be used. The entire process could be controlled from within R, and only a minimum of GIS knowledge and no experience with Python or the EE Python API was required. With the earthEngineGrabR, the user not only could harvest data products from the earth engine data catalogue but with the aggregation process controlled by the user, could generate new data dependent on the research questions. 
 
-Therefore, for the described use cases, it can be said, that the earthEngineGrabR strongly simplified and at the same time extended the possibility of the user to acquire remote sensing data for there research questions. Further, the fast acquisition and preprocessing of the remote sensing data enables a more interactive excess to environmental variables.
+Therefore, for the described use cases, I can say that the earthEngineGrabR strongly simplified and at the same time extended the possibility of the user to acquire remote sensing data for there research questions. Further, the fast acquisition and preprocessing of the remote sensing data enables a more interactive excess to environmental variables.
 Fast access to environmental variables enables fast descriptive analyses, and the test of various hypothesises before the modelling process.
 Thereby, the package shows the potential of simplified access to the capabilities of the GEE for the scientific work.
 
 
 \section{Limits and problems of the current version of the earthEngineGrabR}
 
-Although in some cases, the use of the earthEngineGrabR package offers some significant advantages to the scientific work, the current version is still limited in many ways. 
+Although in many cases, the use of the earthEngineGrabR package offers significant advantages to the scientific work, the current version is still limited in many ways. 
 
 \subsubsection{Vector data processing restriction}
 
-Mainly, due to the current upload limit of the fusion table API, it is not possible to process vector data with more than 5000 features. This small size certainly restricts the application of the package and would make it uncomely for most scientific projects. 
+Mainly, due to the current upload limit of the Fusion Table API, it is not possible to process vector data with more than 5000 features. This small size certainly restricts the application of the package and would make it uncomely for most scientific projects. 
 
 \subsubsection{Limited number of available data products and their possible properties}
 
@@ -24,7 +24,7 @@ Furthermore, the choice of available data products and their properties in the e
 
 \subsubsection{No control of projection}
 
-Another problem that is, that during the upload process all vector data is transformed to geographic reference system WGS84. That is that all the processing in EE is performed without a projection unless you call the WGS84 a projection. Therefore all projections of the original vector data are lost. The output of the \texttt{ee\_grab()} function does not reflect the projection of the imported vector data. The conversion to WGS84 is unproblematic as long as there is no calculation of areas. Since the spatial reducer of the earthEngineGrabR only allows simple statistics like mean, median, mode, min and max, there is no calculation of areas, and the conversion is harmless to the results of the analysis. However, in most cases, it would require a manual reprojection of the results by the user to combine the data collected by the earthEngineGrabR with data that is already at hand. Additional control of the projection would be helpful.
+Another problem is, that during the upload process all vector data is transformed to geographic reference system WGS84. That is that all the processing in EE is performed without a projection unless you call the WGS84 a projection. Therefore all projections of the original vector data are lost. The output of the \texttt{ee\_grab()} function does not reflect the projection of the imported vector data. The conversion to WGS84 is unproblematic as long as there is no calculation of areas. Since the spatial reducer of the earthEngineGrabR only allows simple statistics like mean, median, mode, min and max, there is no calculation of areas, and the conversion is harmless to the results of the analysis. However, in most cases, it would require a manual reprojection of the results by the user to combine the data collected by the earthEngineGrabR with data that is already at hand. Additional control of the projection would be helpful.
 
 \subsubsection{Multiple dependencies, operating system interoperability, confusing authentication process}
 
@@ -42,7 +42,7 @@ The further development can be divided into the improvement of the framework and
 
 \subsection{Implementation of additional features}
 
-Below, some additional extensions to the earthEngineGrabR are described that would rectify most of the addressed shortcomings.
+Below, some additional extensions to the earthEngineGrabR are described that will rectify most of the addressed shortcomings.
 
 \subsubsection{Add more data products}
 
@@ -70,9 +70,9 @@ Independently of the different approaches of how to provide extensibility, sever
 
 To improve the framework for the base functionality of the earthEngineGrabR package the interface of R and Python could be further developed. Instead of an interface depending on the console which invoiced system calls in the way described in the methods section the new published reticulate package of r-studio could be used (\cite{reticulate}). The use of reticulate would offer some significant benefits. The reticulate package provides the translation of R and Python data types. The direct translation of data from R to Python would overdue the use of a flat file connection to pass parameters or processing info. Further, reticulate contains a multitude of helper functions that ease the use of R in combination with Python (\texttt{py\_available()}, for instance, checks for a Python version on the system). While the execution of Pythons scripts with a console, require the Python code organised as scripts, with reticulate it's possible to run Python code directly in R and arrange the code in smaller, more flexible chunks, what is essential when it comes to tools that provide the option to expand the earthEngineGrabR with additional data products and functionalities. The use of the reticulate package also would simplify the installation of python dependencies, because they can be performed in R (\texttt{py\_install()} installs python libraries). Finlay, replace the invoiced system calls would solve the problem due to missing environmental variables. Because, most system call commands like \texttt{python} and \texttt{pip} could be replaced with functions of the reticulate package, the internal paths of these commands is irrelevant for the execution. The retuculate package would manage the execution and provide interoperability for all operating systems.
 
-In summary, the reticulate package would provide a more precise, less error-prone and more flexible interface of R and Python then the currently implemented use of system calls.
+In summary, the reticulate package provide a more precise, less error-prone and more flexible interface of R and Python then the currently implemented use of system calls.
 
-\section{Internal limitations of EE and what this implies for the earthEngineGrabR}
+\section{Internal strengths, weaknesses and limitations of EE and their impact on the earthEngineGrabR}
 
 Besides the discussed limitation, there are also limitations of EE, which in contrast to the limitations of the earthEngineGrabR, can't be avoided by further development of the package. 
 These inherent limitations have a strong influence on the operations that can be performed efficiently with the package.
@@ -80,9 +80,7 @@ Accessory to the suggested improvement of the framework and the
 implementation of additional features, the limitations and strengths of EE pretend a direction to the further development of the package.
 
 
-\subsection{Limitation, strengths and weaknesses of EE}
-
-\subsubsection{System throughput an performance}
+\subsubsection{System throughput and performance}
 
 A reason for EE's performance is its ability to distribute and manage complex computations across many machines efficiently. There is an almost linear relationship of throughput (pixels/sec) with the number of machines (\cite{gorelick2017google}).
 Although EE can execute and manage extensive computations, the underlying infrastructure consists of clusters of low-end servers, and there is a hard limit on the amount of data that can be brought to any individual server. The current Remote procedure call (RPC) and caching system limit the size of an object to 100 MB. An option to configure machines in earth engine is not available.
@@ -96,14 +94,14 @@ The architecture of EE performers well on per-pixel and finite neighbourhood ope
 Furthermore, it is also highly optimised for statistical operations
 that can be applied to a collection of images, such as computing statistics on a time-series stack of images. This way, the EE can easily handle very deep stacks (i.e., millions of images; trillions of pixels). 
 
-\subsubsection{Weaknesses of EE}
+\subsubsection{Weaknesses and limitations of EE}
 
 It performs poorly for non-local operations in which a local value can be affected by arbitrarily distant inputs, such as watershed analysis or clustering algorithms. Further due to the caching limit of 100 MB, operations that require a significant amount of data allocatable at the same time, such as training many machine learning models or operations that involve long-running iterative processes, such as finite element analysis or agent-based models cannot be performed efficiently. 
 
-Another significant limitation is the export limit of the GEE to Google Drive.
-The GEE provides data export to Google Drive and Google Cloud Platform (GCP). While the export to GCP is fast and works with extensive datasets, the export to Google Drive is limited to 2 GB and proportionally slow. Due to the reason, that outside the USA the always free tier of the GCP is not available, the export to Google Drive is the only free option. Discarding the official limit of 2 GB, it has shown that keeping the size of the export small,  speeds up the process dramatically while export files larger 1 GB can result in hours of computation time. 
+Another significant limitation is the export limit of the EE to Google Drive.
+The EE provides data export to Google Drive and Google Cloud Platform (GCP). While the export to GCP is fast and works with extensive datasets, the export to Google Drive is limited to 2 GB and proportionally slow. Due to the reason, that outside the USA the always free tier of the GCP is not available, the export to Google Drive is the only free option. Discarding the official limit of 2 GB, it has shown that keeping the size of the export small,  speeds up the process dramatically while export files larger 1 GB can result in hours of computation time. 
 
-\subsection{What does that mean for the earthEngineGrabR?}
+\subsection{Suggestions of an optimal further development of the earthEngineGrabR}
 
 \subsubsection{Support the internal distribution mechanism of EE by processing the data products in parallel}
 
