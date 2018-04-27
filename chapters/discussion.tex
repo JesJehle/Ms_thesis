@@ -2,12 +2,12 @@
 
 
 The previous sample sessions in the results section showed the ability of the earthEngineGrabR to acquire remote sensing data for various research questions.
-Compared to the traditional method described in the introduction the earthEngineGrabR is superior in various ways:
+Compared to the standard approach described in the introduction the earthEngineGrabR is superior in various ways:
 The use of the earthEngineGrabR to acquire remote sensing data for a specific time, region and aggregation provide significant savings of time, processing resources and labour. To acquire, the data for the illustrated use-cases was a matter of minutes, even the aggregation of daily precipitation satellite imagery for 15 years required less than 15 m. The necessary processing resources for the computation was outsourced entirely, while there was only a minimum of load on the local processing resources. Further, no manual preprocessing or integration of different data sources was necessary, and no external GIS software had to be used. The entire process could be controlled from within R, and only a minimum of GIS knowledge and no experience with Python or the EE Python API was required. With the earthEngineGrabR, the user not only could harvest data products from the earth engine data catalogue but with the aggregation process controlled by the user, could generate new data dependent on the research questions. 
 
 Therefore, for the described use cases, I can say that the earthEngineGrabR strongly simplified and at the same time extended the possibility of the user to acquire remote sensing data for there research questions. Further, the fast acquisition and preprocessing of the remote sensing data enables a more interactive excess to environmental variables.
 Fast access to environmental variables enables fast descriptive analyses, and the test of various hypothesises before the modelling process.
-Thereby, the package shows the potential of simplified access to the capabilities of the GEE for the scientific work.
+Thereby, the package shows the potential of simplified access to the capabilities of EE for the scientific work.
 
 
 \section{Limits and problems of the current version of the earthEngineGrabR}
@@ -79,15 +79,12 @@ These inherent limitations have a strong influence on the operations that can be
 Accessory to the suggested improvement of the framework and the
 implementation of additional features, the limitations and strengths of EE pretend a direction to the further development of the package.
 
-
-\subsubsection{System throughput and performance}
-
 A reason for EE's performance is its ability to distribute and manage complex computations across many machines efficiently. There is an almost linear relationship of throughput (pixels/sec) with the number of machines (\cite{gorelick2017google}).
 Although EE can execute and manage extensive computations, the underlying infrastructure consists of clusters of low-end servers, and there is a hard limit on the amount of data that can be brought to any individual server. The current Remote procedure call (RPC) and caching system limit the size of an object to 100 MB. An option to configure machines in earth engine is not available.
 
 Users can only express computations by using the parallel processing primitives provided in the EE client library, and some non-parallelizable operations just cannot be performed efficiently in this environment.
 
-\subsubsection{Straights of EE}
+\subsubsection{Strengths of EE}
 
 The architecture of EE performers well on per-pixel and finite neighbourhood operations such as band-math, morphological operations, spectral unmixing, template matching and texture analysis and can easily combine such operations in long chains (hundreds to thousands). 
 
@@ -133,21 +130,14 @@ EE's internal strengths could be used to generate a number of data products like
 	\subitem Normalised Difference Water Index (NDWI)
 	\subitem Enhanced Vegetation Index (EVI)
 	\subitem  Normalized Difference Built-up Index (NDBI)
-	\subitem  Normalized Difference Built-up Index (NDBI)
 	\item Forest Change with Hansen First Change Map
 	\item Changes over time of different datasets in EE
 \end{itemize}
 
 
 
-\chapter{Conclusion}
 
-
-In progress
-First package that users the GEE as backend service.
-Great potential to meet needs to generate unique data products, which simplify and push research.
-
-
+\section{Outlook}
 
 
 

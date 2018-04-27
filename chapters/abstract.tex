@@ -8,4 +8,7 @@ By using the Earth Engine (EE) the acquisition and preprocessing of large-scale 
 However, the EE API is accessed by a client library, whose application requires additional effort to learn. Furthermore, the client library is currently only available in JavaScript and Python. Therefore, scientists using the programming language R cannot apply the client library.
 
 In the present work, a simplified access to capabilities of the EE for the R programming environment is presented.
-The thesis aims to develop an R package - earthEngineGrabR - that simplifies the acquisition of remote sensing data by using the EE as a backend-service to retrieve selected data products for a given region and time of interest in an analysis-ready format. Any processing of the remote sensing data shall entirely be outsourced to EE and only the derived data products, are exported and imported into R. 
+The thesis aims to develop an R package - earthEngineGrabR - that simplifies the acquisition of remote sensing data by building an interface of R and EE. The interface enables to use EE as a backend-service to retrieve selected data products for a given region and time of interest in an analysis-ready format. Any acquiring and processing of the remote sensing data is entirely outsourced to EE and only the derived data products, are exported and imported into R. In a number of use cases, the earthEngineGrabR showed great potential to simplify and extend the users possibility to acquire remote sensing data for their research question. Compared to the standard approach of downloading and preprocessing the data on a local system, the earthEngineGrabR provided significant savings of time and resources while enabling the fast acquisition of processing intensive data products.
+
+
+ 

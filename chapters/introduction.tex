@@ -1,4 +1,4 @@
-\section{Introduction}
+\chapter{Introduction}
 
 
 To model environmental systems, data about the system  and resources to process this data to derive insight, is needed. Remote sensing data, such as satellite imagery and derived data products, such as land cover, vegetation indices, elevation models, or precipitation, are integral parts of environmental system models. 
@@ -73,23 +73,17 @@ To summaries the problem statement of the present thesis:
 	
 \end{itemize}
 
-The simplified access to the capabilities of EE would enable scientists to utilise the massive stack of freely available remote sensing data for their research projects without additional costs.
-
-This work is inspired by the attempt to develop such simplified access to capabilities of the EE for the R programming environment.
+The simplified access to the capabilities of EE would enable scientists to utilise the massive stack of freely available remote sensing data for their research projects without additional costs. This work is inspired by the attempt to develop such simplified access to capabilities of the EE for the R programming environment.
 
 The master's thesis aims is to develop an R package - the earthEngineGrabR, which simplifies the acquisition of remote sensing data for the analysis in R. This should be accomplished by building an interface between R and EE.
 The interface should enable to use EE as a backend-service to retrieve selected data sets for a given region and time of interest in an analysis-ready format. The interface is supposed to extract data from the EE data catalogue while providing extensive control over temporal and spatial resolution. 
-Any processing of the remote sensing data shall entirely be outsourced to the EE and only the derived data products, are exported from EE and imported in R. 
-
-This way, the developed interface exploits two of EE's significant advantages. One is the public data catalogue of over 11 petabytes of remote sensing data in an analysis-ready format, and the other is its high-performance, intrinsically parallel computation service to process such massive data.
+Any processing of the remote sensing data shall entirely be outsourced to EE and only the derived data products, are exported from EE and imported in R. This way, the developed interface exploits two of EE's significant advantages. One is the public data catalogue of over 11 petabytes of remote sensing data in an analysis-ready format, and the other is its high-performance, intrinsically parallel computation service to process such massive data.
 
 
-
-To understand the reasons for EE's performance EE's underlying system architecture and the computation service need to be introduced.
-The following section gives a brief introduction to the provided data catalog and the system architecture that is essential to understand EE's performancee.
+The following section is supposed to point out EE's addvantages and introduces the underling system architecture and computation service that enables EE's performance. First, a brief introduction to the provided data catalog is given, next the reasons for EE's performance are explained.
 
 
-\section{Introduction to Earth Engine}
+\section{Advantages of the Earth Engine}
 
 \subsection{The public data catalogue}
 
@@ -100,7 +94,7 @@ For instance, the filtered Landsat scenes can be aggregated to a median composit
 
 What makes EE that performant is the storage system as a tile database with built-in pyramiding architecture in combination with the system architecture and several data distribution models (\cite{gorelick2017google}).
 
-\subsection{Reasons of the performance of Earth Engine}
+\subsection{Reasons for the performance of Earth Engine}
 
 \subsubsection{The tile architecture}
 
