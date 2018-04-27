@@ -74,24 +74,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{33}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Improve the framework of the earthEngineGrabR}{33}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Improve the integration of R and Python}{33}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Internal strengths, weaknesses and limitations of EE and their impact on the earthEngineGrabR}{34}{section.4.3}
+\contentsline {section}{\numberline {4.3}Internal strengths, weaknesses and limitations of EE and their incorporation in the earthEngineGrabR}{34}{section.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Strengths of EE}{34}{section*.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Weaknesses and limitations of EE}{34}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Suggestions of an optimal further development of the earthEngineGrabR}{35}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}The optimal application of EE in the earthEngineGrabR}{35}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Support the internal distribution mechanism of EE by processing the data products in parallel}{35}{section*.24}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{35}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Use EE's strengths to generate the data products}{36}{section*.26}
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusion}{37}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}This is Appendix 1...}{41}{chapter.6}
+\contentsline {chapter}{\numberline {6}This is Appendix 1...}{40}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}This is appendix 2...}{42}{chapter.7}
+\contentsline {chapter}{\numberline {7}This is appendix 2...}{41}{chapter.7}

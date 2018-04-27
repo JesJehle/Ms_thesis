@@ -46,7 +46,7 @@ Below, some additional extensions to the earthEngineGrabR are described that wil
 
 \subsubsection{Add more data products}
 
-The most important extension is the implementation of additional data products. All data products available within the EE public data catalogue can be considered. To provide data products covering weather and climate variables, the implementation of additional products based on ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer) and MODIS would be reasonable. Furthermore, a data product to provide vegetation indices calculated form Sentinel or Landsat satellite imagery would be exciting. This product, for example, would enable to choose a time interval in months, maximum cloud cover to filter the image collection, whether to use Landsat or Sentinel imagery to calculate the Index and a selection of possible vegetation indexes like the NDVI or NDBI (Normalized Difference Built-up Index). 
+The most important extension is the implementation of additional data products. All data products available within the EE public data catalogue can be considered. To provide data products covering weather and climate variables, the implementation of additional products based on ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer) and MODIS would be reasonable. Furthermore, a data product to provide vegetation indices calculated form Sentinel or Landsat satellite imagery would be interestingg.
 
 \subsubsection{Extend the properties of the data products}
 To provide a smaller temporal resolution, the package could implement an additional monthInterval parameter, which filters for specific months. This would result in the possibility to specify year and month of the interval of interest and allow to acquire the chirps-precipitation and jrc-distance-to-surface-water product in a monthly resolution.
@@ -66,13 +66,13 @@ To simplify the authentication process, it would be relevant to replace the manu
 Finally, it would be necessary to consider a possibility to add new data products by the user. To achieve this either the earthEngineGrabR has to provide a function that works with all datasets on the EE Data Catalog or provide detailed documentation on how to create data products while the user acts like a coworker that incorporate changes to the earthEngineGrabR using the version control system of GitHub. This two examples indeed are extremes of two different designs of the earthEngineGrabR and a solution should make use of both directions. In the broader sense, it is the question of how to provide extensibility to users. It seems necessary that the package maintainer implements demanded features. However, to supply tools, that the users can build the required data products himself is probably superior to one individual being responsible for the implementation of every request.
 Independently of the different approaches of how to provide extensibility, several implementations would undoubtedly simplify the integration of additional features and the collaboration with other users of the earthEngineGrabR package. The first is, to provide comprehensive documentation with additional sample sessions, vignettes or tutorials. Next, to implement tests in the development workflow and use them for Continuous Integration (CI). Discarding, of the improved stability of the package, testing and CI would improve the collaboration with co-workers and simplify the publication of the earthEngineGrabR. 
 
-\subsection{Improve the framework of the earthEngineGrabR}
+\subsection{Improve the integration of R and Python}
 
 To improve the framework for the base functionality of the earthEngineGrabR package the interface of R and Python could be further developed. Instead of an interface depending on the console which invoiced system calls in the way described in the methods section the new published reticulate package of r-studio could be used (\cite{reticulate}). The use of reticulate would offer some significant benefits. The reticulate package provides the translation of R and Python data types. The direct translation of data from R to Python would overdue the use of a flat file connection to pass parameters or processing info. Further, reticulate contains a multitude of helper functions that ease the use of R in combination with Python (\texttt{py\_available()}, for instance, checks for a Python version on the system). While the execution of Pythons scripts with a console, require the Python code organised as scripts, with reticulate it's possible to run Python code directly in R and arrange the code in smaller, more flexible chunks, what is essential when it comes to tools that provide the option to expand the earthEngineGrabR with additional data products and functionalities. The use of the reticulate package also would simplify the installation of python dependencies, because they can be performed in R (\texttt{py\_install()} installs python libraries). Finlay, replace the invoiced system calls would solve the problem due to missing environmental variables. Because, most system call commands like \texttt{python} and \texttt{pip} could be replaced with functions of the reticulate package, the internal paths of these commands is irrelevant for the execution. The retuculate package would manage the execution and provide interoperability for all operating systems.
 
 In summary, the reticulate package provide a more precise, less error-prone and more flexible interface of R and Python then the currently implemented use of system calls.
 
-\section{Internal strengths, weaknesses and limitations of EE and their impact on the earthEngineGrabR}
+\section{Internal strengths, weaknesses and limitations of EE and their incorporation in the earthEngineGrabR}
 
 Besides the discussed limitation, there are also limitations of EE, which in contrast to the limitations of the earthEngineGrabR, can't be avoided by further development of the package. 
 These inherent limitations have a strong influence on the operations that can be performed efficiently with the package.
@@ -98,7 +98,7 @@ It performs poorly for non-local operations in which a local value can be affect
 Another significant limitation is the export limit of the EE to Google Drive.
 The EE provides data export to Google Drive and Google Cloud Platform (GCP). While the export to GCP is fast and works with extensive datasets, the export to Google Drive is limited to 2 GB and proportionally slow. Due to the reason, that outside the USA the always free tier of the GCP is not available, the export to Google Drive is the only free option. Discarding the official limit of 2 GB, it has shown that keeping the size of the export small,  speeds up the process dramatically while export files larger 1 GB can result in hours of computation time. 
 
-\subsection{Suggestions of an optimal further development of the earthEngineGrabR}
+\subsection{The optimal application of EE in the earthEngineGrabR}
 
 \subsubsection{Support the internal distribution mechanism of EE by processing the data products in parallel}
 
@@ -115,29 +115,11 @@ To avoid the described export limit, instead of exporting the raw raster data, t
 With the earthEngineGrabR, it is not possible to acquire big geospatial data but to process big geospatial data and acquire the results.
 Considering this, using vector data as the output of the \texttt{ee\_grab()} function is more suitable because it provides a more flexible data format, which can adapt the shape of any AOI. Furthermore, compared to raster, it is smaller in size and therefore can be downloaded faster avoiding the export limit of EE. 
 
-\subsubsection{Use EE's strengths to generate the data products}
+The limitation and strengths of the earthEngineGrabR arise from the weakness and strengths of EE. Therefore, the generated data products should correspond to EE capabilities. For images, this results in the use of per-pixel and finite neighbourhood operations such as band-math, morphological operations, spectral unmixing, template matching and texture analysis.
 
-The limitation and strengths of the earthEngineGrabR arise from the weakness and strengths of EE.
 To use the full potential of the EE, the earthEngineGrabR has to provide comfortable and user-friendly access to the capabilities of EE while using EE's internal strengths to offer a variety of data products.
-The generated data products should correspond to EE capabilities. For images, this results in the use of per-pixel and finite neighbourhood operations such as band-math, morphological operations, spectral unmixing, template matching and texture analysis.
-In the handling of a stack of images in an image, collection EE provides many statistical operations form simple statistics like mean, max, min, mode, and percentiles to linear models and non-parametric regressions.
 
-EE's internal strengths could be used to generate a number of data products like: (list is in progress)
-
-\begin{itemize}
-	\item Monthly indexes derived from high-resolution sentinel satellite data: 
-	\subitem Normalised Difference Vegetation Index (NDVI)
-	\subitem Normalised Difference Water Index (NDWI)
-	\subitem Enhanced Vegetation Index (EVI)
-	\subitem  Normalized Difference Built-up Index (NDBI)
-	\item Forest Change with Hansen First Change Map
-	\item Changes over time of different datasets in EE
-\end{itemize}
-
-
-
-
-\section{Outlook}
+EE's internal strengths could be used to generate a number of processing intensive data products. For example to calculate different vegetation indices's out of satellite data. This product, would enable to choose a time interval in months, maximum cloud cover to filter the image collection, whether to use Landsat or Sentinel imagery and the index that is to be calculated. The product could generate NDVI, Normalised Difference Water Index (NDWI), Enhanced Vegetation Index (EVI) or Normalized Difference Built-up Index (NDBI) out of high-resolution satellite data.
 
 
 

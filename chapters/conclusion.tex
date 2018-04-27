@@ -1,51 +1,17 @@
 
 \chapter{Conclusion}
 
-summary of the main text:
 
+In this master's thesis an R package that enables an interface between R and EE to retrieve selected data sets for a given region and time of interest, was successfully developed. The simplified excess to the capabilities of EE provided by the earthEngineGrabR packages showed great potential to strongly simplify the remote sensing data acquisition process. Compared to the standard approach to download and preprocess remote sensing data on a local system, the use of the earthEngineGrabR provided significant savings of time and processing resources in several use cases. 
 
+However, the current version of the package yet presents a foundations. To be used in wide scientific context a further development and the implementation of additional features is necessary. 
+The number of available data products and corresponding properties need to be extended.
+Further, the implemented integration of R and Python is still error-prone and leads to operating system interoperability.  
+Most of the limitations can be rectified with a further development of the package such as implementing additional features and improving the integration between R and Python.
 
-The simplified excess to the capabilities of EE provided by the earthEngineGrabR packages showed great potential to strongly simplify the remote sensing data acquisition process. Using the earthEngineGrabR to acquire
-remote sensing data for a specific time, region and aggregation in several use cases provided significant savings of time, processing resources and labour.
-However, the current version of the package is still limited lacks stability. 
-The number of possible features to process is limited and there is only a small number of data products available yet. Further the handling of the required dependencies as the extensive authentication process should be improved.
-The used method to integrate Python and R turned out to be error-prone and result in operation system interoperability.
-This limitation can be recified with the further development of the package that can be devided in the implementation of additional features and the enhancement of the framework to integrate Python and R.
-By implementing additional data products and extend their properties the selection is expanded 
-By implementing an internal iteration process the number of processed features can be increased. Further by simiplifying the authencication prcess the package gets more user-friendly. implement test and CI to enable colaboration and extensiblity add data products by the user.
-To use reticulate to integrate R and Python would solve the interoperabilty problem. 
-By
+Still, there are internal limitations of EE that restrict the possibility of the earthEngineGrabR. Altough EE can perform extensive computations, due to the export limit of EE to Google Drive, the download of large remote sensing datasets is efficient. This implies, instead of providing the acquisition of big geospatial data the earthEngineGrabR provides the processing of big geospatial data and the acquisition of the results of these computations.
 
+To use the full potential of EE, the earthEngineGrabR has to provide comfortable and user-friendly access to the capabilities of EE to generate a variety of processing intensive data products and retrieve them in a strongly user defined format.
 
-curreent version shows potential but has several limitaitons and probelms. 
-Problems can be rectified with fruter development.
-
-
-
-\begin{itemize}
-
-
-	\item earthEngineGrabR shows great potential, strongly simplifies and extended the users possibility to acquire data in R and is superior to standard procedure
-	\item However, earthEngineGrabR is limited due to the still
-	\subitem upload limit vector data
-	\subitem small number of data products, 
-	\subitem no controll projection
-	\subitem dependencies, operation interoperability, confusing authenication process
-	\item further development - additional implementations
-	\subitem add products and extend properties
-	\subitem iternal iterations to increas number of features to process
-	\subitem simplify authenication
-	\item further development - change framework for interface
-	\subitem use reticulate, no console prolems solves os interoperability, error-prone base framework of connection R to Python what results in operation system interoperability.
-	\subitem implement test and CI to enable colaboration and extensiblity add data products by the user.
-	\item Next, the strengths and limitations of EE direct a further development of the package towards 
-	\subitem instead of acquiring big data process big data and require the results using vecotr instead of raster
-	\subitem while providin processin intensive data products using EE strenghts to produce them.
-\end{itemize}
-
-
-In progress
-First package that users the GEE as backend service.
-Great potential to meet needs to generate unique data products, which simplify and push research.
 
 
