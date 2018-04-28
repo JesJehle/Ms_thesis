@@ -55,9 +55,14 @@ In the following, I distinguish between a data source of the remote sensing data
 The variables vary in temporal and spatial resolution dependent on the data product they are derived from. 
 
 To access land cover, the MOD44B.051 Terra VCF product with a yearly temporal resolution and a 250 m spatial resolution is used. The data set provides a sub-pixel-level representation of surface vegetation cover, designed to continuously represent earth's terrestrial surface as a gradient of three essential surface cover components: percent tree cover, percent non-tree cover and percent bare. The data set is generated using monthly composites of Terra Modis 250 m and 500 m Land Surface Reflectance data (\cite{hansen2006vegetation}).
-The Joint Research Center (JRC), Water Classification History, is a data set, produced in collaboration with the European Commission and Google. The data set provides a pixel-wise classification of surface water generated using, 3,066,102 scenes from Landsat 5, 7 and 8 acquired between 1984 and 2015. Each pixel was individually classified into water and non-water. The data comes in an original monthly temporal resolution and an aggregated yearly resolution. In the earthEngineGrabR, the aggregated yearly water classification data is used, providing a pixel-wise classification of seasonal water, permanent water and not water (\cite{pekel2016high}). To convert this information in an ecological context, the data is further processed to receive the distance to surface water (SW) product for each pixel. To compute the distance permanent and seasonal water are merged. Therefore the distance refers to permanent and seasonal water.
 
-To provide topographic products, the Shuttle Radar Topography Mission (SRTM) of NASA acquired in 2007 with a spatial resolution of 30 m, is used. While the SRTM dataset provides elevation in meters, the slope product is additionally processed in EE (\cite{farr2007shuttle}). To account for socio-economic variables the recently published Oxford MAP datasets of Accessibility to Cities for 2015 and Global Friction Surface for 2015 both with a spatial resolution of 0.01$^\circ$, what corresponds to approximately 30 m, are used. The global Friction Surface map estimates land-based travel speed for land pixels in the year 2015, and the global Accessibility map estimates land-based travel time to the nearest densely-populated area for the year 2015. Both datasets were produced through a collaboration between the Univerity of Oxford Malaria Atlas Project (MAP), Google and the European Union JRC (\cite{weiss2018global}). To produce the maps, the first time a global-scale combination of Open Street Map data and Google roads dataset was used, extended with datasets for topographic conditions, land cover types and national borders.
+The Joint Research Center (JRC), Water Classification History, is a data set, produced in collaboration with the European Commission and Google. 
+The data set provides a pixel-wise classification of surface water generated using, 3,066,102 scenes from Landsat 5, 7 and 8 acquired between 1984 and 2015. Each pixel was individually classified into water and non-water. The data comes in an original monthly temporal resolution and an aggregated yearly resolution. In the earthEngineGrabR, the aggregated yearly water classification data is used, providing a pixel-wise classification of seasonal water, permanent water and not water (\cite{pekel2016high}). To convert this information in an ecological context, the data is further processed to receive the distance to surface water (SW) product for each pixel. To compute the distance permanent and seasonal water are merged. Therefore the distance refers to permanent and seasonal water.
+
+To provide topographic products, the Shuttle Radar Topography Mission (SRTM) of NASA acquired in 2007 with a spatial resolution of 30 m, is used. While the SRTM dataset provides elevation in meters, the slope product is additionally processed in EE (\cite{farr2007shuttle}). 
+
+To account for socio-economic variables the recently published Oxford MAP datasets of Accessibility to Cities for 2015 and Global Friction Surface for 2015 both with a spatial resolution of 0.01$^\circ$, what corresponds to approximately 30 m, are used. The global Friction Surface map estimates land-based travel speed for land pixels in the year 2015, and the global Accessibility map estimates land-based travel time to the nearest densely-populated area for the year 2015. Both datasets were produced through a collaboration between the Univerity of Oxford Malaria Atlas Project (MAP), Google and the European Union JRC (\cite{weiss2018global}).
+To produce the maps, the first time a global-scale combination of Open Street Map data and Google roads dataset was used, extended with datasets for topographic conditions, land cover types and national borders.
 For the Friction Surface map, these underlying datasets were used to calculate travel speed regarding time to cross each pixel, with the fastest travel mode intersecting the pixel being used to determine the speed to travel in that pixel. The travel speed is in minutes required to travel one meter. The Accessibility map is produced by using the Friction Surface map in combination with a least-cost-algorithm, which calculates the travel time in minutes for each pixel to the nearest city. Cities were determined by using data from the Global Human Settlement Project.  
 
 The Climate Hazard Group InfraRed Precipitation with Station Data (CHIRPS) is a global rainfall data set with a daily temporal resolution and 0.05$^\circ$ spatial resolution (approximately 150 m) (\cite{funk2015climate}). In the earthEngineGrabR, the CHIRPS daily (version 2.0 final) is utilised, an aggregated version of the daily CHIRPS dataset, with a temporal resolution of 1 days.
@@ -77,8 +82,8 @@ The target is defined by vector data, where the spatial extent of the features d
 \begin{center}
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=15cm]{images/design_function-cropped.pdf}
-			\caption{Function design and the data manipulation workflow of the ee\_grab function}
+			\includegraphics[width=15cm]{images/processing_flow2-cropped.pdf}
+			\caption{Function design and the data manipulation workflow of the \texttt{ee\_grab()} function}
 			\label{Workflow}
 		\end{center}
 	\end{figure}
@@ -101,7 +106,7 @@ Each tool performs a specific task. In R, the user specifies the requested data 
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/processing_flow_big.pdf}
-			\caption{Internal processing flow of the \texttt{ee\_grab()} function call}
+			\caption{Internal processing flow of the \texttt{ee\_grab()} function call.}
 			\label{processingFlow}
 		\end{center}
 	\end{figure}
@@ -127,7 +132,7 @@ The EE is accessed with the EE client library for Python. To access EE from R it
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/concole_connection_big-cropped.pdf}
-			\caption{Example of utilizing the console to execute a Python script from R, that requests metadata on the SRTM data set on EE}
+			\caption{Example of utilizing the console to execute a Python script from R, that requests metadata on the SRTM data set on EE.}
 			\label{consoleConnection}			
 		\end{center}
 	\end{figure}

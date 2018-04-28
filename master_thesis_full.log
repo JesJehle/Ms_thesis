@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  27 APR 2018 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.16)  28 APR 2018 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -887,7 +887,11 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 \@quotelevel=\count313
 \@quotereset=\count314
 
-(./master_thesis_full.aux)
+(./master_thesis_full.aux
+
+LaTeX Warning: Label `install' multiply defined.
+
+)
 \openout1 = `master_thesis_full.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
@@ -906,8 +910,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 164.
 LaTeX Font Info:    ... okay on input line 164.
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 164.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 *geometry* driver: auto-detecting
@@ -1073,34 +1076,33 @@ ob-ser-va-tion pro-grammes.
 
 [2
 
-]
-<images/traditional_acquisition-cropped.pdf, id=171, 722.7pt x 327.47343pt>
-File: images/traditional_acquisition-cropped.pdf Graphic file (type pdf)
+] <images/standard_method-cropped.pdf, id=171, 722.7pt x 331.99031pt>
+File: images/standard_method-cropped.pdf Graphic file (type pdf)
 
-<use images/traditional_acquisition-cropped.pdf>
-Package pdftex.def Info: images/traditional_acquisition-cropped.pdf used on inp
-ut line 20.
-(pdftex.def)             Requested size: 426.79134pt x 193.39253pt.
- [3 <./images/traditional_acquisition-cropped.pdf>]
-Overfull \hbox (2.08405pt too wide) in paragraph at lines 44--49
+<use images/standard_method-cropped.pdf>
+Package pdftex.def Info: images/standard_method-cropped.pdf used on input line 
+20.
+(pdftex.def)             Requested size: 426.79134pt x 196.06001pt.
+ [3 <./images/standard_method-cropped.pdf>] [4]
+Overfull \hbox (2.08405pt too wide) in paragraph at lines 45--50
 \OT1/ppl/m/n/12 scaleable, com-pu-ta-tion ser-vice and is ac-cessed and con-tro
 lled through an Internet-
  []
 
 
-Overfull \hbox (15.23514pt too wide) in paragraph at lines 44--49
+Overfull \hbox (15.23514pt too wide) in paragraph at lines 45--50
 \OT1/ppl/m/n/12 accessible ap-pli-ca-tion pro-gram-ming in-ter-face (API). The 
 user writes EE pro-grammes
  []
 
-[4]
+[5]
 LaTeX Font Info:    Try loading font information for OMS+ppl on input line 67.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
- [5]
+
 Overfull \hbox (1.02821pt too wide) in paragraph at lines 76--77
 \OT1/ppl/m/n/12 the mas-sive stack of freely avail-able re-mote sens-ing data f
 or their re-search projects
@@ -1129,34 +1131,40 @@ ral- and spatial-
  []
 
 [11]
-Overfull \hbox (14.56082pt too wide) in paragraph at lines 60--62
+Overfull \hbox (14.56082pt too wide) in paragraph at lines 62--63
 []\OT1/ppl/m/n/12 To pro-vide to-po-graphic prod-ucts, the Shut-tle Radar To-po
 g-ra-phy Mis-sion (SRTM)
  []
 
 
-Overfull \hbox (1.30132pt too wide) in paragraph at lines 63--64
+Overfull \hbox (1.30132pt too wide) in paragraph at lines 68--69
 []\OT1/ppl/m/n/12 The Cli-mate Haz-ard Group In-fraRed Pre-cip-i-ta-tion with S
 ta-tion Data (CHIRPS)
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 67.
+(hyperref)                removing `\\' on input line 72.
 
-[12] <images/design_function-cropped.pdf, id=346, 722.7pt x 373.395pt>
-File: images/design_function-cropped.pdf Graphic file (type pdf)
+[12] <images/processing_flow2-cropped.pdf, id=346, 716.6775pt x 367.3725pt>
+File: images/processing_flow2-cropped.pdf Graphic file (type pdf)
 
-<use images/design_function-cropped.pdf>
-Package pdftex.def Info: images/design_function-cropped.pdf used on input line 
-80.
-(pdftex.def)             Requested size: 426.79134pt x 220.51195pt.
- [13 <./images/design_function-cropped.pdf>] <images/processing_flow_big.pdf, i
-d=496, 722.7pt x 542.025pt>
+<use images/processing_flow2-cropped.pdf>
+Package pdftex.def Info: images/processing_flow2-cropped.pdf used on input line
+ 85.
+(pdftex.def)             Requested size: 426.79134pt x 218.77713pt.
+
+Underfull \hbox (badness 1616) in paragraph at lines 86--86
+[]\OT1/ppl/m/n/12 Figure 2.1: []Function de-sign and the data ma-nip-u-la-tion 
+work-flow of the
+ []
+
+[13 <./images/processing_flow2-cropped.pdf>]
+<images/processing_flow_big.pdf, id=496, 722.7pt x 542.025pt>
 File: images/processing_flow_big.pdf Graphic file (type pdf)
 
 <use images/processing_flow_big.pdf>
-Package pdftex.def Info: images/processing_flow_big.pdf used on input line 103.
+Package pdftex.def Info: images/processing_flow_big.pdf used on input line 108.
 
 (pdftex.def)             Requested size: 426.79134pt x 320.09798pt.
 
@@ -1169,7 +1177,7 @@ File: images/concole_connection_big-cropped.pdf Graphic file (type pdf)
 
 <use images/concole_connection_big-cropped.pdf>
 Package pdftex.def Info: images/concole_connection_big-cropped.pdf used on inpu
-t line 129.
+t line 134.
 (pdftex.def)             Requested size: 426.79134pt x 204.06245pt.
 
 
@@ -1177,7 +1185,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15 <./images/processing_flow_big.pdf>] [16 <./images/concole_connection_big-cr
 opped.pdf>] [17]
-Overfull \hbox (11.07072pt too wide) in paragraph at lines 171--172
+Overfull \hbox (11.07072pt too wide) in paragraph at lines 176--177
 \OT1/ppl/m/n/12 The earth-Engine-GrabR pack-age has sev-eral pack-age de-pen-de
 n-cies in R and Python.
  []
@@ -1188,7 +1196,7 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 	\end{tabularx}
+l.201 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1199,7 +1207,7 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 	\end{tabularx}
+l.201 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1210,7 +1218,7 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 	\end{tabularx}
+l.201 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1221,19 +1229,7 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 	\end{tabularx}
-                     
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package array Error:  Illegal pream-token (C): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 	\end{tabularx}
+l.201 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1245,7 +1241,19 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 	\end{tabularx}
+l.201 	\end{tabularx}
+                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package array Error:  Illegal pream-token (C): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 	\end{tabularx}
                      
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1274,87 +1282,80 @@ File: images/install_authentication.png Graphic file (type png)
 
 <use images/install_authentication.png>
 Package pdftex.def Info: images/install_authentication.png used on input line 5
-3.
+1.
 (pdftex.def)             Requested size: 426.79134pt x 166.26596pt.
+ [21 <./images/install_authentication.png>] <images/autocomplete.png, id=666, 9
+25.4575pt x 216.81pt>
+File: images/autocomplete.png Graphic file (type png)
 
+<use images/autocomplete.png>
+Package pdftex.def Info: images/autocomplete.png used on input line 68.
+(pdftex.def)             Requested size: 426.79134pt x 99.98523pt.
+ [22 <./images/autocomplete.png>]
+<images/session_1_hor_2-cropped.pdf, id=673, 722.7pt x 424.58624pt>
+File: images/session_1_hor_2-cropped.pdf Graphic file (type pdf)
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[21] [22 <./images/install_authentication.png>]
-Underfull \hbox (badness 10000) in alignment at lines 96--96
+<use images/session_1_hor_2-cropped.pdf>
+Package pdftex.def Info: images/session_1_hor_2-cropped.pdf used on input line 
+102.
+(pdftex.def)             Requested size: 426.79134pt x 250.74342pt.
+ [23 <./images/session_1_hor_2-cropped.pdf>]
+Underfull \hbox (badness 10000) in alignment at lines 135--135
 [][][][][][] 
  []
 
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103 	\begin{figure}[H]
-                        
-Option `H' ignored and `p' used.
-
-<images/sample_session_1-cropped.pdf, id=681, 761.84625pt x 1228.59pt>
-File: images/sample_session_1-cropped.pdf Graphic file (type pdf)
-
-<use images/sample_session_1-cropped.pdf>
-Package pdftex.def Info: images/sample_session_1-cropped.pdf used on input line
- 105.
-(pdftex.def)             Requested size: 398.33858pt x 642.37613pt.
-
-
-LaTeX Warning: Float too large for page by 10.42973pt on input line 109.
-
-<images/stripes-cropped.pdf, id=683, 614.295pt x 617.30624pt>
+[24] <images/stripes-cropped.pdf, id=706, 614.295pt x 617.30624pt>
 File: images/stripes-cropped.pdf Graphic file (type pdf)
 
 <use images/stripes-cropped.pdf>
-Package pdftex.def Info: images/stripes-cropped.pdf used on input line 125.
+Package pdftex.def Info: images/stripes-cropped.pdf used on input line 155.
 (pdftex.def)             Requested size: 199.16928pt x 200.14175pt.
- [23] [24 <./images/sample_session_1-cropped.pdf>]
-Underfull \hbox (badness 3333) in paragraph at lines 132--133
+
+Underfull \hbox (badness 3333) in paragraph at lines 162--166
 []\OT1/ppl/m/n/12 You have ac-cess to data col-lected
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 132--133
+Underfull \hbox (badness 1769) in paragraph at lines 162--166
 \OT1/ppl/m/n/12 po-si-tion, hight and the flight path
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 132--133
+Underfull \hbox (badness 1527) in paragraph at lines 162--166
 \OT1/ppl/m/n/12 of the air-craft at the time the ele-
  []
 
-<images/stripes_distance_2.pdf, id=711, 601.24625pt x 448.67625pt>
+
+Underfull \hbox (badness 1178) in paragraph at lines 162--166
+\OT1/ppl/m/n/12 to-surface-water data prod-uct avail-
+ []
+
+<images/stripes_distance_2.pdf, id=712, 601.24625pt x 448.67625pt>
 File: images/stripes_distance_2.pdf Graphic file (type pdf)
 
 <use images/stripes_distance_2.pdf>
-Package pdftex.def Info: images/stripes_distance_2.pdf used on input line 156.
+Package pdftex.def Info: images/stripes_distance_2.pdf used on input line 184.
 (pdftex.def)             Requested size: 426.79134pt x 318.50075pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [25 <./images/stripes-cropped.pdf>] [26 <./images/stripes_distance_2.pdf>]
-<images/change_precipitation.pdf, id=751, 1011.78pt x 867.24pt>
-File: images/change_precipitation.pdf Graphic file (type pdf)
+<images/session_3.pdf, id=751, 519.9425pt x 448.67625pt>
+File: images/session_3.pdf Graphic file (type pdf)
 
-<use images/change_precipitation.pdf>
-Package pdftex.def Info: images/change_precipitation.pdf used on input line 204
-.
-(pdftex.def)             Requested size: 455.24408pt x 390.2147pt.
+<use images/session_3.pdf>
+Package pdftex.def Info: images/session_3.pdf used on input line 238.
+(pdftex.def)             Requested size: 483.69684pt x 417.40152pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 204--206
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 238--239
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./chapters/discussion.tex [27] [28 <./images/change_precipitation.pdf>]
+[27]) (./chapters/discussion.tex [28 <./images/session_3.pdf>]
 Chapter 4.
 
 Overfull \hbox (6.66815pt too wide) in paragraph at lines 4--7
@@ -1440,19 +1441,23 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
 Package rerunfilecheck Info: File `master_thesis_full.out' has not changed.
 (rerunfilecheck)             Checksum: F54FE9C541779429DB3EBA71A69B6D12;1790.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'master_thesis_full.run.xml'.
 \openout1 = `master_thesis_full.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 281.
  ) 
 Here is how much of TeX's memory you used:
- 15427 strings out of 494910
- 238404 string characters out of 6179836
- 689405 words of memory out of 5000000
- 18311 multiletter control sequences out of 15000+600000
+ 15437 strings out of 494910
+ 238504 string characters out of 6179836
+ 692554 words of memory out of 5000000
+ 18316 multiletter control sequences out of 15000+600000
  17718 words of font info for 49 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,11n,45p,1870b,1834s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,45p,1870b,1780s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
@@ -1461,10 +1466,10 @@ ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on master_thesis_full.pdf (45 pages, 8672808 bytes).
+Output written on master_thesis_full.pdf (45 pages, 8563976 bytes).
 PDF statistics:
- 938 PDF objects out of 1000 (max. 8388607)
- 791 compressed objects within 8 object streams
- 175 named destinations out of 1000 (max. 500000)
- 250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 943 PDF objects out of 1000 (max. 8388607)
+ 795 compressed objects within 8 object streams
+ 179 named destinations out of 1000 (max. 500000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 

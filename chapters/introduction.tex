@@ -17,7 +17,7 @@ Scenes are near-square images covering an area that varies in size depending on 
 \begin{center}
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=15cm]{images/traditional_acquisition-cropped.pdf}
+			\includegraphics[width=15cm]{images/standard_method-cropped.pdf}
 			\caption{Schematic approach to acquire and prepare remote sensing data for environmental system modeling}
 			\label{traditionl_approach}
 		\end{center}
@@ -30,7 +30,6 @@ A standard procedure of acquiring and preparing remote sensing data comprises se
 Forth, the data is spatially aggregated according to a given target. The target represents the shape of the area of interest (AOI). The AOI could be a world-wide grid of 1$^\circ$ x 1$^\circ$ cells, the resolution of a raster, a set of points representing the locations of experiments, or the sample area. Finally, in the last step, the data is retrieved as tabular data with a geographic reference (see Figure \ref{traditionl_approach}). The entire processing of the remote sensing data was performed on the local system.
 
 The standard procedure to acquire remote sensing data is usually time consuming and cumbersome due to the interoperability and size of remote sensing data (\cite{iosifescu2011geovite}).
-
 Because varies governments and agencies collect remote sensing data, most data are distributed and stored in different locations, in a variety of file formats, projections and resolutions. To integrate data from such diverse sources requires a manual and thus time-consuming pre-processing of the data even when processing only a few satellite images (\cite{schell2000geodata}). To perform the required integration and harmonisation of different remote sensing data sets expertise in a Geographic Information System (GIS) is prerequisite.
 
 Furthermore, due to the limited possibility of the search and order tools to control the request to the servers, the data throughput is unnecessary high. Even though only a fraction of a scene is needed, the complete scene needs to be downloaded. Furthermore, the processing resources are not where they are needed. It is required to download the entire row data to a local system to perform the tasks necessary to prepare the data for environmental modeling. The limited control over the requested data results in many unnecessary inter-products and again raises the data throughput. While processing small geospatial data sets, this may be of no importance, but for the processing of large-scale data sets, this quickly leads to challenges in dealing with memory limitation and the necessity for big data solutions such as computer clusters or cloud computing resources.
@@ -41,6 +40,8 @@ For instance, the processing of a moderately sized remote sensing imagery stack 
 Hence, although petabyte-scale archives of geospatial data are freely available, the access and utilisation of these datasets for environmental system modelling are restricted due to the given difficulties. 
 These obstacles hinder most researchers to make use of this massive stack of remote sensing imagery, restricting access to the information that can be derived from large remote sensing datasets, to remote-sensing experts with exclusive access to high-performance computing resources.
 
+\newpage
+
 This is where the use of the Google Earth Engine provides significant advantages.
 The Earth Engine (EE) is a cloud-based platform that strongly simplifies the access to high-performance computing resources to process extensive remote sensing datasets, without the information technology (IT) management obstacles like, data acquisition and storage, combine different file formats, managing databases, machine allocations, CPUs, GPUs. 
 Earth Engine (EE) consists of a multi-petabyte data catalogue, a high performance, parallel and therefore scaleable, computation service and is accessed and controlled through an Internet-accessible application programming interface (API). The user writes EE programmes using the client library available for Python and JavaScript.
@@ -49,7 +50,6 @@ The functions in the client library can be composed to build a description of th
 
 
 By using the EE the acquisition and preprocessing of large-scale remote sensing data can strongly be simplified.
-
 EE offers an elegant solution for working with large remote sensing data and the related problems of the interoperability of the data due to distributed sources and the big data problems caused by the size of the data and required processing resources. 
 Processing resources and data are connected, and there are no unnecessary inter-products or downloads. 
 The data does not have to be download and preprocessed separately. Instead, the data is already stored in one managed database, pre-processed and in access and analysis-ready format. 
@@ -59,7 +59,7 @@ With EE, it is possible to request and generate precisely the data needed for an
 However, the EE API is controlled by a client library, currently only available in JavaScript and Python. To use the EE additional effort to learn and apply the client libraries is necessary, furthermore, scientists using a different programming language like R cannot access the EE API directly from within R.
 There is currently no R or Python package that is using EE capabilities to simplify the acquisition and preprocessing of remotely sensed data. Actually, there is not a single R or Python package using any of EE capabilities directly. The few existing ones are written in Python and only facilitate the use of the EE API by providing a pipeline to other API's like the Planet-GEE-Pipeline-GUI or provide an automated upload feature of assets via the Google Cloud Environment like the geeadd tool (\cite{roy2017google}).
 
-
+\newpage
 To summaries the problem statement of the present thesis:
 
 \begin{itemize}

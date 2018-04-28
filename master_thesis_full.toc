@@ -2,15 +2,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Advantages of the Earth Engine}{6}{section.1.1}
+\contentsline {section}{\numberline {1.1}Advantages of the Earth Engine}{7}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}The public data catalogue}{6}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.1}The public data catalogue}{7}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.2}Reasons for the performance of Earth Engine}{7}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{The tile architecture}{7}{section*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The pyramid architecture}{7}{section*.3}
+\contentsline {subsubsection}{The pyramid architecture}{8}{section*.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{The system architecture}{8}{section*.4}
 \defcounter {refsection}{0}\relax 
