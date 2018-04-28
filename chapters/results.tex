@@ -66,7 +66,7 @@ To acquire the data next use the \texttt{ee\_grab()} function. The target is the
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/autocomplete.png}
-			\caption{Example of viewing data product documentation with R Studio's auto-complete functionality}
+			\caption{Example of viewing the data product documentation with R Studio's auto-complete functionality}
 			\label{install}
 		\end{center}
 	\end{figure}
@@ -112,7 +112,7 @@ Since all parameters are set, the function can be executed.
 
 
 
-During the processing the function prints info corresponding to the state of the upload, processing and the download of each data product. With the verbose = FALSE, this behaviour can be avoided. 
+During the processing the function prints info corresponding to the state of the upload, processing and the download of each data product. With the \texttt{verbose = FALSE}, this behaviour can be avoided. 
 
 
 
@@ -229,13 +229,12 @@ The output is an object of class sf that contains all properties of the original
 Next, use a linear model of $year  \sim precipitation$ for each site and retrieve the estimates for the effect of year. 
 The estimates show the linear effect of year on the yearly precipitation sum in mm for each of the sites. 
 By joining the estimates with the spatial data of the sites, the estimates can be visualised spatially. 
-
 Figure \ref{change} shows the estimate of the yearly change of the annual precipitation sum in mm for each site. That estimates reflect a yearly change from - 10 mm to + 20 mm. While the yearly precipitation sum is increasing for the sites in East Africa, it is decreasing for most sites in central Africa, especially for those with hight tree cover (see figure \ref*{sample_session_1}).
 
 \begin{center}
 	\begin{figure}[h]
 		\begin{center}
-			\includegraphics[width=17cm]{images/session_3.pdf}
+			\includegraphics[width=15cm]{images/session_3-cropped.pdf}
 			\caption{Estimates for the yearly change of the annual precipitation sum in mm within the african MIKE sites}
 			\label{change}
 		\end{center}

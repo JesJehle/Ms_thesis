@@ -1,7 +1,83 @@
 
 % insert a second appendix
-\chapter{This is appendix 2...}
+\chapter{Appendix}
 \label{app:appendix2}
 
-Put appendix text here...
 
+\begin{table}[h]
+	\tiny
+	\begin{tabularx}{\textwidth}{|l|X|X|X|X|}
+		\toprule
+		\textbf{Dataset} & \textbf{Nominal resolution} & \textbf{Temporal granularity}  & \textbf{Temporal coverage}  & \textbf{Spatial coveragee} \\
+		\hline
+		Landsat & & & & \\
+			Landsat 8 OLI/TIRS	&30 m	&16 day&	2013–Now&	Global\\
+			Landsat 7 ETM +	&30 m	&16 day	&2000–Now&	Global\\
+			Landsat 5 TM	&30 m	&16 day	&1984–2012&	Global\\
+			Landsat 4–8 surface reflectance	&30 m	&16 day	& 1984–Now &	Global\\
+		Sentinel & & & & \\        
+		Sentinel 1 A/B  &10 m	&6 day	&2014–Now	&Global \\
+		Sentinel 2A MSI  &10/20 m	&10 day&	2015–Now&	Global\\
+		
+		MODIS & & & & \\  
+		
+		  MOD08 atmosphere&	$1^\circ$ &	Daily	&2000–Now&	Global\\
+		  MOD09 surface reflectance&	500 m&	1 day/8 day&	2000–Now&	Global\\
+		  MOD10 snow cover&	500 m&	1 day&	2000–Now&	Global \\
+		  MOD11 temperature and emissivity&	1000 m&	1 day/8 day&	2000–Now&	Global\\
+		  MCD12 Land cover&	500 m	&Annual	&2000–Now	&Global \\
+		  MOD13 Vegetation indices&	500/250 m	&16 day	&2000–Now&	Global\\
+		  MOD14 Thermal anomalies  fire&	1000 m&	8 day&	2000–Now&	Global\\
+		  MCD15 Leaf area index/FPAR&	500 m&	4 day&	2000–Now&	Global\\
+		  MOD17 Gross primary productivity	&500 m&	8 day&	2000–Now&	Global\\
+		  MCD43 BRDF-adjusted reflectance	&1000/500 m&	8 day/16 day&	2000–Now&	Global\\
+		  MOD44 veg. cover conversion&	250 m&	Annual&	2000–Now&	Global\\
+		  MCD45 thermal anomalies and fire	&500 m&	30 day&	2000–Now&	Global\\
+		
+		 ASTER	& & & & \\	
+		 L1 T radiance	&15/30/90 m	&1 day&	2000–Now&	Global \\
+		 Global emissivity	&100 m	&Once	&2000–2010&	Global \\
+		  
+		 Other imagery	& & & & \\		
+		 PROBA-V top of canopy reflectance&	100/300 m&	2 day&	2013–Now&	Global\\
+		 EO-1 hyperion hyperspectral radiance&	30 m&	Targeted&	2001–Now&	Global\\
+		 DMSP-OLS nighttime lights&	1 km&	Annual&	1992–2013&	Global\\
+		 USDA NAIP aerial imagery&	1 m	&Sub-annual	&2003–2015& 	CONUS\\
+		 
+		 Topography			& & & & \\		
+		 Shuttle Radar Topography Mission&	30 m&	Single&	2000&	$60^\circ$ N–$54^\circ$ S\\
+		 USGS National Elevation Dataset&	10 m&	Single&	Multiple&	United States\\
+		 USGS GMTED2010&	$7.5''$&	Single	&Multiple&	$83^\circ$ N–$57^\circ$S\\
+		 GTOPO30&	$30''$	&Single	&Multiple	&Global\\
+		 ETOPO1	& $1'$ &	Single&	Multiple &	Global \\
+		 
+		 Landcover		& & & & \\			
+		 GlobCover	&300 m	&Non-periodic	&2009&	90°N–65°S\\
+		 USGS National Landcover Database&	30 m	&Non-periodic	&1992–2011&	CONUS\\
+		 UMD global forest change&	30 m&	Annual	&2000–2014&	$80^\circ$ N–$57^\circ$ S\\
+		 JRC global surface water&	30 m&	Monthly	&1984–2015	&$78^\circ$ N–$60^\circ$ S\\
+		 GLCF tree cover&	30 m	&5 year	&2000–2010	&Global\\
+		 USDA NASS cropland data layer&	30 m&	Annual&	1997–2015&	CONUS\\
+		  
+		 Weather, precipitation, atmosphere	& & & & \\				
+		 Global precipitation measurement& 	$6'$& 	3 h	& 2014–Now& 	Global\\
+		 TRMM 3B42 precipitation& 	$15'$& 	3 h	& 1998–2015	& $50^\circ$ N–$50^\circ$ S\\
+		 CHIRPS precipitation& 	$3'$& 	5 day& 	1981–Now& 	$50^\circ$ N–$50^\circ$ S\\
+		 NLDAS-2& 	$7.5'$& 	1 h	& 1979–Now	& North America\\
+		 GLDAS-2& 	$15'$& 	3 h	& 1948–2010	& Global\\
+		 NCEP reanalysis& 	$2.5^\circ$ & 	6 h	& 1948–Now& 	Global\\
+		 ORNL DAYMET weather& 	1 km& 	Annual& 1980–Now& 	North America\\
+		  
+		 GRIDMET&	4 km&	1 day&	1979–Now&	CONUS\\
+		 NCEP global forecast system&	$15'$&	6 h&	2015–Now&	Global\\
+		 NCEP climate forecast system&	$12'$	&6 h&	1979–Now&	Global\\
+		 WorldClim	&$3''$ &	12 images&	1960–1990&	Global\\
+		 NEX downscaled climate projections&	1 km&	1 day&	1950–2099&	North America\\
+		 Population		& & & & \\		
+		 WorldPop	&100 m	&5 year	&Multiple	& 2010–2015\\
+		 GPWv4	& $30''$ &	5 year&	2000–2020&	$85^\circ$ N–$60^\circ$ S\\
+		\hline
+	\end{tabularx}
+	\caption{Frequently used datasets in the earth engine data catalog (\cite{gorelick2017google})}
+	\label{dependencies}
+\end{table}
