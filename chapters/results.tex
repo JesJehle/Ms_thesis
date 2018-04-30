@@ -26,7 +26,7 @@ Because the study area is fragmented and of large-scale at the same time it woul
 
 Fortunately, you heard of a new R package that is supposed to greatly simplified the data acquisition process and you are desperate enough to give it a try. 
 
-After some googling, you find the earthEngineGrabR and the corresponding Git Hup page, which describes how to apply for an EE account and how to install the required dependencies for the package. Because you have GDAL and Python already installed, you only install the sf R package and wait a few hours for the acknowledgement e-mail from Google, that you or your Google Account is now a trusted tester of the EE.
+After some googling, you find the earthEngineGrabR and the corresponding Git Hup page, which describes how to apply for an EE account and how to install the required dependencies for the package (\cite{earthEngineGrabR}). Because you have GDAL and Python already installed, you only install the sf R package and wait a few hours for the acknowledgement e-mail from Google, that you or your Google Account is now a trusted tester of the EE.
 
 First, install the package from Git Hup with the \texttt{install\_githup()} function form the devtools package.
 
@@ -123,15 +123,14 @@ On a 64-bit ubuntu machine with 8 Gbit of RAM, 4 cores with 2.40 GHz and interne
 The output of the \texttt{ee\_grab()} function is an object of class sf.  The output always contains all properties of the original target vector data with the added data products and an additional geometry column as shown in table \ref{output}.
 
 \begin{table}[h]
-	\begin{tabularx}{\textwidth}{|l|l|l|c|c|c|}
-		\hline
+	\begin{tabularx}{\textwidth}{lllccc}
+		\toprule
 		id & sitecode & name & tree cover & accessibility & geometry \\
 		\hline
 		1  & AKG  & Akagera & 15 & 138.4 & MULTIP. (30.5 -1.\\
 		2 & DZA  & Dzanga-Sangha & 76.4 & 858.9 & MULTIP. (16.06 2.\\
 		3 & MCH  & Murchison Falls & 25.0 & 146.1 & MULTIP. (32.1 2.\\
-		
-		\hline
+		\bottomrule
 	\end{tabularx}
 	\caption{Example output of the \texttt{ee\_grab()} function}
 	\label{output}

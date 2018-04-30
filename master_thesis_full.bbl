@@ -702,6 +702,33 @@
       \field{title}{Geovite-a Service-Driven Solution for an on-Demand, User-Friendly Web Access to Geodata}
       \field{year}{2011}
     \endentry
+    \entry{earthEngineGrabR}{manual}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=e42c0ba4d3e0e51a38a1891c3cb8a100}{%
+           family={Jehle},
+           family_i={J\bibinitperiod},
+           given={Janusch},
+           given_i={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e42c0ba4d3e0e51a38a1891c3cb8a100}
+      \strng{fullhash}{e42c0ba4d3e0e51a38a1891c3cb8a100}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{2018}
+      \field{labelmonth}{05}
+      \field{labelday}{01}
+      \field{datelabelsource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Version: 0.1}
+      \field{title}{earthEngineGrabR: An R package to simplify the acquisition of remote sensing data}
+      \field{urlday}{01}
+      \field{urlmonth}{05}
+      \field{urlyear}{2018}
+      \verb{url}
+      \verb https://github.com/JesJehle/earthEngineGrabR
+      \endverb
+    \endentry
     \entry{johnson20102009}{article}{}
       \true{moreauthor}
       \name{author}{2}{}{%

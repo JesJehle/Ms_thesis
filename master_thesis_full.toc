@@ -1,20 +1,22 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acknowledgements}{II}{chapter*.1}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Advantages of the Earth Engine (EE)}{7}{section.1.1}
+\contentsline {section}{\numberline {1.1}Advantages of Earth Engine (EE)}{7}{section.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.1}The public data catalogue}{7}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.2}Reasons for the performance of EE}{7}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The tile architecture}{7}{section*.2}
+\contentsline {subsubsection}{The tile architecture}{7}{section*.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The pyramid architecture}{8}{section*.3}
+\contentsline {subsubsection}{The pyramid architecture}{8}{section*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The system architecture}{8}{section*.4}
+\contentsline {subsubsection}{The system architecture}{8}{section*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Data distribution models}{8}{section*.5}
+\contentsline {subsubsection}{Data distribution models}{8}{section*.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.3}Potential of EE for the data acquisition process}{9}{subsection.1.1.3}
 \defcounter {refsection}{0}\relax 
@@ -24,23 +26,23 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Design and functionality of the \\ data manipulation}{12}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Technical framework for the interface of R and EE}{14}{section.2.3}
+\contentsline {section}{\numberline {2.3}Technical framework for the interface between R and EE}{14}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Upload data to Fusion Table}{15}{section*.6}
+\contentsline {subsubsection}{Upload data to Fusion Table}{15}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Integration of R and Python}{15}{section*.7}
+\contentsline {subsubsection}{Integration of R and Python}{15}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Organize Python code as modules}{17}{section*.8}
+\contentsline {subsubsection}{Organize Python code as modules}{17}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Communication of the client library, EE and Google Drive}{17}{section*.9}
+\contentsline {subsubsection}{Communication of the client library, EE and Google Drive}{17}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parallel processing of data products}{18}{section*.10}
+\contentsline {subsubsection}{Parallel processing of data products}{18}{section*.11}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Organize dependencies and authentications}{18}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dependencies}{18}{section*.11}
+\contentsline {subsubsection}{Dependencies}{18}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Authentication}{19}{section*.12}
+\contentsline {subsubsection}{Authentication}{19}{section*.13}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Results}{20}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -54,41 +56,41 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Limits and problems of the current version of the earthEngineGrabR}{29}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vector data processing restriction}{30}{section*.13}
+\contentsline {subsubsection}{Vector data processing restriction}{30}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Limited number of available data products and their possible properties}{30}{section*.14}
+\contentsline {subsubsection}{Limited number of available data products and their possible properties}{30}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{No control of projection}{30}{section*.15}
+\contentsline {subsubsection}{No control of projection}{30}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Multiple dependencies, operating system interoperability, confusing authentication process}{30}{section*.16}
+\contentsline {subsubsection}{Multiple dependencies, operating system interoperability, confusing authentication process}{30}{section*.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Further development of the earthEngineGrabR}{31}{section.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.1}Implementation of additional features}{31}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Add more data products}{31}{section*.17}
+\contentsline {subsubsection}{Add more data products}{31}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Extend the properties of the data products}{32}{section*.18}
+\contentsline {subsubsection}{Extend the properties of the data products}{32}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Internal iterations as a workaround for the vector data processing restriction}{32}{section*.19}
+\contentsline {subsubsection}{Internal iterations as a workaround for the vector data processing restriction}{32}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Simplify the authentication process}{32}{section*.20}
+\contentsline {subsubsection}{Simplify the authentication process}{32}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{33}{section*.21}
+\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{33}{section*.22}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.2.2}Improve the integration of R and Python}{33}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Internal strengths, weaknesses and limitations of EE and their incorporation in the earthEngineGrabR}{34}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strengths of EE}{34}{section*.22}
+\contentsline {subsubsection}{Strengths of EE}{34}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Weaknesses and limitations of EE}{34}{section*.23}
+\contentsline {subsubsection}{Weaknesses and limitations of EE}{34}{section*.24}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}The optimal application of EE in the earthEngineGrabR}{35}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Support the internal distribution mechanism of EE by processing the data products in parallel}{35}{section*.24}
+\contentsline {subsubsection}{Support the internal distribution mechanism of EE by processing the data products in parallel}{35}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{35}{section*.25}
+\contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{35}{section*.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusion}{37}{chapter.5}
 \defcounter {refsection}{0}\relax 

@@ -28,7 +28,7 @@ Another problem is, that during the upload process all vector data is transforme
 
 \subsubsection{Multiple dependencies, operating system interoperability, confusing authentication process}
 
-The most challenging problem though is to get the earthEngineGrabR to work on all operating systems properly. This point is challenging because of the many requirements and dependencies of the package and the approach to invoke system calls. There are dependencies to R packages python libraries and external libraries like GDAL, and there has to be a working python distribution on the system (see table \ref{dependencies}). If any of the requirements are not met, the package crashes. 
+The most challenging problem though is to get the earthEngineGrabR to work on all operating systems properly. This point is challenging because of the many requirements and dependencies of the package and the approach to invoke system calls. There are dependencies to R packages python libraries and external libraries such as GDAL, and there has to be a working python distribution on the system (see table \ref{dependencies}). If any of the requirements are not met, the package crashes. 
 Further, the invoked system calls depend on specified paths as environmental variables on the users operating system. For example the commands \texttt{python}, \texttt{pip} or \texttt{ogr2ogr} are invoked with the \texttt{system()} function, if the commands can't be found, the execution fails. The problems could be solved by specifying the full path to the underlying programmes, but these again depend on the operating system and the Python distribution that is installed. In summary, the approach to use invoked system call via R's \texttt{system()} functions makes the package vulnerable to internal errors due to interoperability of different operating systems and local environments.
 
 An additional difficulty is the confusing and extensive authentication process. While the Google Drive and Fusion Table API are accessed directly with R, the EE API and the GDAL driver for Fusion Tables are accessed with Python. In R the authentication protocol is managed by the httr R package and requires no manual copying and pasting of authorisation tokens. For the authorisation to the API's accessed from Python the copy and pasting of tokens are still necessary. 
@@ -38,7 +38,7 @@ Furthermore, the httr R package in its current implementation of the earthEngine
 
 Most of the shortcomings addressed in the last section can be rectified with the further development of the earthEngineGrabR package. 
 
-The further development can be divided into the improvement of the framework and the implementation and further development of additional features.
+The further development can be divided into the improvement of the interface between R and EE and the implementation and of additional features.
 
 \subsection{Implementation of additional features}
 
@@ -46,7 +46,7 @@ Below, some additional extensions to the earthEngineGrabR are described that wil
 
 \subsubsection{Add more data products}
 
-The most important extension is the implementation of additional data products. All data products available within the EE public data catalogue can be considered. To provide data products covering weather and climate variables, the implementation of additional products based on ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer) and MODIS would be reasonable. Furthermore, a data product to provide vegetation indices calculated form Sentinel or Landsat satellite imagery would be interestingg.
+The most important extension is the implementation of additional data products. All data products available within the EE public data catalogue can be considered (see table \ref{app:appendix2}). To provide data products covering weather and climate variables, the implementation of additional products based on ASTER (Advanced Spaceborne Thermal Emission and Reflection Radiometer) and MODIS would be reasonable. Furthermore, a data product to provide vegetation indices calculated form Sentinel or Landsat satellite imagery would be interestingg.
 
 \subsubsection{Extend the properties of the data products}
 To provide a smaller temporal resolution, the package could implement an additional monthInterval parameter, which filters for specific months. This would result in the possibility to specify year and month of the interval of interest and allow to acquire the chirps-precipitation and jrc-distance-to-surface-water product in a monthly resolution.
@@ -76,11 +76,11 @@ In summary, the reticulate package provide a more precise, less error-prone and 
 
 Besides the discussed limitation, there are also limitations of EE, which in contrast to the limitations of the earthEngineGrabR, can't be avoided by further development of the package. 
 These inherent limitations have a strong influence on the operations that can be performed efficiently with the package.
-Accessory to the suggested improvement of the framework and the
+Accessory to the suggested improvement of the interface between R and Python and the
 implementation of additional features, the limitations and strengths of EE pretend a direction to the further development of the package.
 
 A reason for EE's performance is its ability to distribute and manage complex computations across many machines efficiently. There is an almost linear relationship of throughput (pixels/sec) with the number of machines (\cite{gorelick2017google}).
-Although EE can execute and manage extensive computations, the underlying infrastructure consists of clusters of low-end servers, and there is a hard limit on the amount of data that can be brought to any individual server. The current Remote procedure call (RPC) and caching system limit the size of an object to 100 MB. An option to configure machines in earth engine is not available.
+Although EE can execute and manage extensive computations, the underlying infrastructure consists of clusters of low-end servers, and there is a hard limit on the amount of data that can be brought to any individual server. The current Remote procedure call (RPC) and caching system limit the size of an object to 100 MB. An option to configure machines in EE is not available.
 
 Users can only express computations by using the parallel processing primitives provided in the EE client library, and some non-parallelizable operations just cannot be performed efficiently in this environment.
 
@@ -117,7 +117,7 @@ Considering this, using vector data as the output of the \texttt{ee\_grab()} fun
 
 The limitation and strengths of the earthEngineGrabR arise from the weakness and strengths of EE. Therefore, the generated data products should correspond to EE capabilities. For images, this results in the use of per-pixel and finite neighbourhood operations such as band-math, morphological operations, spectral unmixing, template matching and texture analysis.
 
-To use the full potential of the EE, the earthEngineGrabR has to provide comfortable and user-friendly access to the capabilities of EE while using EE's internal strengths to offer a variety of data products.
+To use the full potential of EE, the earthEngineGrabR has to provide comfortable and user-friendly access to the capabilities of EE while using EE's internal strengths to offer a variety of data products.
 
 EE's internal strengths could be used to generate a number of processing intensive data products. For example to calculate different vegetation indices's out of satellite data. This product, would enable to choose a time interval in months, maximum cloud cover to filter the image collection, whether to use Landsat or Sentinel imagery and the index that is to be calculated. The product could generate NDVI, Normalised Difference Water Index (NDWI), Enhanced Vegetation Index (EVI) or Normalized Difference Built-up Index (NDBI) out of high-resolution satellite data.
 

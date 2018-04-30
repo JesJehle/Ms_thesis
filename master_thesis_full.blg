@@ -1,15 +1,15 @@
-[0] Config.pm:340> INFO - This is Biber 2.4
+[1] Config.pm:340> INFO - This is Biber 2.4
 [1] Config.pm:343> INFO - Logfile is 'master_thesis_full.blg'
-[69] biber:287> INFO - === Do Apr 26, 2018, 17:35:34
-[207] Biber.pm:348> INFO - Reading 'master_thesis_full.bcf'
-[424] Biber.pm:742> INFO - Found 28 citekeys in bib section 0
-[433] Biber.pm:3151> INFO - Processing section 0
-[478] Biber.pm:3308> INFO - Looking for bibtex format file 'reference.bib' for section 0
-[540] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
-[596] bibtex.pm:974> INFO - Found BibTeX data source 'reference.bib'
-[1645] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1645] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1645] Biber.pm:3028> INFO - Sorting list 'nyt/global' of type 'entry' with scheme 'nyt' and locale 'en-US'
-[1646] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
-[1740] bbl.pm:519> INFO - Writing 'master_thesis_full.bbl' with encoding 'UTF-8'
-[1936] bbl.pm:615> INFO - Output to master_thesis_full.bbl
+[69] biber:287> INFO - === Mo Apr 30, 2018, 16:13:48
+[211] Biber.pm:348> INFO - Reading 'master_thesis_full.bcf'
+[425] Biber.pm:742> INFO - Found 29 citekeys in bib section 0
+[437] Biber.pm:3151> INFO - Processing section 0
+[506] Biber.pm:3308> INFO - Looking for bibtex format file 'reference.bib' for section 0
+[574] bibtex.pm:1113> INFO - Decoding LaTeX character macros into UTF-8
+[632] bibtex.pm:974> INFO - Found BibTeX data source 'reference.bib'
+[1911] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1911] UCollate.pm:65> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1911] Biber.pm:3028> INFO - Sorting list 'nyt/global' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[1911] Biber.pm:3032> INFO - No sort tailoring available for locale 'en-US'
+[2014] bbl.pm:519> INFO - Writing 'master_thesis_full.bbl' with encoding 'UTF-8'
+[2223] bbl.pm:615> INFO - Output to master_thesis_full.bbl
