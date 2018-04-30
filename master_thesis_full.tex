@@ -84,13 +84,13 @@
 
 \usepackage{wrapfig}   % allows text to flow around a figure               
 
+\usepackage[labelfont=bf]{caption}   % allows text to flow around a                
+
+%\usepackage{color}
 
 
 
-
-
-
-
+%\definecolor{myCol}{rgb}{0.58,0,0.82}
 
 
 \usepackage{tabularx}
@@ -112,15 +112,15 @@
   showspaces=false,               % show spaces adding particular underscores
   showstringspaces=false,         % underline spaces within strings
   showtabs=false,                 % show tabs within strings adding particular underscores
-  frame=none,                   % adds a frame around the code
+  frame=single,                   % adds a frame around the code
   rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
   tabsize=2,                      % sets default tabsize to 2 spaces
   captionpos=b,                   % sets the caption-position to bottom
   breaklines=true,                % sets automatic line breaking
   breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
-  keywordstyle=\color{RoyalBlue},      % keyword style
-  commentstyle=\color{YellowGreen},   % comment style
-  stringstyle=\color{ForestGreen}      % string literal style
+  keywordstyle=\color{black},      % keyword style
+  commentstyle=\color{black},   % comment style
+  stringstyle=\color{black}      % string literal style
 }
 
 
@@ -152,10 +152,10 @@
 \def\authors{Janusch Jehle}
 
 
-\def\supervisor{Supervisor: Severin Hauenstein, PhD. candidate, Department of Biometry and Environmental System Analysis}
-\def\cosupervisor{Co-supervisor: Mirko Mälicke, M.Sc. Hydrologie, Department of Remote Sensing and Landscape Information Systems}
-\def\examiner{Examiner: Carsten Dormann, Prof. Dr., Department of Biometry and Environmental System Analysis,
-	Dr.-Ing. Holger Weinacker, Department of Remote Sensing and Landscape Information Systems}
+\def\supervisor{Supervisor: M.Sc. Severin Hauenstein}
+\def\cosupervisor{Co-supervisor: M.Sc. Mirko Mälicke}
+\def\examiner{Examiner: Prof. Dr Carsten Dormann,
+	Dr.-Ing. Holger Weinacker}
 
 \def\year{Freiburg, May 2018}
 \def\course{Master thesis  (Student ID 2920545) \\submitted to \\the Faculty of Environment \& Natural Resources \\ at the Albert-Ludwigs-University Freiburg}
@@ -224,6 +224,7 @@
 		\includegraphics[width=16cm]{images/artWork_croped_2.png} %ALU_longlogo}
 	\end{center}
 \end{figure}
+
 \newpage
 
 % Page numbering, options are arabic (Arabic numerals), roman	(Lowercase Roman), Roman (Uppercase Roman)
@@ -232,9 +233,9 @@
 \pagestyle{plain}
 
 \input{chapters/acknowledgements}
-		
+
 % Include table of contents
-\tableofcontents
+
 
 % Remove the % in front of the command below to include a list of tables:
 %\listoftables
@@ -250,8 +251,13 @@
 \abstract{
 
 \input{chapters/abstract}
+	
+}
 
-} 
+
+\tableofcontents
+\thispagestyle{empty}
+\setcounter{page}{0}
 
 \input{chapters/introduction}
 
@@ -269,14 +275,16 @@
 
 % Insert the first appendix
 
-
 % Insert the second appendix
 \input{chapters/appendix2}
-
 
 % If you used the makeidx package to create an index then use the 
 % following command to print the index
 \printindex
+
+\listoffigures
+
+\listoftables
 
 \input{chapters/selbststaendigkeit}
 

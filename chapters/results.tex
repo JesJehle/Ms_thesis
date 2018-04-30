@@ -43,13 +43,13 @@ ee_grab_init()
 \end{lstlisting}
 
 Next, by running the \texttt{ee\_grab\_init()} function all additionally required dependencies are installed and you are guides through the authentication processes to activate the different API's. To authenticate to the API the log into your Google account and allow the API to access data on googles servers on your behalf. 
-If the Google account is verified and the permission is granted, you are directed to an authentification token. This token is manually copied and pasted into a running command line script, which creates persistent credentials. Later, the credentials are used to authenticate a request to the API. To simplify this procedure, the \texttt{ee\_grab\_init()} function successively opens a browser window to log into the Google account and a corresponding command line window to enter the token (see figure \ref{install}). 
+If the Google account is verified and the permission is granted, you are directed to an authentification token. This token is manually copied and pasted into a running command line script, which creates persistent credentials. Later, the credentials are used to authenticate a request to the API. To simplify this procedure, the \texttt{ee\_grab\_init()} function successively opens a browser window to log into the Google account and a corresponding command line window to enter the token (Figure \ref{install}). 
 
 \begin{center}
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/install_authentication.png}
-			\caption{Example of the authentication process for the EE API with the required Google login on the right side and the terminal window to paste the token on the left.}
+			\caption{Example of the authentication process for the EE API with the required Google login (right) and the terminal window to enter the token (left).}
 			\label{install}
 		\end{center}
 	\end{figure}
@@ -66,7 +66,7 @@ To acquire the data next use the \texttt{ee\_grab()} function. The target is the
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/autocomplete.png}
-			\caption{Example of viewing the data product documentation with R Studio's auto-complete functionality}
+			\caption{Example of viewing the data product documentation with R Studio's auto-complete functionality.}
 			\label{install}
 		\end{center}
 	\end{figure}
@@ -77,7 +77,7 @@ To acquire the data next use the \texttt{ee\_grab()} function. The target is the
 
 Furthermore, the selection of a product in the menu displays a little description of the product and list their possible parameters. For more Information on a particular data product simply open the documentation of the function by pressing F1, or use equivalent methods. This way, it's possible to browse through the products, without any additional metadata outside of R. Additionally the functions provide default parameter values, which allow a test run without the need of specifying any parameter. While this procedure provides a user-friendly selection of available data products with their corresponding parameters, it also minimises potential typing and spelling errors.
 
-After browsing through the data products, you choose the modis-tree-cover product for the year 2000 to 2005. You are further interested in the mean tree cover between this period and also want the mean tree cover in each of the elephant territories. Because the default value for the time reducer and the spatial reducer is mean you only need to specify the time interval parameter with a vector of the start and end-year (\texttt{timeInterval = c(2000, 2005)}). You are further interested in a potential correlation of the accessibility to populated areas and the illegally killed elephant. Therefore you additionally choose the oxford-accessibility product. The information displayed by the R's auto compete feature reveals only one possible parameter - spatialReducer - and by requesting the documentation of the function, you learn that this data product is only available for the year 2015, and therefore has no temporal resolution to aggregate. Again, you choose the mean accessibility in each territory by using the default value of the parameter and add the product function to the list. The last argument specifies the resolution in meters as edge length. 
+After browsing through the data products, you choose the modis-tree-cover product for the year 2000 to 2005. You are further interested in the mean tree cover between this period and also want the mean tree cover in each of the elephant territories. Because the default value for the time reducer and the spatial reducer is mean you only need to specify the time interval parameter with a vector of the start and end-year (\texttt{timeInterval = c(2000, 2005)}). You are further interested in a potential correlation of the accessibility to populated areas and the illegally killed elephant. Therefore you additionally choose the oxford-accessibility product. The information displayed by the R's auto compete feature reveals only one possible parameter - spatialReducer - and by requesting the documentation of the function, you learn that this data product is only available for the year 2015, and therefore has no temporal resolution to aggregate. Again, you choose the mean accessibility in each territory by using the default value of the parameter and add the product function to the list. The last argument specifies the resolution in m as edge length. 
 
 
 \begin{lstlisting}
@@ -100,7 +100,7 @@ The resolution parameter sets the resolution of the processed data in EE and app
 	\begin{figure}
 		\begin{center}
 			\includegraphics[width=15cm]{images/session_1_hor_2-cropped.pdf}
-			\caption{Left map shows accessibility to the nearest populated areas in minutes and the right map presents tree cover in percent for the african MIKE sides}
+			\caption{Accessibility to the nearest populated areas in minutes (left) and mean tree cover in percent (right) for the african MIKE sides.}
 			\label{sample_session_1}
 		\end{center}
 	\end{figure}
@@ -123,16 +123,20 @@ On a 64-bit ubuntu machine with 8 Gbit of RAM, 4 cores with 2.40 GHz and interne
 The output of the \texttt{ee\_grab()} function is an object of class sf.  The output always contains all properties of the original target vector data with the added data products and an additional geometry column as shown in table \ref{output}.
 
 \begin{table}[h]
+	\captionsetup{justification=raggedright,
+		singlelinecheck=false
+	}
+	\caption{Example output of the \texttt{ee\_grab()} function.}
 	\begin{tabularx}{\textwidth}{lllccc}
 		\toprule
 		id & sitecode & name & tree cover & accessibility & geometry \\
-		\hline
+		\midrule
 		1  & AKG  & Akagera & 15 & 138.4 & MULTIP. (30.5 -1.\\
 		2 & DZA  & Dzanga-Sangha & 76.4 & 858.9 & MULTIP. (16.06 2.\\
 		3 & MCH  & Murchison Falls & 25.0 & 146.1 & MULTIP. (32.1 2.\\
 		\bottomrule
 	\end{tabularx}
-	\caption{Example output of the \texttt{ee\_grab()} function}
+
 	\label{output}
 \end{table}
 
@@ -146,13 +150,11 @@ While this sample session shows the capabilities of the earthEngineGrabR package
 
 \section{Small-scale analysis}
 
-
-
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\begin{center}
 		\vspace{-10mm}
 		\includegraphics[width=7cm]{images/stripes-cropped.pdf}
-		\caption{Spatial coverage of the aerial survey for Tanzania}
+		\caption{Spatial coverage of the aerial survey for Tanzania.}
 		\label{stripes}
 	\end{center}
 \end{wrapfigure}
@@ -181,7 +183,7 @@ Due to the smaller area of the features of the target (mean area of 0.7 km$^2$),
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/stripes_distance_2.pdf}
-			\caption{Distance to surface water in km for the coverage of the areal survey}
+			\caption{Augmented excerpt of the distance to surface water in km for the coverage of the areal survey.}
 			\label{session_2}
 		\end{center}
 	\end{figure}
@@ -228,13 +230,13 @@ The output is an object of class sf that contains all properties of the original
 Next, use a linear model of $year  \sim precipitation$ for each site and retrieve the estimates for the effect of year. 
 The estimates show the linear effect of year on the yearly precipitation sum in mm for each of the sites. 
 By joining the estimates with the spatial data of the sites, the estimates can be visualised spatially. 
-Figure \ref{change} shows the estimate of the yearly change of the annual precipitation sum in mm for each site. That estimates reflect a yearly change from - 10 mm to + 20 mm. While the yearly precipitation sum is increasing for the sites in East Africa, it is decreasing for most sites in central Africa, especially for those with hight tree cover (see figure \ref*{sample_session_1}).
+Figure \ref{change} shows the estimate of the yearly change of the annual precipitation sum in mm for each site. That estimates reflect a yearly change from - 10 mm to + 20 mm. While the yearly precipitation sum is increasing for the sites in East Africa, it is decreasing for most sites in central Africa, especially for those with hight tree cover (Figure \ref*{sample_session_1}).
 
 \begin{center}
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/session_3-cropped.pdf}
-			\caption{Estimates for the yearly change of the annual precipitation sum in mm within the african MIKE sites}
+			\caption{Estimates of the yearly change of the annual precipitation sum in mm within the african MIKE sites.}
 			\label{change}
 		\end{center}
 	\end{figure}

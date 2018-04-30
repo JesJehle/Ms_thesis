@@ -20,13 +20,14 @@ The last section covers the necessary dependencies and authentications processes
 
 \section{Available data products}
 
-The main objective of the current version of the earthEngineGraR package is to develop a stable interface of R and the EE to retrieve data in a user-specific form. Therefore the temporally available data is still limited to a selected list of data products, that should illustrate the diversity of the EE data catalogue (see table \ref{data}). In the further development of the earthEngineGrabR package, this list will be extended.
+The main objective of the current version of the earthEngineGraR package is to develop a stable interface of R and the EE to retrieve data in a user-specific form. Therefore the temporally available data is still limited to a selected list of data products, that should illustrate the diversity of the EE data catalogue (Table \ref{data}). In the further development of the earthEngineGrabR package, this list will be extended.
 
 \begin{table}[h]
+		\caption{Data products with temporal coverage, temporal- and spatial-resolution available in the earthEngineGrabR.}
 	\begin{tabularx}{\textwidth}{llXXX}
 		\toprule
 		\textbf{data source} & \textbf{data product} & \textbf{spatial} & \textbf{temporal} & \textbf{availability}\\
-		\hline
+		\midrule
 		
 		MOD44B.051 & Tree-cover  & 30 m & yearly & 2000–2015 \\
 		
@@ -47,7 +48,7 @@ The main objective of the current version of the earthEngineGraR package is to d
 		
 		\bottomrule
 	\end{tabularx}
-	\caption{Data products with temporal coverage, temporal- and spatial-resolution available in the earthEngineGrabR}
+
 	\label{data}
 \end{table}
 
@@ -77,13 +78,13 @@ Instead of downloading the raw raster data, the package provides control to filt
 A data product in the earthEngineGrabR is specified with an earth engine data product-function. Each function specifies one particular data product with the corresponding parameters. The name of the function is \texttt{eeProduct\_ } followed by the source of the data products, underscore the name of the data product. For example: \texttt{eeProduct\_modis\_treeCover()}. The output of the function is simply an object of the class list that specifies the parameters of the requested data product. To use a function - that produces the required parameters instead of committing a list or a vector with the listed parameter - holds several advantages illustrated in the result section.
 
 In the EE, a reducer is a way to aggregate data over space and time. In the earthEngineGrabR, there are implementations for simple statistics such as computing the mean, modal, maximum, and minimum value. The temporal reducer aggregates the data over time and the spatial reducer aggregates the data over a region defined by the target. 
-The target is defined by vector data, where the spatial extent of the features define the region the spatial reducer is applied over (figure \ref*{Workflow}).
+The target is defined by vector data, where the spatial extent of the features define the region the spatial reducer is applied over (Figure \ref*{Workflow}).
 
 \begin{center}
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/processing_flow2-cropped.pdf}
-			\caption{Function design and the data manipulation workflow of the \texttt{ee\_grab()} function}
+			\caption{Function design and data manipulation workflow of the \texttt{ee\_grab()} function.}
 			\label{Workflow}
 		\end{center}
 	\end{figure}
@@ -99,7 +100,7 @@ During this entire processing flow, the size of the data is massively reduced, w
 To enable R users, to request and download data from EE. The package combines multiple tools like the programming languages R, Python as well as multiple web services provided by Google such as the Fusion Tables, Google Drive and the EE. While Google Drive is a general file sharing and storage service for all kinds of files, Google Fusion Table is specifically designed to manage tabular data and enables users to upload, manipulate, visualise and share small amounts of data online.
 
 Each tool performs a specific task. In R, the user specifies the requested data and initialises all further processes. In Python, the actual request is generated and sent to EE. Because EE can import Fusion Tables, the Google Fusion Table is used to upload local vector data to EE. The EE performs all data processing and exports the data to Google Drive wherefrom it is downloaded and imported into R. 
-In the following, an internal processing flow of the \texttt{ee\_grab()} function is described (see figure \ref{processingFlow}).
+In the following, an internal processing flow of the \texttt{ee\_grab()} function is described (Figure \ref{processingFlow}).
 \begin{center}
 	\begin{figure}[h]
 		\begin{center}
@@ -130,7 +131,7 @@ The EE is accessed with the EE client library for Python. To access EE from R, i
 	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=15cm]{images/concole_connection_big-cropped.pdf}
-			\caption{Example of utilizing the console to execute a Python script from R, that requests metadata on the SRTM data set on EE.}
+			\caption{Example of utilizing a system call to execute a Python script from R and request metadata on the SRTM data set from EE.}
 			\label{consoleConnection}			
 		\end{center}
 	\end{figure}
@@ -164,27 +165,25 @@ While this is the action of the request that is performed, the response of the r
 \subsubsection{Parallel processing of data products}
 
 
-To process multiple data products in a \texttt{ee\_grab()} function call, each data product is processed in an individual request to the EE servers. While the upload of the target vector is performed only once, the remaining seven processes of the processing flow in figure \ref{processingFlow} are iterated for each data product. This approach allows the parallel processing of the data products. The individual requests for the data products, generated by the EE client library in Python, all end with a command to export the generated data to Google Drive (in figure \ref{processingFlow} shown as green arrows with number 7). However, the request must not wait until the data is processed and exported to Google Drive. Instead, the request ends with the response of the EE servers, whether EE started the processing. 
+To process multiple data products in a \texttt{ee\_grab()} function call, each data product is processed in an individual request to the EE servers. While the upload of the target vector is performed only once, the remaining seven processes of the processing flow in figure \ref{processingFlow} are iterated for each data product. This approach allows the parallel processing of the data products. The individual requests for the data products, generated by the EE client library in Python, all end with a command to export the generated data to Google Drive (7). However, the request must not wait until the data is processed and exported to Google Drive. Instead, the request ends with the response of the EE servers, whether EE started the processing. 
 This allows requesting the computation of multiple data products at the same time. The exported data products are individually downloaded from Google Drive and finally joined in R.
 
 
 \section{Organize dependencies and authentications}
 
 
-The earthEngineGrabR package has several package dependencies in R and Python. While most R dependencies can be handled within the description file of an R package, the Python dependencies need to be manually installed with a package manager like pip. Furthermore, the package connects to several API's, which each require an individual, user-specific, authentication procedure. Therefore, a user-friendly organisation of all requirements of the earthEngineGrabR to work is particularly important. To leave the installation of dependencies and authentications to the user, would significantly hinder the use of the package and make it more cumbersome. 
-
-
-To simplify the installation and authentication process, the earthEngineGrabR includes a function \texttt{ee\_grab\_init()} that installs Python dependencies and furthermore guides the user through the different authentications. Before using the earthEngineGrabR, the user has to call \texttt{ee\_grab\_init()}. 
+The earthEngineGrabR package has several package dependencies in R and Python. While most R dependencies can be handled within the description file of an R package, the Python dependencies need to be manually installed with a package manager like pip. Furthermore, the package connects to several API's, which each require an individual, user-specific, authentication procedure. Therefore, a user-friendly organisation of all requirements of the earthEngineGrabR to work is particularly important. To leave the installation of dependencies and authentications to the user, would significantly hinder the use of the package and make it more cumbersome. To simplify the installation and authentication process, the earthEngineGrabR includes a function \texttt{ee\_grab\_init()} that installs Python dependencies and furthermore guides the user through the different authentications. Before using the earthEngineGrabR, the user has to call \texttt{ee\_grab\_init()}. 
 
 \subsubsection{Dependencies}
 
 Table \ref*{dependencies} lists the different dependencies for the earthEngineGrabR and how they are installed. 
-
+The dependencies handled by the description file are automatically installed during the installation of the earthEngineGrabR, while the libraries dealt with the setuptools utility are installed with \texttt{ee\_grab\_init()}.
 \begin{table}[h]
+		\caption{Library dependencies of the earthEngineGrabR and the provided installation handling.}
 	\begin{tabularx}{\textwidth}{XXl}
 		\toprule
 		\textbf{library} & \textbf{dependency} & \textbf{installation}  \\
-		\hline
+		\midrule
 		googledrive & R  & description file  \\
 		dplyr & R  & description file  \\
 		rjson & R  & description file  \\
@@ -197,13 +196,10 @@ Table \ref*{dependencies} lists the different dependencies for the earthEngineGr
 		json & Python  & setuptools  \\        
 		\bottomrule
 	\end{tabularx}
-	\caption{Library dependencies of the earthEngineGrabR and how the installation is handled}
+
 	\label{dependencies}
 \end{table}
-
-The dependencies handled by the description file are automatically installed during the installation of the earthEngineGrabR, while the libraries dealt with the setuptools utility are installed with \texttt{ee\_grab\_init()}. The installation of sf and GDAL is not provided and has to be manually installed by the user prior to the use of the earthEngineGrabR.
-
-The earthEngineGrabR depends on a Python version higher 2.7 with Python path set (PYTHONPATH). To ease the installation of the Python dependencies, all dependencies are combined in a new python package (GEE2R), using the setuptools package in Python. The GEE2R Python package can then be installed with the package manager pip. During this installation, all specified python dependencies are installed at once. This process is similar to the use of the description file in R packages. To call pip from R, R's described ability to invoke a system call with the \texttt{system()} or \texttt{system2()} function is used.
+ The installation of sf and GDAL is not provided and has to be manually installed by the user prior to the use of the earthEngineGrabR.The earthEngineGrabR depends on a Python version higher 2.7 with Python path set (PYTHONPATH). To ease the installation of the Python dependencies, all dependencies are combined in a new python package (GEE2R), using the setuptools package in Python. The GEE2R Python package can then be installed with the package manager pip. During this installation, all specified python dependencies are installed at once. This process is similar to the use of the description file in R packages. To call pip from R, R's described ability to invoke a system call with the \texttt{system()} or \texttt{system2()} function is used.
 
 \subsubsection{Authentication}
 
