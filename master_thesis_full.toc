@@ -93,3 +93,9 @@
 \contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{34}{section*.43}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Conclusion}{36}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{37}{chapter*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Figures}{39}{table.caption.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Tables}{39}{table.caption.46}

@@ -1,6 +1,6 @@
 \chapter{Results}
 
-The following section provides three sample sessions with corresponding scientific scenario in which the earthEngineGrabR is used to acquire remote sensing data to meet a specific question. The emphasis of this section lies on how to use the earthEngineGrabR in practice.
+The following section provides three sample sessions with corresponding scientific scenarios in which the earthEngineGrabR is used to acquire remote sensing data to answer a specific question. The emphasis of this section lies on how to use the earthEngineGrabR in practice.
 
 \section{Large-scale analysis}
 
@@ -18,31 +18,31 @@ For Each site there are the aggregated number of illegally killed elephants enco
 % \vskip 2em%
 
 
-Your object of investigation is to find covariates for the intensity of illegally killed elephants within the different MIKE sites.
+Your object of investigation is to find covariates, for the intensity of illegally killed elephants within the different MIKE sites.
 To run your statistical model in R and find influential covariates you need further environmental variables derived from satellite imagery like the topography, land-use, and precipitation. 
 
-Because the study area is fragmented and of large-scale at the same time it would require significant effort to use one of the search and order tools like the Earth Explorer, to acquire and prepare the remote sensing data for your analysis. You would have to download a multitude of tiles for each of your environmental variables to cover the study area. Next, you would have to integrate, merge and aggregate all this data in an external GIS application before you start your actual analysis in R.
+Because the study area is fragmented and of large-scale at the same time, it would require significant effort to use one of the search and order tools like the Earth Explorer, to acquire and prepare the remote sensing data for your analysis. You would have to download a multitude of tiles for each of your environmental variables to cover the area of study. Further, you would have to integrate, merge and aggregate all this data in an external GIS application before you start your actual analysis in R.
 
 
-Fortunately, you heard of a new R package that is supposed to greatly simplified the data acquisition process and you are desperate enough to give it a try. 
+Fortunately, you heard of a new R package that is supposed to greatly simplify the data acquisition process and you are desperate enough to give it a try. 
 
-After some googling, you find the earthEngineGrabR and the corresponding Git Hup page, which describes how to apply for an EE account and how to install the required dependencies for the package (\cite{earthEngineGrabR}). Because you have GDAL and Python already installed, you only install the sf R package and wait a few hours for the acknowledgement e-mail from Google, that you or your Google Account is now a trusted tester of the EE.
+After some googling, you find the earthEngineGrabR and the corresponding Git Hup page, which describes how to apply for an EE account and how to install the required dependencies for the package (\cite{earthEngineGrabR}). Because you have GDAL and Python already installed, you only install the sf R package and wait a few hours for the acknowledgement e-mail from Google, confirming that you or your Google Account are now a trusted tester of the EE.
 
-First, install the package from Git Hup with the \texttt{install\_githup()} function form the devtools package.
+In a first step, install the package from Git Hup with the \texttt{install\_githup()} function form the devtools package.
 
 \begin{lstlisting}
 library(devtools)
 install_github("JesJehle/earthEngineGrabR")
 \end{lstlisting}
 
-After installing the package the first step is to initialize the package with \texttt{ee\_grab\_init()}. 
+After installing the package, the first step is to initialize the package with \texttt{ee\_grab\_init()}. 
 
 \begin{lstlisting}
 library(earthEngineGrabR)
 ee_grab_init()
 \end{lstlisting}
 
-Next, by running the \texttt{ee\_grab\_init()} function all additionally required dependencies are installed and you are guides through the authentication processes to activate the different API's. To authenticate to the API the log into your Google account and allow the API to access data on googles servers on your behalf. 
+Next, by running the \texttt{ee\_grab\_init()} function, all additionally required dependencies are installed and you are guided through the authentication processes to activate the different API's. To authenticate the API, log into your Google account and allow the API to access data on Google's servers on your behalf. 
 If the Google account is verified and the permission is granted, you are directed to an authentification token. This token is manually copied and pasted into a running command line script, which creates persistent credentials. Later, the credentials are used to authenticate a request to the API. To simplify this procedure, the \texttt{ee\_grab\_init()} function successively opens a browser window to log into the Google account and a corresponding command line window to enter the token (Figure \ref{install}). 
 
 \begin{center}
@@ -58,9 +58,9 @@ If the Google account is verified and the permission is granted, you are directe
 
 
 
-This process is repeated for each API. If the function runs successfully, all needed credentials are stored for further sessions. Because some of the credentials expire after a few hours, a reauthentication is necessary. This process is handled automatically inside the \texttt{ee\_grab()} function. If a reauthentication is needed the function opens a browser window and the user is asked to log into his Google account. The creation of credentials is automated, and there is no need to copy or paste the token manually.
+This process is repeated for each API. If the function runs successfully, all needed credentials are stored for further sessions. Because some of the credentials expire after a few hours, a reauthentication is necessary. This process is handled automatically inside the \texttt{ee\_grab()} function. If a reauthentication is needed, the function opens a browser window and the user is asked to log into their Google account. The creation of credentials is automated, and there is no need to copy or paste the token manually.
 
-To acquire the data next use the \texttt{ee\_grab()} function. The target is the path to the shapefile of the MIKE sites shown in figure \ref{territories}. The products argument takes a list of earth engine data product-functions. Each function specifies one particular data product, and it's necessary parameter. The name of the function is \texttt{eeProduct\_ }followed by the source of the data products, underscore the name of the data product. For example: \texttt{eeProduct\_modis\_treecover()}. Because all data products start with \texttt{eeProduct\_ }, by simply typing \texttt{eeProduct\_ }, R's autocomplete function opens a drop-down menu of all available data products. 
+To acquire the data, use the \texttt{ee\_grab()} function. The target is the path to the shapefile of the MIKE sites shown in figure \ref{territories}. The products argument takes a list of earth engine data product functions. Each function specifies one particular data product, and its necessary parameter. The name of the function is \texttt{eeProduct\_ }followed by the source of the data products, underscore the name of the data product. For example: \texttt{eeProduct\_modis\_treecover()}. Because all data products start with \texttt{eeProduct\_ }, by simply typing \texttt{eeProduct\_ }, R's autocomplete function opens a drop-down menu of all available data products. 
 
 \begin{center}
 	\begin{figure}[h]
@@ -75,9 +75,9 @@ To acquire the data next use the \texttt{ee\_grab()} function. The target is the
 
 
 
-Furthermore, the selection of a product in the menu displays a little description of the product and list their possible parameters. For more Information on a particular data product simply open the documentation of the function by pressing F1, or use equivalent methods. This way, it's possible to browse through the products, without any additional metadata outside of R. Additionally the functions provide default parameter values, which allow a test run without the need of specifying any parameter. While this procedure provides a user-friendly selection of available data products with their corresponding parameters, it also minimises potential typing and spelling errors.
+Furthermore, the selection of a product in the menu displays a little description of the product and lists their possible parameters. For more information on a particular data product, simply open the documentation of the function by pressing F1, or use equivalent methods. This way, it's possible to browse through the products, without any additional metadata outside of R. Additionally, the functions provide default parameter values, which allow a test run without the need of specifying any parameter. While this procedure provides a user-friendly selection of available data products with their corresponding parameters, it also minimises potential typing and spelling errors.
 
-After browsing through the data products, you choose the modis-tree-cover product for the year 2000 to 2005. You are further interested in the mean tree cover between this period and also want the mean tree cover in each of the elephant territories. Because the default value for the time reducer and the spatial reducer is mean you only need to specify the time interval parameter with a vector of the start and end-year (\texttt{timeInterval = c(2000, 2005)}). You are further interested in a potential correlation of the accessibility to populated areas and the illegally killed elephant. Therefore you additionally choose the oxford-accessibility product. The information displayed by the R's auto compete feature reveals only one possible parameter - spatialReducer - and by requesting the documentation of the function, you learn that this data product is only available for the year 2015, and therefore has no temporal resolution to aggregate. Again, you choose the mean accessibility in each territory by using the default value of the parameter and add the product function to the list. The last argument specifies the resolution in m as edge length. 
+After browsing through the data products, you choose the modis-tree-cover product for the year 2000 to 2005. You are further interested in the mean tree cover between this period and also want the mean tree cover in each of the elephant territories. Because the default value for the time reducer and the spatial reducer is mean, you only need to specify the time interval parameter with a vector of the start and end-year (\texttt{timeInterval = c(2000, 2005)}). You are further interested in a potential correlation between the accessibility to populated areas and the illegally killed elephant. Therefore, you additionally choose the oxford-accessibility product. The information displayed by R Studio's auto compete feature reveals only one possible parameter - spatialReducer - and by requesting the documentation of the function, you learn that this data product is only available for the year 2015, and therefore has no temporal resolution to aggregate. Again, you choose the mean accessibility in each territory by using the default value of the parameter and add the product function to the list. The last argument specifies the resolution in m as edge length. 
 
 
 \begin{lstlisting}
@@ -92,7 +92,7 @@ africa_elephant_data <- ee_grab(
 
 \end{lstlisting}
 
-The resolution parameter sets the resolution of the processed data in EE and applies for all products. A value smaller than the native resolution of the data product results in EE resampling the data with the default nearest neighbour method, values higher result in a pixel aggregation with a default method mean. In the documentation, you learned that the native resolution of the tree cover product is 250 m while the accessibility products provide a resolution of 30 m. Because the area of the MIKE sites is of large-scale (mean area of the regions is 9862 km$^2$), choose 1000 m as the scale of analysis. 
+The resolution parameter sets the resolution of the processed data in EE and applies for all products. A value smaller than the native resolution of the data product results in EE resampling the data with the default nearest neighbour method. Values higher than this result in a pixel aggregation with a default method - mean. In the documentation, you learned that the native resolution of the tree cover product is 250 m, while the accessibility products provide a resolution of 30 m. Because the area of the MIKE sites is of large-scale (mean area of the regions is 9862 km$^2$), choose 1000 m as the scale of analysis. 
 
 
 
@@ -100,26 +100,26 @@ The resolution parameter sets the resolution of the processed data in EE and app
 	\begin{figure}
 		\begin{center}
 			\includegraphics[width=15cm]{images/session_1_hor_2-cropped.pdf}
-			\caption{Accessibility to the nearest populated areas in minutes (left) and mean tree cover in percent (right) for the african MIKE sides.}
+			\caption{Accessibility to the nearest populated areas in minutes (left) and mean tree cover in percent (right) for the african MIKE sites.}
 			\label{sample_session_1}
 		\end{center}
 	\end{figure}
 	% \vskip 2em%
 \end{center}
 
-The resolution parameter actively controls the scope of computation and out of this the processing time. Therefore it's a good choice to not unnecessarily set him too low. 
+The resolution parameter actively controls the scope of computation, and out of this the processing time. Therefore it's a good choice to not unnecessarily set it too low. 
 Since all parameters are set, the function can be executed. 
 
 
 
-During the processing the function prints info corresponding to the state of the upload, processing and the download of each data product. With the \texttt{verbose = FALSE}, this behaviour can be avoided. 
+During processing, the function prints info corresponding to the upload, the processing and the download state of each data product. With the \texttt{verbose = FALSE}, this behaviour can be avoided. 
 
 
 
 
 
-As most processes of the function call are performed on Googles servers, the execution time depends strongly on the throughput of your analysis on the servers and only slightly on the performance of your local machine. However, because of the upload and download process during the function execution, deficient internet speed (1 Mbit/s in download and 0.1 Mbit/s in upload) can work as a bottleneck, particularly during the upload process. 
-On a 64-bit ubuntu machine with 8 Gbit of RAM, 4 cores with 2.40 GHz and internet speed of 10 Mbit/s in download and 1Mbit/s in upload the \texttt{ee\_grab()} function took 55 s to execute. All further time measurements refer to this setting.
+As most processes of the function call are performed on Google servers, the execution time depends strongly on the throughput of your analysis on the servers and only slightly on the performance of your local machine. However, because of the upload and download process during the function execution, deficient internet speed (1 Mbit/s in download and 0.1 Mbit/s in upload) can work as a bottleneck, particularly during the upload process. 
+On a 64-bit ubuntu machine with 8 Gbit of RAM, 4 cores with 2.40 GHz and internet speed of 10 Mbit/s in download and 1 Mbit/s in upload the \texttt{ee\_grab()} function took 55 s to execute. All further time measurements refer to this setting.
 The output of the \texttt{ee\_grab()} function is an object of class sf.  The output always contains all properties of the original target vector data with the added data products and an additional geometry column as shown in table \ref{output}.
 
 \begin{table}[h]
@@ -163,7 +163,7 @@ While this sample session shows the capabilities of the earthEngineGrabR package
 You have access to data collected within the Great Elephant Census, a continent-wide aerial survey counting  elephants within a strip specified by position, hight and the flight path of the aircraft at the time the elephants where observed (\cite{beale2017spatial}). 
 Figure \ref{stripes} shows the stripes for the Ruaha-Rungwa ecosystem in south west Tanzania.
 You are interested in the availability of surface water in each of these stripes. Therefore you want to use the jrc-distance-to-surface-water data product available in the earthEngineGrabR package. 
-As the target, use the shapefile of the survey coverage for the Ruaha-Rungwa ecosystem and only specify the \texttt{jrc\_distanceToWater} product in the products argument. As spatial and temporal reducer you choose median. 
+As the target, use the shapefile of the survey coverage for the Ruaha-Rungwa ecosystem and only specify the \texttt{jrc\_distanceToWater} product in the products argument. As spatial and temporal reducer, you choose median. 
 
 \begin{lstlisting}
 
@@ -190,13 +190,12 @@ Due to the smaller area of the features of the target (mean area of 0.7 km$^2$),
 	% \vskip 2em%
 \end{center}
 
-The distance to surface water is specified in km (though, the actual resolution is 50 m) and refers to the distance to the next Landsat pixel (30 m x 30 m) classified as water (\cite{pekel2016high}). The distance ranges from approximately 25 km to 35 km. In figure \ref{session_2} the aerial stripes on the left indicate a higher distance than the stripes on the right side of the map. Thus, the next close surface water must be located approximately 25 km in an eastward direction. 
-This session shows the flexibility of the earthEngineGrabR referred to the scale of analysis and the shape of the AOI.
+The distance to surface water is specified in km (though, the actual resolution is 50 m) and refers to the distance to the next Landsat pixel (30 m x 30 m) classified as water (\cite{pekel2016high}). The distance ranges from approximately 25 km to 35 km. In figure \ref{session_2} the aerial stripes on the left indicate a higher distance than the stripes on the right side of the map. Thus, the next close surface water must be located approximately 25 km in an eastward direction. This session shows the flexibility of the earthEngineGrabR with regard to the scale of analysis and the shape of the AOI.
 In the last example, a more extended use case of the \texttt{ee\_grab()} function is presented.
 
 \section{Time-series analysis}
 
-You are also interested in the change of precipitation in the MIKE sites. Out of the documentation you know, that the precipitation product of the earthEngineGrabR is available from 2000 to 2015 on a yearly basis, thus you decide to calculate the precipitation for each year from 2000 to 2015 and analyse the change by using a linear model. The chirps-precipitation product is produced from satellite data on a daily basis, what offers the possibility to calculate the yearly precipitation sum. Because the yearly precipitation sum is a common practice in hydrology and compared to the mean not this prone to extreme values you decide to calculate the annual sum in each of the MIKE sites for each year. 
+You are also interested in the change of precipitation in the MIKE sites. Based on the documentation you know that the precipitation product of the earthEngineGrabR is available from 2000 to 2015 on a yearly basis. Thus, you decide to calculate the precipitation for each year from 2000 to 2015 and analyse the change by using a linear model. The chirps-precipitation product is produced from satellite data on a daily basis, which offers the possibility to calculate the yearly precipitation sum. Because the yearly precipitation sum is a common practice in hydrology and not as prone to extreme values, compared to the mean, you decide to calculate the annual sum in each of the MIKE sites for each year. 
 
 To achieve this, create one product for each year and pass the list of products to the \texttt{ee\_grab()} function.
 The list of products can be generated using a vector of years from 2000 to 2015 and iterate the precipitation data product function over the years vector.
@@ -224,13 +223,13 @@ precipitation_time_series <- ee_grab(
 
 
 As temporal reducer, choose sum, and for the year interval, you take the i-th value of the created years vector. This generates a list of 15 specified data products for each year from 2000 to 2015. This list is passed to the products argument in the \texttt{ee\_grab()} function.
-Due to the large-scale of analysis, select a resolution of 1000 m. Since you want the spatial mean of the yearly precipitation sum in the territories, which already is the default spatial reducer, all necessary parameters in the \texttt{ee\_grab()} function are specified. While the processing of a single request for one year would take about 3 m, the processing time of all 15 data products require only approximately 15 m. Because the requests are sent and processed in parallel, the relationship of processing time and the number of requests is nonlinear. 
+Given the large-scale of the analysis, select a resolution of 1000 m. Since you want the spatial mean of the yearly precipitation sum in the territories, which already is the default spatial reducer, all necessary parameters in the \texttt{ee\_grab()} function are specified. While the processing of a single request for one year would take about 3 m, the processing time of all 15 data products requires only approximately 15 m. Because the requests are sent and processed in parallel, the relationship of processing time and the number of requests is nonlinear. 
 
 The output is an object of class sf that contains all properties of the original MIKE sites shapefile with 15 added columns for the precipitation sum of each year.
 Next, use a linear model of $year  \sim precipitation$ for each site and retrieve the estimates for the effect of year. 
 The estimates show the linear effect of year on the yearly precipitation sum in mm for each of the sites. 
 By joining the estimates with the spatial data of the sites, the estimates can be visualised spatially. 
-Figure \ref{change} shows the estimate of the yearly change of the annual precipitation sum in mm for each site. That estimates reflect a yearly change from - 10 mm to + 20 mm. While the yearly precipitation sum is increasing for the sites in East Africa, it is decreasing for most sites in central Africa, especially for those with hight tree cover (Figure \ref*{sample_session_1}).
+Figure \ref{change} shows the estimate of the yearly change of the annual precipitation sum in mm for each site. These estimates reflect a yearly change from - 10 mm to + 20 mm. While the yearly precipitation sum is increasing for the sites in East Africa, it is decreasing for most sites in central Africa, especially for those with high tree cover (Figure \ref*{sample_session_1}).
 
 \begin{center}
 	\begin{figure}[h]
@@ -245,9 +244,9 @@ Figure \ref{change} shows the estimate of the yearly change of the annual precip
 
 
 
-Interpreting the results is beyond the scope of this thesis, instead this chapter focus on how to use the earthEngineGrabR and it's potential fields of application.
-With the use of the package, it was possible to quickly and easily acquire remote sensing data in three different use-cases. First, with the instructions on the packages Git Hup site, the requirements and the earthEngineGrabR were installed. Next, the \texttt{ee\_grab\_init()} installed the necessary Python dependencies and guided the user through the different authentications. The section illustrated how to use R, autocomplete feature and the package's data product functions to browse through the available data products and quickly open further documentation. Next, the \texttt{ee\_grab()} function was used to acquire remote sensing data according to 3 different questions and use-cases. The section showed the package's flexibility referring to the possible AOI, by obtaining data for both large-scale analyses with a mean area of the territories of 9862 km$^2$ and small-scale study with a mean area of 0.7 km$^2$.
-The last sample session gave suggestions on how to extend the possibilities of the package by integrating the \texttt{ee\_grab()} over a series of years and doing this, acquire a time series of a specific data products.
+Interpreting the results is beyond the scope of this thesis, instead this chapter focuses on how to use the earthEngineGrabR and its potential fields of application.
+With the use of the package, it was possible to quickly and easily acquire remote sensing data in three different cases for use. First, with the instructions on the packages Git Hup site, the requirements and the earthEngineGrabR were installed. Next, the \texttt{ee\_grab\_init()} installed the necessary Python dependencies and guided the user through the different authentications. The section illustrated how to use R, autocomplete feature and the package's data product functions to browse through the available data products and quickly open further documentation. Next, the \texttt{ee\_grab()} function was used to acquire remote sensing data according to 3 different questions and cases for use. The section showed the package's flexibility referring to the possible AOI, by obtaining data for both large-scale analyses with a mean area of the territories of 9862 km$^2$ and small-scale study with a mean area of 0.7 km$^2$.
+The last sample session gave suggestions on how to extend the possibilities of the package by integrating the \texttt{ee\_grab()} over a series of years and by doing this, acquire a time series of specific data products.
 
 
 
