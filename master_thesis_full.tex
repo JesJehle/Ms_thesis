@@ -197,18 +197,19 @@
   \end{center}
 \end{figure}
 
+
+
 \begin{center}
-		\hline
 		\vspace{1cm}
+		\rule{\linewidth}{0.6mm}
   {\huge\bfseries\maintitle\par}
-%  \vskip 2em%
-  		\vspace{1cm}
-		\hline
+		\rule{\linewidth}{0.6mm}
+
         \vspace{1cm}
 %  {\Large\bfseries\subtitle\par}
 %  \vskip 2em%
   {\Large\authors\par}
-   \vskip 2cm%
+   \vskip 1cm%
   {\course\par}
   \vskip 1em%
    \begin{figure}[h]
@@ -224,8 +225,9 @@
   	\flushright \year \par} 
 \end{center}
 
-
 \newpage
+\leavevmode\thispagestyle{empty}\newpage
+
 % If you have a photo on the titlepage, you can add a short
 % explanataion here 
 \begin{figure}[h]
@@ -238,8 +240,13 @@
 
 % Page numbering, options are arabic (Arabic numerals), roman	(Lowercase Roman), Roman (Uppercase Roman)
 % alph (lowercase letters) and Alph (Uppercase letters)
+
+
 \pagenumbering{Roman}
 \pagestyle{plain}
+
+
+
 
 \input{chapters/acknowledgements}
 
@@ -264,9 +271,13 @@
 }
 
 
+
 \tableofcontents
 \thispagestyle{empty}
 \setcounter{page}{0}
+
+\newpage
+\leavevmode\thispagestyle{empty}\newpage
 
 \input{chapters/introduction}
 

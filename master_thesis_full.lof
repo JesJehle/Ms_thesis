@@ -2,31 +2,31 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Standard approach to acquire and prepare remote sensing data for environmental system modeling.\relax }}{2}{figure.caption.6}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Standard approach to acquire and prepare remote sensing data for environmental system modeling.\relax }}{3}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Function design and data manipulation workflow of the \texttt {ee\_grab()} function.\relax }}{12}{figure.caption.12}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Function design and data manipulation workflow of the \texttt {ee\_grab()} function.\relax }}{13}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Internal processing flow of the \texttt {ee\_grab()} function call.\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Internal processing flow of the \texttt {ee\_grab()} function call.\relax }}{15}{figure.caption.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of utilizing a system call to execute a Python script from R and request metadata on the SRTM data set from EE.\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Example of utilizing a system call to execute a Python script from R and request metadata on the SRTM data set from EE.\relax }}{16}{figure.caption.16}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces African MIKE sites.\relax }}{19}{figure.caption.23}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces African MIKE sites.\relax }}{20}{figure.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Example of the authentication process for the EE API with the required Google login (right) and the terminal window to enter the token (left).\relax }}{20}{figure.caption.24}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example of the authentication process for the EE API with the required Google login (right) and the terminal window to enter the token (left).\relax }}{21}{figure.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of viewing the data product documentation with R Studio's auto-complete functionality.\relax }}{21}{figure.caption.25}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of viewing the data product documentation with R Studio's auto-complete functionality.\relax }}{22}{figure.caption.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Accessibility to the nearest populated areas in minutes (left) and mean tree cover in percent (right) for the african MIKE sites.\relax }}{22}{figure.caption.26}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Accessibility to the nearest populated areas in minutes (left) and mean tree cover in percent (right) for the african MIKE sites.\relax }}{23}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Spatial coverage of the aerial survey for Tanzania.\relax }}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Spatial coverage of the aerial survey for Tanzania.\relax }}{25}{figure.caption.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Augmented excerpt of the distance to surface water in km for the coverage of the areal survey.\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Augmented excerpt of the distance to surface water in km for the coverage of the areal survey.\relax }}{26}{figure.caption.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Estimates of the yearly change of the annual precipitation sum in mm within the african MIKE sites.\relax }}{27}{figure.caption.30}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Estimates of the yearly change of the annual precipitation sum in mm within the african MIKE sites.\relax }}{28}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

@@ -2,100 +2,100 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Acknowledgements}{II}{chapter*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Advantages of Earth Engine (EE)}{6}{section.1.1}
+\contentsline {section}{\numberline {1.1}Advantages of Earth Engine (EE)}{7}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}The public data catalogue}{6}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.1}The public data catalogue}{7}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Reasons for the performance of EE}{6}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.2}Reasons for the performance of EE}{7}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The tile architecture}{6}{section*.7}
+\contentsline {subsubsection}{The tile architecture}{7}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The pyramid architecture}{7}{section*.8}
+\contentsline {subsubsection}{The pyramid architecture}{8}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{The system architecture}{7}{section*.9}
+\contentsline {subsubsection}{The system architecture}{8}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Data distribution models}{7}{section*.10}
+\contentsline {subsubsection}{Data distribution models}{8}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.3}Potential of EE for the data acquisition process}{8}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.3}Potential of EE for the data acquisition process}{9}{subsection.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Methods}{9}{chapter.2}
+\contentsline {chapter}{\numberline {2}Methods}{10}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Available data products}{10}{section.2.1}
+\contentsline {section}{\numberline {2.1}Available data products}{11}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Design and functionality of the \\ data manipulation}{11}{section.2.2}
+\contentsline {section}{\numberline {2.2}Design and functionality of the \\ data manipulation}{12}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Technical framework for the interface between R and EE}{13}{section.2.3}
+\contentsline {section}{\numberline {2.3}Technical framework for the interface between R and EE}{14}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Upload data to Fusion Table}{14}{section*.14}
+\contentsline {subsubsection}{Upload data to Fusion Table}{15}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Integration of R and Python}{14}{section*.15}
+\contentsline {subsubsection}{Integration of R and Python}{15}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Organize Python code as modules}{16}{section*.17}
+\contentsline {subsubsection}{Organize Python code as modules}{17}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Communication of the client library, EE and Google Drive}{16}{section*.18}
+\contentsline {subsubsection}{Communication of the client library, EE and Google Drive}{17}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Parallel processing of data products}{17}{section*.19}
+\contentsline {subsubsection}{Parallel processing of data products}{18}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Organize dependencies and authentications}{17}{section.2.4}
+\contentsline {section}{\numberline {2.4}Organize dependencies and authentications}{18}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Dependencies}{17}{section*.20}
+\contentsline {subsubsection}{Dependencies}{18}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Authentication}{18}{section*.22}
+\contentsline {subsubsection}{Authentication}{19}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Results}{19}{chapter.3}
+\contentsline {chapter}{\numberline {3}Results}{20}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Large-scale analysis}{19}{section.3.1}
+\contentsline {section}{\numberline {3.1}Large-scale analysis}{20}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Small-scale analysis}{24}{section.3.2}
+\contentsline {section}{\numberline {3.2}Small-scale analysis}{25}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Time-series analysis}{25}{section.3.3}
+\contentsline {section}{\numberline {3.3}Time-series analysis}{26}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Discussion}{28}{chapter.4}
+\contentsline {chapter}{\numberline {4}Discussion}{29}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Limits and problems of the current version of the earthEngineGrabR}{28}{section.4.1}
+\contentsline {section}{\numberline {4.1}Limits and problems of the current version of the earthEngineGrabR}{29}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Vector data processing restriction}{29}{section*.31}
+\contentsline {subsubsection}{Vector data processing restriction}{30}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Limited number of available data products and their possible properties}{29}{section*.32}
+\contentsline {subsubsection}{Limited number of available data products and their possible properties}{30}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{No control of projection}{29}{section*.33}
+\contentsline {subsubsection}{No control of projection}{30}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Multiple dependencies, operating system interoperability, confusing authentication process}{29}{section*.34}
+\contentsline {subsubsection}{Multiple dependencies, operating system interoperability, confusing authentication process}{30}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Further development of the earthEngineGrabR}{30}{section.4.2}
+\contentsline {section}{\numberline {4.2}Further development of the earthEngineGrabR}{31}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Implementation of additional features}{30}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Implementation of additional features}{31}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Add more data products}{30}{section*.35}
+\contentsline {subsubsection}{Add more data products}{31}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Extend the properties of the data products}{31}{section*.36}
+\contentsline {subsubsection}{Extend the properties of the data products}{32}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Internal iterations as a workaround for the vector data processing restriction}{31}{section*.37}
+\contentsline {subsubsection}{Internal iterations as a workaround for the vector data processing restriction}{32}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Simplify the authentication process}{31}{section*.38}
+\contentsline {subsubsection}{Simplify the authentication process}{32}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{32}{section*.39}
+\contentsline {subsubsection}{Add the possibility for the user to add and define new data products}{33}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Improve the integration of R and Python}{32}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Improve the integration of R and Python}{33}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Internal strengths, weaknesses and limitations of EE and their incorporation in the earthEngineGrabR}{33}{section.4.3}
+\contentsline {section}{\numberline {4.3}Internal strengths, weaknesses and limitations of EE and their incorporation in the earthEngineGrabR}{34}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Strengths of EE}{33}{section*.40}
+\contentsline {subsubsection}{Strengths of EE}{34}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Weaknesses and limitations of EE}{33}{section*.41}
+\contentsline {subsubsection}{Weaknesses and limitations of EE}{34}{section*.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}The optimal application of EE in the earthEngineGrabR}{34}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}The optimal application of EE in the earthEngineGrabR}{35}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Support the internal distribution mechanism of EE by processing the data products in parallel}{34}{section*.42}
+\contentsline {subsubsection}{Support the internal distribution mechanism of EE by processing the data products in parallel}{35}{section*.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{34}{section*.43}
+\contentsline {subsubsection}{Instead of acquiring Big Data, process Big Data and acquire the results}{35}{section*.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{36}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{37}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{37}{chapter*.44}
+\contentsline {chapter}{Bibliography}{38}{chapter*.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Figures}{39}{table.caption.46}
+\contentsline {chapter}{List of Figures}{40}{table.caption.46}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Tables}{39}{table.caption.46}
+\contentsline {chapter}{List of Tables}{40}{table.caption.46}
